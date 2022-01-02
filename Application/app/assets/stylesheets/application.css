@@ -116,3 +116,9 @@
 #content-container button:hover{
 	opacity: 0.9;
 }
+
+
+#signup {
+	font-size: 30px;
+    color: var(--text-white);
+}
