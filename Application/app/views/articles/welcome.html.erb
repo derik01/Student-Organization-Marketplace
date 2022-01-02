@@ -3,4 +3,4 @@
     <h1>You are Logged In, <%= current_user.username %></h1>
 <%end%>
 
-<%= link_to "Sign out", '/' %>
+<%= button_to 'Logout', logout_path, method: :delete %>

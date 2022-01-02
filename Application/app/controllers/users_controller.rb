@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    skip_before_action :require_login, only: [:new, :create, :login]
+    # skip_before_action :require_login, only: [:new, :create, :login]
 
     def new
         @user = User.new
@@ -12,23 +12,10 @@ class UsersController < ApplicationController
             session[:user_id] = @user.id
             redirect_to '/welcome'
         else
-            flash[:error] = "Sign up invalid: User and/or password are incorrect."
+            flash[:error] = "Sign up invalid."
             redirect_to '/signup'
         end
     end
-
-    def login 
-        @user = User.create(params.require(:user).permit(:username, :password))
-
-        if @user.valid?
-            session[:user_id] = @user.id
-            redirect_to '/welcome'
-        else
-            flash[:error] = "Log in invalid: User and/or password are incorrect."
-            redirect_to '/login'
-        end
-    end
-
 
     def show 
         @user = User.find(params[:id])
