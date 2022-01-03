@@ -17684,3 +17684,248 @@ Completed 200 OK in 1666ms (Views: 1664.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/application.self-73bb827239f462a13d6ca9429d51fe9363886a7f67b8ca9481e1d241cb97fbf1.css?body=1" for ::1 at 2022-01-03 02:39:00 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 03:57:16 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 419ms (Views: 413.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-03 03:57:46 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2429ms (Views: 2428.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1f332f36df49db10d2e56b58b51a6ba23d02630c26c0bfa05f281bb39a500071.css?body=1" for ::1 at 2022-01-03 03:57:49 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 03:58:19 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1667ms (Views: 1666.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-97b878c91741a1199c3cf186c655f58ccb0edd15f56bb79e044efc509cc38369.css?body=1" for ::1 at 2022-01-03 03:58:21 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 03:58:34 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1695ms (Views: 1694.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a0e0c64abaa06cbb5f6a9358b017341b28fd80755aa5b34845df5ab9e2ff4594.css?body=1" for ::1 at 2022-01-03 03:58:35 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:02:27 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1774ms (Views: 1773.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-50d5e19ca12e93e8b13da05e1c1e6a2becaa5985832f507c2de49e77a4b35988.css?body=1" for ::1 at 2022-01-03 04:02:28 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:03:16 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1764ms (Views: 1763.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c5ef5e2648d92ed42b217653d22d8a52b8bdfcf17efd76332c4d0bf18600c010.css?body=1" for ::1 at 2022-01-03 04:03:18 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:03:37 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1689ms (Views: 1688.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-35cc5d1a4a2a155dffdbebb31ca79b2e58c1ecc8b20b433b45a8ef0d40e781e1.css?body=1" for ::1 at 2022-01-03 04:03:39 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:04:35 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1667ms (Views: 1666.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9d95fb894758eb23496201e06dbd0df8e645c71db681f9d0f7b884bbd7f191b4.css?body=1" for ::1 at 2022-01-03 04:04:37 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:04:44 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1685ms (Views: 1684.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-17c2cfde3f52f50479ee735305677638da1b0b8918635f468e99d64db161b676.css?body=1" for ::1 at 2022-01-03 04:04:46 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:07:13 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1718ms (Views: 1717.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b169cd64b9b02c9298500d061022901e9ec1f92f76e8c18ba8190393f255db18.css?body=1" for ::1 at 2022-01-03 04:07:15 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:08:01 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1748ms (Views: 1747.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6b0ab27b8679918e7a7c46781bb890ebac083d7190f5eb4a6bfc92dc0b947e9d.css?body=1" for ::1 at 2022-01-03 04:08:03 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:08:50 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1754ms (Views: 1753.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ffc75b4ed9434897a4573e6c8528cd367caa112f090e9bf9dcd4e8e3ad0c5315.css?body=1" for ::1 at 2022-01-03 04:08:52 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:09:49 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-03 04:12:44 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1753ms (Views: 1752.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c5728774f52bb3a30b130f0b73437b21271b231a21c36de6f444671a22c390c7.css?body=1" for ::1 at 2022-01-03 04:12:46 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:13:21 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1729ms (Views: 1728.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-38ba93c6e8207c5a65f38fdebe6a8db1db90336a7995480076c293e3d2c8e9a7.css?body=1" for ::1 at 2022-01-03 04:13:23 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:13:34 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1701ms (Views: 1700.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e967f03cbb856ded611e2f0025d3f7699cbda4af6e2afb1507e66aa68627e254.css?body=1" for ::1 at 2022-01-03 04:13:36 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:14:17 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1684ms (Views: 1683.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-eea3e5d67e92ad77cdb5bb4e54ac67ff39fc15ee3fe5f9c9471dfd58ae912324.css?body=1" for ::1 at 2022-01-03 04:14:19 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:15:29 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1640ms (Views: 1639.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5e9a4c777d7d2ca4ba4080823d3bd7f453c742435e5611745b02aa0a5233e5b0.css?body=1" for ::1 at 2022-01-03 04:15:30 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:15:54 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1666ms (Views: 1665.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c3fabc79ae218a021be704b25cf4532217319e27c54e4793df69afaa660ea3db.css?body=1" for ::1 at 2022-01-03 04:15:56 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:16:48 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1605ms (Views: 1604.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-03 04:17:12 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1638ms (Views: 1637.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6bd958dd2bc5d83e66617e2cb28d382d8f10db3c636287d5e079f66d9a4d27b4.css?body=1" for ::1 at 2022-01-03 04:17:13 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:18:33 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-03 04:23:35 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1759ms (Views: 1758.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a0d222a4dd55a0b2205b1c51658274a3c688546c99aa7899e28e3ab75c9f1a3f.css?body=1" for ::1 at 2022-01-03 04:23:37 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:26:53 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "// }": expected "}", was ""):
+    2: <html>
+    3:   <head>
+    4:     <title>Mporium</title>
+    5:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:     <%= csrf_meta_tags %>
+    8:   </head>
+  app/assets/stylesheets/application.scss:289
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__27347927291120500_70197432136240'
+
+
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.2ms)
+
+
+Started GET "/" for ::1 at 2022-01-03 04:27:15 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1699ms (Views: 1698.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-35035bb406e09d63fe1196033ea577c987ff466aa9f9cd50db1764ba4da85ca1.css?body=1" for ::1 at 2022-01-03 04:27:17 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:28:20 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1770ms (Views: 1769.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ed39e8db34e7cfbcc2f71f4c649a9c91e81c2abe5d77ec9d8ee903b3283b2402.css?body=1" for ::1 at 2022-01-03 04:28:21 -0600
