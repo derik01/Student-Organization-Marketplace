@@ -7,14 +7,14 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/welcome'
     else
-      flash[:danger] = 'Invalid email/password combination'
+      flash[:notice] = 'Invalid email/password combination'
       redirect_to '/sign_in'
     end 
   end
 
   def destroy
     session[:user_id] = nil
-    flash.now[:notice] = "You have been signed out!"
+    # flash[:notice] = "You have been signed out!"
     redirect_to '/'
   end
 end
