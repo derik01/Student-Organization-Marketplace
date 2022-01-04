@@ -57,10 +57,12 @@
 // }
 
 #container{
-	padding-top: 2em;
+	padding: 2em;
+	margin: 10%;
 	background-color: var(--color1);
 	color: var(--color2);
  	width: 100%;
+	border-radius: 40px;
 }
 #container h1{
 	color: var(--color2);
@@ -87,28 +89,43 @@
 
 
 // start of new.html.erb >>>>>>>>
+body {
+	background-image: url("kyle23.jpg");
+	background-repeat: no-repeat;
+}
 #login-box {
 	padding: 2em;
-	margin: 25%;
+	margin: 10%;
 	border-radius: 25px;
-	background-color: var(--color1);	
+	background-color: var(--color1);
+	color: var(--color2);	
 }
-#login-box h4 {
-	color: var(--color2);
+#login-field {
+	margin-left: 15%;
+	margin-right: 15%;
 }
-
 #login-field label {
 	color: var(--color2);
-	font-size:16px;
+	font-size: 150%;
 }
-
+#login-field input {
+	font-size: 150%;
+	width: 60%
+}
 #login-submit {
 	text-transform: uppercase;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 #login-submit:hover {
 	background-color: var(--color1);
 	color: var(--color2);
 	border: solid white 2px;
+}
+
+#err-msg {
+	color: var(--color2);
 }
 
 

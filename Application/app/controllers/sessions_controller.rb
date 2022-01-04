@@ -7,9 +7,9 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/welcome'
     else
-      message = "Login Invalid."
-      redirect_to '/sign_in', notice: message
-    end 
+      flash[:notice] = 'Invalid email/password combination'
+      redirect_to '/sign_in'
+    end
   end
 
   def destroy
