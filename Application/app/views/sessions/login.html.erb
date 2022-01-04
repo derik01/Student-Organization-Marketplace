@@ -1,0 +1,38 @@
+
+
+<div id="login-box" class=" h-100 justify-content-center align-items-center">
+	<br>
+	<%= form_for(:session, url: sign_in_path) do |f| %>
+			<h2 class="container text-center">Login</h2> <br>
+			<div id="login-field" class="form-group">
+				<span><%= f.label :"Username:" %></span>
+				
+				<%= f.text_field :username %><br>
+			</div>
+
+			<div id="login-field" class="form-group">
+				
+				<span><%= f.label :"Password:" %></span>
+				<%= f.password_field :password %><br>
+			</div>
+
+			<button id="login-submit" class="container text-center btn btn-default">
+				<span visibility: hidden><%= f.submit "Sign in"%></span>
+				<span class="button__text" class="container text-center">Sign In</span>
+			</button>
+
+	<% end %> 
+	
+	<br>
+	
+	<span id="err-msg" class="container text-center">
+		<% flash.each do |type, msg| %>
+			<div>
+				<%= msg %>
+			</div>
+		<% end %>
+	</span>
+
+</div>
+
+
