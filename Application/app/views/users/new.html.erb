@@ -1,24 +1,35 @@
-<body id="login">
-    <div id="login-box" class=" h-100 justify-content-center align-items-center">
-        <h2 class="container text-center">Create an Account</h2>
 
-        <%= form_for @user do |f| %>
-            <div id="login-field" class="form-group">
-                <%= f.label :"Username:" %>
-                <%= f.text_field :username %><br>
-            </div>
-
-            <div id="login-field" class="form-group">
-                <%= f.label :"Password:" %>
-                <%= f.password_field :password %><br>
-            </div>
-            <button id="login-submit" class="container text-center btn btn-default">
-                <span visibility: hidden><%= f.submit "Create Account"%></span>
-                <span class="button__text" class="container text-center">Create Account</span>
-            </button>
-
-        <% end %>
-
+<div id="nav-header">
+    <div id="logo" class="text-left">
+        <a id="home-btn" href="/"><span>Mporium</span></a>
     </div>
 
-</body>
+    <nav>
+        <a href="#">PRODUCTS</a>
+        <a href="#">ORGANIZATIONS</a>
+        <a href="sign_in">LOG IN</a>
+        <a href="signup">SIGN UP</a>
+    </nav>
+</div>
+
+<div id="login-box" class=" h-100 justify-content-center align-items-center">
+    <h2 class="container text-center">Create an Account</h2>
+
+    <%= form_for @user do |f| %>
+        <div id="login-field" class="form-group">
+            <%= f.label :"Username:" %>
+            <%= f.text_field :username %><br>
+        </div>
+
+        <div id="login-field" class="form-group">
+            <%= f.label :"Password:" %>
+            <%= f.password_field :password %><br>
+        </div>
+        <button id="login-submit" class="container text-center btn btn-default">
+            <span visibility: hidden><%= f.submit "Create Account"%></span>
+            <span class="button__text" class="container text-center">Create Account</span>
+        </button>
+
+    <% end %>
+
+</div>

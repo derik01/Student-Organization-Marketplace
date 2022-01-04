@@ -19866,3 +19866,232 @@ Started GET "/" for ::1 at 2022-01-04 04:11:26 -0600
 Processing by ArticlesController#index as HTML
   Rendered articles/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 119ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:09:38 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 398ms (Views: 394.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2022-01-04 05:09:50 -0600
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 66ms (Views: 52.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:10:11 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:10:57 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2058ms (Views: 2057.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-803eebb52f10c8f1e10e8158687e8bb07ef439a08e781ae4ae763ae2bc443f81.css?body=1" for ::1 at 2022-01-04 05:10:59 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:10:59 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:11:20 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1780ms (Views: 1779.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9dc3b58b9480c825e98b4c7e4db17518bf3b9d08acd92d2ad3ba85d22b3cc57b.css?body=1" for ::1 at 2022-01-04 05:11:22 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:11:22 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:12:14 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1765ms (Views: 1764.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-de4330dcad092cfd3670278ab442627ebccfaf846e5385d417d7ebe400831874.css?body=1" for ::1 at 2022-01-04 05:12:16 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:12:16 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:14:05 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:14:05 -0600
+
+
+Started GET "/signup" for ::1 at 2022-01-04 05:14:16 -0600
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:14:21 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:16:12 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1717ms (Views: 1717.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-745c2f9c835bd680c94f046a9d86bf2bba3048c548694b3dc4a4c2a8d3122c67.css?body=1" for ::1 at 2022-01-04 05:16:14 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:16:14 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 05:16:33 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:16:34 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 05:18:18 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1733ms (Views: 1732.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d4a4592b88bef405fdb71e3e2a51bbe84e5951a9b7a50b3f41f0230b2b72842b.css?body=1" for ::1 at 2022-01-04 05:18:20 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:18:20 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 05:19:26 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1761ms (Views: 1760.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-41e42b534f002514457e7a183849a32d35c53f99b4bc2f4ff881b56c54a59ecb.css?body=1" for ::1 at 2022-01-04 05:19:28 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:19:28 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 05:20:25 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1766ms (Views: 1765.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-255ae4418cbebe6b57f721d41964caf082ab9cce9ca78e6947a01b50f1f1a524.css?body=1" for ::1 at 2022-01-04 05:20:27 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:20:27 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:20:37 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:22:19 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1767ms (Views: 1766.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-68443653c3d4134bc59cecbe65edc6132034467b657dc512a5e99ee15fe99697.css?body=1" for ::1 at 2022-01-04 05:22:21 -0600
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:22:21 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 05:22:24 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:23:15 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:23:15 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:23:16 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:24:26 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for ::1 at 2022-01-04 05:24:26 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 05:24:27 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:24:33 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:24:35 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:24:42 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:24:44 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 05:25:08 -0600
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2022-01-04 05:25:11 -0600
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 05:25:14 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)

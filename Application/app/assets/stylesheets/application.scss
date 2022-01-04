@@ -32,6 +32,9 @@
 	color: var(--color1);
     background-color: var(--color2);
 }
+#home-btn:hover {
+	text-decoration: none;
+}
 #nav-header nav {
 	color: var(--color1);
 }
@@ -43,18 +46,18 @@
 	text-align: center;
 	color: var(--color1);
 }
-#nav-header nav a:last-child {
-	color: var(--color2);
-	background: var(--color1);
-	padding: 10px 20px;
-	margin-left: 30px;
-	border-radius: 30px;
-} 
-// #nav-header nav a:hover {
-// 	background-color: var(--color1);
+// #nav-header nav a:last-child {
 // 	color: var(--color2);
-// 	border-radius: 12px;
-// }
+// 	background: var(--color1);
+// 	padding: 10px 20px;
+// 	margin-left: 30px;
+// 	border-radius: 30px;
+// } 
+#nav-header nav a:hover {
+	background-color: var(--color1);
+	color: var(--color2);
+	border-radius: 30px;
+}
 
 #container{
 	padding: 2em;
