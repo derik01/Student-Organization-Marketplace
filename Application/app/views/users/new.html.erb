@@ -7,3 +7,9 @@
     <%= f.password_field :password %><br>
     <%= f.submit "Create Account"%>
 <% end %>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>

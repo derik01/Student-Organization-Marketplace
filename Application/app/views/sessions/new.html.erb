@@ -1,8 +1,47 @@
-  <h1>Sign In</h1>
-    <%= form_for(:session, url: sign_in_path) do |f| %>
-    <%= f.label :"Username:" %>
-    <%= f.text_field :username %><br>
-    <%= f.label :"Password:" %>
-    <%= f.password_field :password %><br>
-    <%= f.submit "Sign in"%>
-  <% end %>
+
+<div class="back"> </div>
+<%= form_for(:session, url: sign_in_path) do |f| %>
+<div class="background">
+<div class="container text-center">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login">
+				<div class="login__field">
+					    <SPAN STYLE="font-size:16pt" top="position: absolute; top: 80;"><%= f.label :"Username:" %></SPAN>
+              <i class="login__icon fas fa-user"></i>
+              <%= f.text_field :username %><br>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					    <SPAN STYLE="font-size:16pt"><%= f.label :"Password:" %></SPAN>
+              <%= f.password_field :password %><br>
+				</div>
+				<button class="button login__submit" placeholder="Sign In">
+					    <SPAN visibility: hidden><%= f.submit "Sign in"%></SPAN>
+              <span class="button__text" text-align=center margin:auto>Sign In</span>
+				</button>	
+			</form>
+			<div class="social-login">
+				<div class="social-icons">
+				</div>
+			</div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+</div>
+
+	<%# <div class="test">
+		<%= f.label :"Username:" %>
+	<% end %>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
