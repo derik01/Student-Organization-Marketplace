@@ -4,10 +4,14 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'bcrypt' 
 
+gem 'pg_tester'
+
+gem 'rspec'
+
 gem 'pg', '~> 0.15'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails', '5.0.1'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,7 +54,7 @@ end
 
 group :test do
   gem 'cucumber-rails', :require => false
-  gem 'rspec-rails'
+  # gem 'rspec-rails'
   gem 'webmock'
   gem 'database_cleaner'
 end

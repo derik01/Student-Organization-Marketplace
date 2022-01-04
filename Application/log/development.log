@@ -21147,3 +21147,254 @@ Processing by SessionsController#new as HTML
   Rendered sessions/new.html.erb within layouts/application (3.1ms)
 Completed 200 OK in 1610ms (Views: 1609.1ms | ActiveRecord: 0.0ms)
 >>>>>>> origin/main
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-04 13:09:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 27200ms (Views: 27125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4dd96e86b442ee5ad7c33cd6024b4904d4810634b4ccc3940966cfac9a2c5fed.css?body=1" for 127.0.0.1 at 2022-01-04 13:09:49 +0200
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-04 13:09:50 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-04 13:09:55 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (394.7ms)
+Completed 200 OK in 2004ms (Views: 1818.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-04 13:10:01 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1452ms (Views: 1451.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-04 13:17:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 5989ms (Views: 5900.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-04 13:17:26 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-04 13:17:30 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (227.2ms)
+Completed 200 OK in 1273ms (Views: 1184.0ms | ActiveRecord: 3.5ms)
+Started GET "/" for 127.0.0.1 at 2022-01-05 00:35:26 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 28057ms (Views: 27598.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:35:59 +0200
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:16 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (383.5ms)
+Completed 200 OK in 2189ms (Views: 1780.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:36:22 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2279ms (Views: 2002.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:26 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1546ms (Views: 1502.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:36:31 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+R6zo/dWXTqik2jAu2LfxlLy7WUs+pZlD6H5fNzn685IvM7wkMenlAB3Kgyv13zoqRxugqnKymKVsIq1jupiw==", "user"=>{"username"=>"dsada", "password"=>"[FILTERED]"}}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 203ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:31 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1150ms (Views: 1081.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:36:33 +0200
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:36:39 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2iYAPXmMn1sTIIV0AgKvNK0dBnwhdzkutpkrnsg5D/OU4InINBLYsamrFH8yUHm4FvK8c79j+F6o8W5R7XE51w==", "user"=>{"username"=>"ca", "password"=>"[FILTERED]"}}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 219ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:39 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 1944ms (Views: 1780.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:36:41 +0200
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:36:56 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1432ms (Views: 1262.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:36:58 +0200
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:05 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZGO40PfkOvdZxhDUBUnPiz6qL+30OcOnEQ2M5aqH8G/VwcWDkHXAWfsiUhgR/GylxUSsCnEJn6CLHP8s+Ip5Q==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 244ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:06 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:07 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZGO40PfkOvdZxhDUBUnPiz6qL+30OcOnEQ2M5aqH8G/VwcWDkHXAWfsiUhgR/GylxUSsCnEJn6CLHP8s+Ip5Q==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 322ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:08 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2702ms (Views: 2643.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1151ms (Views: 1063.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:37:09 +0200
+Started GET "/" for 127.0.0.1 at 2022-01-05 00:44:09 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 10764ms (Views: 10650.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:44:26 +0200
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:44:28 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (174.5ms)
+Completed 200 OK in 777ms (Views: 550.9ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:44:54 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"67zJoQRXuhstcrzOnVx1dZljUQx2nRez4iBXlXljyQqlekBUScn98Zf5LcWtDqP5IozrA+iJ1sP8SBJaXCv/Lg==", "user"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 305ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:44:54 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1201ms (Views: 1018.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:44:56 +0200
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:45:02 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HM3ztbGl2MHo0p2hapBbB67qERPWUB5Ay9o9V1kAZDpSC3pA/DufK1JZDKpawo2LFQWrHEhE3zDVsniYfEhSHg==", "user"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "hallie@gmail.com"], ["password_digest", "$2a$12$bHF8NLTweCGveqiTMjunkuoDbsdxgb6LYty9dcp7aod0p8ip8tjF6"], ["created_at", 2022-01-04 22:45:03 UTC], ["updated_at", 2022-01-04 22:45:03 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 769ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-05 00:45:03 +0200
+Processing by ArticlesController#welcome as HTML
+  Rendering articles/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  Rendered articles/welcome.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 507ms (Views: 443.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:05 +0200
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-05 00:45:09 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yixb9kSW4sSNqBJkBc4a/K0K/B4bBL/0GXfFxPx/CcGE6tIDCQilLjcjg281nMxwFuVGEYUQfoQHH4AL2Tc/5Q=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-05 00:45:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1847ms (Views: 1773.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:12 +0200
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:15 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 768ms (Views: 691.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:29 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/dL2FENSXOoookHHY8BqHuLZrnzlmcmePCRhNO3HgNizFH/hDswbAJIp0MxTkrySWTYUc3uNCO4iTCT7yI+2/A==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 193ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:29 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 2313ms (Views: 2083.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:32 +0200
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:38 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wtf1OX3ju60TAvtuK2LKOf/WaONmxeom1r1+J+J4GeyMEXzMMH38R6mJamUbMBy1RDnS7PjRK1bI1TvoxzAvyA==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 239ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-05 00:45:38 +0200
+Processing by ArticlesController#welcome as HTML
+  Rendering articles/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  Rendered articles/welcome.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1694ms (Views: 1613.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:41 +0200
