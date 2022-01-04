@@ -15,3 +15,7 @@ end
 When /^I press "([^\"]*)"$/ do |button|
     click_button(button)
 end
+
+Then /^(?:|I )should be on (.+)$/ do |page_name|
+    visit path_to(page_name)
+end
