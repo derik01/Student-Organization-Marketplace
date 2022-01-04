@@ -17929,3 +17929,466 @@ Completed 200 OK in 1770ms (Views: 1769.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/application.self-ed39e8db34e7cfbcc2f71f4c649a9c91e81c2abe5d77ec9d8ee903b3283b2402.css?body=1" for ::1 at 2022-01-03 04:28:21 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 04:32:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2346ms (Views: 2341.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-35497c971ddbd934938d6630087673245795d0c44725dc64af703c9c7b4b52b9.css?body=1" for ::1 at 2022-01-03 04:32:25 -0600
+
+
+Started GET "/" for ::1 at 2022-01-03 05:12:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2457ms (Views: 2453.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4ea25bef998c3ab9a74da41577ce8e3e06fa550e203d59b20e936447d212e02a.css?body=1" for ::1 at 2022-01-03 05:12:43 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:12:45 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2022-01-03 05:12:49 -0600
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 67ms (Views: 52.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2022-01-03 05:13:00 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:13:01 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2022-01-03 05:13:10 -0600
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:16:44 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:17:53 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:18:23 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:18:36 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:18:49 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:19:37 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1753ms (Views: 1752.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-984f40a151a0f43403565f98c5f408377ce5881b433c0ded73f07e2e1e33f6d4.css?body=1" for ::1 at 2022-01-03 05:19:39 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-03 05:24:13 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1791ms (Views: 1790.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-800c174dff575dcbe5c591c4f7cdca25dccfba7a7f1ba109921dcd7610ca0ad8.css?body=1" for ::1 at 2022-01-03 05:24:15 -0600
+
+
+Started GET "/" for ::1 at 2022-01-04 01:41:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (5.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 365ms (Views: 359.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:41:08 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:41:45 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:44:04 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:47:54 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2408ms (Views: 2407.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-206a9b727d63cde1ff181559b9ee3850a59f0b27ca7cad8920fc219f187a8f7a.css?body=1" for ::1 at 2022-01-04 01:47:56 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:52:14 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1770ms (Views: 1769.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f54d46000bd405c24843234ec1228c8e2cf227f41d08117f810887f5a8bae1a9.css?body=1" for ::1 at 2022-01-04 01:52:16 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:52:53 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1673ms (Views: 1672.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-16465b62247de0d643b21f35f8da52849a0b4bc5a56c782cb9acc1bf95915f57.css?body=1" for ::1 at 2022-01-04 01:52:54 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:53:09 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1580ms (Views: 1579.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2b98578224188f43c8848aecf8e87c9ef4641907dd48e3f808a04994c961f332.css?body=1" for ::1 at 2022-01-04 01:53:11 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:54:02 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:54:23 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:54:41 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1712ms (Views: 1711.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-936e523a461cd989f04de93152de65b33f1b428e2e4ce7a09f3560fb23e3ebd9.css?body=1" for ::1 at 2022-01-04 01:54:43 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:56:33 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:56:44 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:57:17 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1640ms (Views: 1639.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3ebebe733ec671fd064fce3bbcf0be51cf7e3e91a3b9f1efe9c4c122f3ad44c7.css?body=1" for ::1 at 2022-01-04 01:57:19 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:58:07 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after " 	width": expected ";", was ": 25%;	"):
+    2: <html>
+    3:   <head>
+    4:     <title>Mporium</title>
+    5:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:     <%= csrf_meta_tags %>
+    8:   </head>
+  app/assets/stylesheets/application.scss:95
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___470750939741948211_70256836639240'
+
+
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.4ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.8ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:58:22 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1619ms (Views: 1618.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-45c28f3423b7028fb12db1917896e998ddf9ee4c119bc20c499dd5d29c2b5ce6.css?body=1" for ::1 at 2022-01-04 01:58:24 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:58:41 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1651ms (Views: 1650.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7998c0f5ee0ce13cde49935642ed4dcdd19181b880fc95da4649b51b09d3caa5.css?body=1" for ::1 at 2022-01-04 01:58:43 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:59:05 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1624ms (Views: 1623.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f631f09e52cba994258425282df39b1f23fefac658b0517a2bb6bfbd10c8ecff.css?body=1" for ::1 at 2022-01-04 01:59:07 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 01:59:26 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1592ms (Views: 1591.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8cf2e8abf537f61723e8f6781401ae7d11400bab9bc519a64b5b964a7eccedd8.css?body=1" for ::1 at 2022-01-04 01:59:27 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:00:12 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1618ms (Views: 1617.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b78e8853a0e9d5b9dace4861abea1d78d2f31f5db2e486167aa7b1ee48a39fad.css?body=1" for ::1 at 2022-01-04 02:00:14 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:01:33 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:02:34 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:03:16 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:03:52 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1670ms (Views: 1669.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2b8b141baa66d34c912469375e7d0833c408b03dd3ddd883a74045b64683b10c.css?body=1" for ::1 at 2022-01-04 02:03:54 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:04:22 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1709ms (Views: 1708.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0cef633ab87d6255e8a7af76b69b117eb9e4f087ad9dde3a03427007c38c90a6.css?body=1" for ::1 at 2022-01-04 02:04:23 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:04:33 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1607ms (Views: 1607.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:05:27 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1614ms (Views: 1613.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6f5ecf30134a1a4c187f590548ea081c8573b951f739de2c3460f2180c751165.css?body=1" for ::1 at 2022-01-04 02:05:28 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:07:01 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1784ms (Views: 1783.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:09:35 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1752ms (Views: 1752.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-27f7a12f5563cdc0990aeebd3e5fa9a0f90a60cf9e001bb27518668754182a39.css?body=1" for ::1 at 2022-01-04 02:09:37 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:11:15 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1724ms (Views: 1723.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4af96eea153f6d67fc9903c37ab94baeb8a987e25a3bf16260e6caf29eb9def9.css?body=1" for ::1 at 2022-01-04 02:11:17 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:12:11 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1803ms (Views: 1802.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c8ea5dbcb77866f60872da8ce1d4e905468fda8cf0afcc77cd00cdf04fd23c6d.css?body=1" for ::1 at 2022-01-04 02:12:13 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:12:44 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1770ms (Views: 1769.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ff15f5cb0f8df598bdc4aa61437704cbaf3d43349209a51d19c46bc159d39acf.css?body=1" for ::1 at 2022-01-04 02:12:45 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:13:50 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1694ms (Views: 1693.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0206526243c2febd847d43d164f82ca009d2471a5f64d50afd26323ae4150a0b.css?body=1" for ::1 at 2022-01-04 02:13:51 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:14:15 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:14:36 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:16:49 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:17:05 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:17:16 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:18:19 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:19:04 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:20:00 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1746ms (Views: 1745.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a28bccbee58ba125e3c3af32e92a5853b30d3321b4b70c169020c718306a8f00.css?body=1" for ::1 at 2022-01-04 02:20:02 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:20:15 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1695ms (Views: 1694.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a1c04d6da5da1807bbbb26bce71939d36e71bd8125fb22e77e9c0a73edc5ba37.css?body=1" for ::1 at 2022-01-04 02:20:17 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:20:32 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1622ms (Views: 1621.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fe53f7de90769c05c88ce38174b964281d5a2b5c5c7ab4d905e04d4e8455a1be.css?body=1" for ::1 at 2022-01-04 02:20:34 -0600
+
+
+Started GET "/sign_in" for ::1 at 2022-01-04 02:20:46 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-01-04 02:21:10 -0600
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1562ms (Views: 1561.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5184ad47b8689d99fffb92a954a2f292d76ed9613f207a0a263d2442623527f4.css?body=1" for ::1 at 2022-01-04 02:21:12 -0600
