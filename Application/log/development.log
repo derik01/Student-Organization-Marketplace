@@ -17686,6 +17686,7 @@ Completed 200 OK in 1666ms (Views: 1664.9ms | ActiveRecord: 0.0ms)
 Started GET "/assets/application.self-73bb827239f462a13d6ca9429d51fe9363886a7f67b8ca9481e1d241cb97fbf1.css?body=1" for ::1 at 2022-01-03 02:39:00 -0600
 
 
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2022-01-03 03:57:16 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ArticlesController#index as HTML
@@ -19866,6 +19867,7 @@ Started GET "/" for ::1 at 2022-01-04 04:11:26 -0600
 Processing by ArticlesController#index as HTML
   Rendered articles/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 119ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+<<<<<<< HEAD
 
 
 Started GET "/sign_in" for ::1 at 2022-01-04 05:09:38 -0600
@@ -20095,3 +20097,1536 @@ Started GET "/" for ::1 at 2022-01-04 05:25:14 -0600
 Processing by ArticlesController#index as HTML
   Rendered articles/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+=======
+=======
+Started GET "/" for 127.0.0.1 at 2022-01-03 11:55:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 33154ms (Views: 33078.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-eaabe28365909f53021f3d78215ed2af3efeb7fabd00525f709dd975708163d6.css?body=1" for 127.0.0.1 at 2022-01-03 11:56:01 +0200
+
+
+Started GET "/assets/jquery3.self-2a83d06853bd343c7bfc2e5d4539814cfa934676e2948ed348311435eca862f5.js?body=1" for 127.0.0.1 at 2022-01-03 11:56:02 +0200
+
+
+Started GET "/assets/bootstrap_js_files.self-4faa6fe4cd331d82c22b39308cfaa0634a36dac7c77a9e2b422f68f96be4cb06.js?body=1" for 127.0.0.1 at 2022-01-03 11:56:02 +0200
+
+
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for 127.0.0.1 at 2022-01-03 11:56:03 +0200
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2022-01-03 11:56:03 +0200
+
+
+Started GET "/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" for 127.0.0.1 at 2022-01-03 11:56:04 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 11:56:19 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (336.2ms)
+Completed 200 OK in 2491ms (Views: 2210.1ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-03 11:56:26 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 739ms (Views: 738.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 11:56:36 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1781ms (Views: 1780.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 11:56:43 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eSdhgpeaOwFzyABRUm4+WSn4USMbGtRrIXIxAHBoOQd+Vv35ROQhWvq9yUo7W6S+qCInQgJJWKWcLs7SHd1jNw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (6.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 391ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 11:56:43 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 790ms (Views: 788.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 11:59:49 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 358ms (Views: 357.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 11:59:53 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 734ms (Views: 733.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:00:09 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1641ms (Views: 1639.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-03 12:00:13 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 412ms (Views: 411.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:00:14 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1891ms (Views: 1888.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:00:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y51Pm1Ob86C8fxQopVoJslBddvZTgyExP5s8O5EpMavM7NPggOXp+zUK3TPMb5NV0YcAl0rQrf+Cx8Pp/Jxrmw==", "user"=>{"username"=>"dsa", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'dsa' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'dsa' LIMIT 1[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 220ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:00:21 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1333ms (Views: 1332.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:01:07 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0mvD3PTUK/L6ajG5rRR/u1pmaBXNPm6sZAJyAmNb9brVGl+nJ6oxqXMf+KLEIeVc27wedNRt4mLZXo3QDu6vig==", "user"=>{"username"=>"ds", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'ds' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'ds' LIMIT 1[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 441ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:01:08 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1895ms (Views: 1893.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:04:09 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1540ms (Views: 1410.3ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:04:16 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kXL7Fkl71NvZpypMcICa9ruFWZKVqB9loBbcW6o9hp2WA2dtmgXOgFDS41cZtQAROl8v84z7k6sdSiOJx4jcrQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 2.7ms)
+
+NoMethodError (undefined method `exists?' for #<User:0x00007f54e5549f70>):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:07:30 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1387ms (Views: 1214.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:08:36 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lEImQMJ+C+hl+1/lX4ncqqsT1ioGvn9P/JUDyzTBxeCTM7o7EQARs+yOlv42vEZNKsmgSx/t84FByfwZWXSf0A==", "user"=>{"username"=>"keegan123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'keegan123@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["username", "keegan123@gmail.com"], ["password_digest", "$2a$12$lp08v8iWMbdQIQ1R4Vfzae7Z6y6UKce..jj9eEP7p79BHmTn17LVC"], ["created_at", "2022-01-03 10:08:36.718971"], ["updated_at", "2022-01-03 10:08:36.718971"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'keegan123@gmail.com' AND "users"."id" != 54) LIMIT 1
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 329ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-03 12:08:36 +0200
+Processing by ArticlesController#welcome as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 54]]
+  Rendered articles/welcome.html.erb within layouts/application (80.7ms)
+Completed 200 OK in 826ms (Views: 824.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:09:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lEImQMJ+C+hl+1/lX4ncqqsT1ioGvn9P/JUDyzTBxeCTM7o7EQARs+yOlv42vEZNKsmgSx/t84FByfwZWXSf0A==", "user"=>{"username"=>"keegan23@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (2.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'keegan23@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["username", "keegan23@gmail.com"], ["password_digest", "$2a$12$O3PCiq39rbATMpdBrrWQTOHKfnt3ZQjWf8lsXZMYsEQInNAy1Tdy."], ["created_at", "2022-01-03 10:09:07.207414"], ["updated_at", "2022-01-03 10:09:07.207414"]]
+  [1m[36m (7.5ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 13.7ms)
+
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f54fdb6e6e0>
+Did you mean?  @user):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:09:14 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lEImQMJ+C+hl+1/lX4ncqqsT1ioGvn9P/JUDyzTBxeCTM7o7EQARs+yOlv42vEZNKsmgSx/t84FByfwZWXSf0A==", "user"=>{"username"=>"keegan23@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'keegan23@gmail.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 379ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:09:15 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 524ms (Views: 522.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:09:49 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xnoQfAUQoHuwCFXHBIqvTm6EXhQge28PIr5m/5yVyV/BC4wH1m66IDl9nNxtvzWp714odTko48Gf4pkt8SCTbw==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 445ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:09:50 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1244ms (Views: 1243.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:10:12 +0200
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/mnt/c/CSCE431/project/Application/app/models/user.rb:3: syntax error, unexpected '}', expecting =>
+...sh[:notice] = 'Invalid email' }
+...                              ^):
+  app/models/user.rb:3: syntax error, unexpected '}', expecting =>
+  app/controllers/users_controller.rb:6:in `new'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:12:16 +0200
+
+SyntaxError (/mnt/c/CSCE431/project/Application/app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end):
+  app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:12:25 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 889ms (Views: 781.7ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:12:34 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"giRYY5r3fwiMRSv1aywdRlnFJT48FmSSjCJ678uoEqSFVcQYSYllUwUw4u4CGYeh2B9TXyVF6FwxfoU9ph1IlA==", "user"=>{"username"=>"sasda", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'sasda' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 335ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:12:34 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 737ms (Views: 736.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:12:40 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E0n0rEgWWDI9nFpUdpHP+WxsqisUEXDxDdRRmrLVbE8UOGjXm2hCabTpk08fpFUe7bbcSg1C/D+wiK5I32A2fw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "derik@gmail.com"], ["password_digest", "$2a$12$kHiVyDxD3/m6.FhpT.gbIuJwLOsyV/fIhBc3VSoDimuRGSxGVNV72"], ["created_at", "2022-01-03 10:12:40.986297"], ["updated_at", "2022-01-03 10:12:40.986297"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 313ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:12:41 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1051ms (Views: 1050.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:12:56 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bpGsSnfcjUQ1PlOD0Gr2SrxjHR4LO/oFRyZlOinhjUpp4DAxpKKXH7xLmpi5X2ytPblrfxJodsv6eproRFTXeg==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 365ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:12:57 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1355ms (Views: 1354.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:13:27 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNTjQY66whxUjISZKPBxl+njCmv7NrXZ+bLvo1CUMgR7pX86XcTYR935TYJBxetwaDl8CuJlORdE7hBxPSFoNA==", "user"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'anu@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["username", "anu@gmail.com"], ["password_digest", "$2a$12$I82hhoIxmzhgo1Py04Oi/u8M2PjQmmFf3Vv1RZo.JvnOrmTqNb8yS"], ["created_at", "2022-01-03 10:13:27.827498"], ["updated_at", "2022-01-03 10:13:27.827498"]]
+  [1m[36m (7.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 460ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:13:27 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1387ms (Views: 1386.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:16:57 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1988ms (Views: 1834.6ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:17:11 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sF2U0hkLzbyf2GfPT0WgqSudmKdZEXOLLxRtX+IoaKq3LAipynXX5xatrtQmcDpOqkfuxkBC/0WSSJKNj50ymg==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:17:12 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1032ms (Views: 1030.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:17:17 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+FLV3zWgJJluYux6VNN9foJmY2vyDAOyGWECSKufWe3/I0mk5t4+wucXJWE95ueZA7wVCutfj3ykPf2axioD3Q==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:17:17 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 687ms (Views: 685.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:17:29 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wUbGb5UxXe0e0jQRDSLEOCExaQMLKsH7/DPXcrT1TOHGN1oURk9Htpen/QpkF17foOsfYhJ5TTVBbyig2UAW0Q==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:17:29 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 831ms (Views: 830.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:20:39 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1536ms (Views: 1435.2ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:20:44 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVyXNBjrGctG5LDvgCo0XIJ6S1Z5cvx42tDDLS8KB5VeLQtPy5UDkM+RefTpH667A6A9N2AhcLZnjDz/Qr9dpQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Array into String):
+  app/controllers/users_controller.rb:10:in `match'
+  app/controllers/users_controller.rb:10:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:21:16 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 906ms (Views: 855.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:21:19 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i5iTN4xpPZa2L/NjeLb675svzy/sMh+p+ySrHDrgHLmM6Q9MXxcnzT9aOngRg2AIGvW5TvVhk2dGeFTOV1VGiQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:21:19 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1546ms (Views: 1545.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:21:25 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uUibajzSeuCIrvAVExBWkXAevkkiaZE4jzWrqsf3IdK+OQcR76xguwHbOQ56Jcx28cTIKDs6HfYyaVR4qkJ74g==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:21:25 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1211ms (Views: 1210.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:28:07 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 868ms (Views: 805.2ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:28:11 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wM6WdkL0P43T3w4XCM1fCV6fW5EDaK1sSej7mtlTDX3HvwoNkYol1lqqxwxh+MXu30Ut8Bo7IaL0tARItOZXTQ==", "user"=>{"username"=>"dsa", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'dsa' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 389ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-03 12:28:12 +0200
+Processing by ArticlesController#welcome as HTML
+  Rendered articles/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 778ms (Views: 777.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-03 12:28:17 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1qvF2dNVgCwjjbbpXykWWL7mQ4h3Jvv2oDYli8DFtfnR2lmiACuad6r4f/I2HIy/Pzw16W51dzgdatpZrXDvyQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-03 12:28:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 921ms (Views: 920.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:28:20 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1366ms (Views: 1365.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:28:32 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 1559ms (Views: 1556.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:28:38 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lQhVBuKuup1cNTxrtVjxYuHZyTJAzYsaqT/oFpyga9qSecl9MdCgxtVA9XDcbWuFYAO/U1meB9QUYxfE8RUx6g==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik@gmail.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "derik@gmail.com"], ["password_digest", "$2a$12$f9iz5X.JkvTyx1tmGGb59.EMecbT0s1bgppbzhA3FfyPiW7czusrG"], ["created_at", "2022-01-03 10:28:38.628824"], ["updated_at", "2022-01-03 10:28:38.628824"]]
+  [1m[35m (7.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 246ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-03 12:28:38 +0200
+Processing by ArticlesController#welcome as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 58]]
+  Rendered articles/welcome.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1053ms (Views: 1052.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-03 12:28:49 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OdB9K9xc1kYr7qmIRS3841L9dfkdf/qmE1QrIzmuNpM+oeFQDyLMHaKbYJMsGGYE0ycDmAQsdmiuCNTxVBtsow=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-03 12:28:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 920ms (Views: 919.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:28:54 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1387ms (Views: 1386.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:29:16 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 921ms (Views: 872.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:29:25 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gKKMTtqn/5Hz3Vv/QfrQF2QwGsM9dQmPUZ9BF6MrNK2H0xA1CdnlynqokuQoz0rw5epsoiQmhUHsw77Fzp5unQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:29:25 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 760ms (Views: 759.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:29:39 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JfufK77leML6WikyMr/LlhzQ6YwQpR3cJ512uhGcY4UiigNQbZtimXMv4ClbilFxnQqf7Qn2kRKawYlofCk5tQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:29:40 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1727ms (Views: 1661.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:29:59 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QS/Q8ZQcYmmKQsA2pKkkR8AYBF2fTw8AxzElNO5Jm6NGXkyKR2J4MgM3CS3NnL6gQcJyPIYcg856bdrmg/zBkw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:29:59 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 656ms (Views: 612.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:30:17 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vn2Bw4klPNpl5hH6YS2bmtDx73r3Cshva5L6uaxpwUq5DB24WlsmgeyT2OEIGAF9USuZG+5ZRKHWzgVrwdybeg==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:30:18 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 906ms (Views: 843.0ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:30:44 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kpj9vu+MNISd99w90LZEuwfJR7mcwDfqG0flBrN3W7Ut6WHFPPIu3xSCFSa5g95chhMx2IWTuySmGxrU3sIBhQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:30:45 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2030ms (Views: 1862.6ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:31:01 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gU1We0oXjaFHQi7WNZf6zowUhIuWtdG0aqG+JZ3T5rWGPMoAmWmX+s43581comApDc7y6o/mXXrX/UH38Ga8hQ==", "user"=>{"username"=>"d", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `username' for nil:NilClass):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:31:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gU1We0oXjaFHQi7WNZf6zowUhIuWtdG0aqG+JZ3T5rWGPMoAmWmX+s43581comApDc7y6o/mXXrX/UH38Ga8hQ==", "user"=>{"username"=>"der", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `username' for nil:NilClass):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:31:25 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gU1We0oXjaFHQi7WNZf6zowUhIuWtdG0aqG+JZ3T5rWGPMoAmWmX+s43581comApDc7y6o/mXXrX/UH38Ga8hQ==", "user"=>{"username"=>"der", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:31:25 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 977ms (Views: 931.1ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:31:30 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oVfuzRQZV7Hhbp3yKttzJ0Ah3meENPs1UGbW2sFons2mJnK2x2dN6mgbVOlD7unAwfuoBp1nd/vtOikIrN3E/Q==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:31:30 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 781ms (Views: 780.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:32:38 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1088ms (Views: 1019.3ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:32:41 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xKQsgL9BidN0GKCN6OdELKBuQYft82cKl4+Txz2F7vUYwzJ0YMcfMSlq5lelgf3M1vPZwbkQVKXAsGdcUNNiw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:33:17 +0200
+
+SyntaxError (/mnt/c/CSCE431/project/Application/app/controllers/users_controller.rb:11: syntax error, unexpected tSYMBEG
+...    flash[:notice] = :session.:username
+...                              ^):
+  app/controllers/users_controller.rb:11: syntax error, unexpected tSYMBEG
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:35:26 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xKQsgL9BidN0GKCN6OdELKBuQYft82cKl4+Txz2F7vUYwzJ0YMcfMSlq5lelgf3M1vPZwbkQVKXAsGdcUNNiw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:35:30 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xKQsgL9BidN0GKCN6OdELKBuQYft82cKl4+Txz2F7vUYwzJ0YMcfMSlq5lelgf3M1vPZwbkQVKXAsGdcUNNiw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:35:43 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xKQsgL9BidN0GKCN6OdELKBuQYft82cKl4+Txz2F7vUYwzJ0YMcfMSlq5lelgf3M1vPZwbkQVKXAsGdcUNNiw==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:35:44 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 638ms (Views: 598.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:35:47 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bNg7y9apNV+WNkNEpDk3MsX7LEbrDfmu62VV/Xwc1i1rqaewBdcvBB9Dil/NDK3VRCFaJ/JedWBWOaovEamMHQ==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:35:47 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1061ms (Views: 1059.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:35:55 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lLsQHSFFMwTS2890jM1VdnsrijEcyoSQ9qfT03mef7uTyoxm8jspX1uuBm/l+M+R+vH8UAWZCF5L+ywBFCsliw==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:35:56 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1563ms (Views: 1562.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:36:40 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 935ms (Views: 858.1ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:36:44 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+TB7dq+MffGwn2DwMJxpZmaxD7Zg44XPhPSkky5PQLElV2WCcArrE+3tJip9+tCGECyX8DQAtmDTy1AIQxnMg==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:36:44 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1498ms (Views: 1496.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:37:14 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VvExV9vJI300+e63ECsk4NumKFuqhor/H1dtRcrERmBRgK0sCLc5Jr2MJ6x5Hr4HWnxeOrPVBjGiC5KXp3EcUA==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/users_controller.rb:11:in `+'
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:44:59 +0200
+
+SyntaxError (/mnt/c/CSCE431/project/Application/app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end):
+  app/controllers/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (46.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:45:07 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VvExV9vJI300+e63ECsk4NumKFuqhor/H1dtRcrERmBRgK0sCLc5Jr2MJ6x5Hr4HWnxeOrPVBjGiC5KXp3EcUA==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 503ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:45:08 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 750ms (Views: 749.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:45:13 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 879ms (Views: 877.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:45:24 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 782ms (Views: 722.8ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:46:05 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3gAq/IwWVxWbQaJF2adqF97/qq9KeJb8dJDBLWrpFJPZcbaHX2hNThI0a16wkvDwXyXczlMrGjLJzD7/B1xOow==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 341ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:46:06 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1753ms (Views: 1752.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:46:38 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1498ms (Views: 1444.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:46:43 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7o/Fzb1F1Fnh3QYafg2bSnbbRW/MEpl0TRfXIFAIdIXp/lm2bjvOAmiozwEXOAGt9wEzDtVBFbrwSyjyPb0utQ==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 332ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:46:44 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1555ms (Views: 1553.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:47:49 +0200
+
+SyntaxError (/mnt/c/CSCE431/project/Application/app/controllers/users_controller.rb:31: syntax error, unexpected end-of-input, expecting end):
+  app/controllers/users_controller.rb:31: syntax error, unexpected end-of-input, expecting end
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:47:56 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1014ms (Views: 947.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:47:59 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2teMytcMPtaUT2ppfUUBBIlP9J4RX/hwOO2NuxnN977dphCxBHIkjR06o3IUcJvjCJWC/wgMdL6FsXJpdHitjg==", "user"=>{"username"=>"derik", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 284ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:47:59 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1058ms (Views: 1057.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:48:11 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RNfgTk+M12RsioYNQ6EVq87k1sorqFWAX/Vo41MyT2BDpnw1nPLNP+X/TxYqlI9MTz6gqzL72U7iqZcxPocVUA==", "user"=>{"username"=>"hello@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 303ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:48:12 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1562ms (Views: 1561.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:48:22 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rC1QXsn0tx57NjOALZYSlLoabSICJ2eOhk/33MunZEyrXMwlGoqtRfJD+ptEo4hzO8AbQxt060A7EwgOphI+fA==", "user"=>{"username"=>"test@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'test@gmail.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (3.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'test@gmail.com' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test@gmail.com"], ["password_digest", "$2a$12$FSGSuk8PfNqMhIjcaxryyOFdVaSj9cgI8HgmbqrRJqpV6lnq4RMjC"], ["created_at", "2022-01-03 10:48:23.023862"], ["updated_at", "2022-01-03 10:48:23.023862"]]
+  [1m[35m (7.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 789ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-03 12:48:23 +0200
+Processing by ArticlesController#welcome as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 59]]
+  Rendered articles/welcome.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1582ms (Views: 1580.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-03 12:49:26 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AFLxq1Tgy8xQzEZk5Uz5k03ENhjsxWYdygkkBksHXKgHI23Qh57Rl9m5j3+MeWN0zB5AefWW6tN3VdvUJrIGmA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-03 12:49:27 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 777ms (Views: 776.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:49:29 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1192ms (Views: 1092.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:49:37 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+mJRFGf3bP8F41KJ9PlYCKmE3gMYOC1re8Iy1nmt/KQmBU/guHH6HViRFFO5n+Ho3xlGRUzbHsQs/cZNFPtwg==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE (derik@gmail.com) LIMIT 1
+Completed 500 Internal Server Error in 300ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "derik" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE (derik@gmail.com) LIMIT...
+                                              ^
+: SELECT  "users".* FROM "users" WHERE (derik@gmail.com) LIMIT 1):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:50:01 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+mJRFGf3bP8F41KJ9PlYCKmE3gMYOC1re8Iy1nmt/KQmBU/guHH6HViRFFO5n+Ho3xlGRUzbHsQs/cZNFPtwg==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE (derik@gmail.com) LIMIT 1[0m
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 3.4ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "derik" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE (derik@gmail.com) LIMIT...
+                                              ^
+: SELECT  "users".* FROM "users" WHERE (derik@gmail.com) LIMIT 1):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:50:25 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+mJRFGf3bP8F41KJ9PlYCKmE3gMYOC1re8Iy1nmt/KQmBU/guHH6HViRFFO5n+Ho3xlGRUzbHsQs/cZNFPtwg==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "derik@gmail.com"]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 486ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:50:26 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 803ms (Views: 801.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:50:30 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1247ms (Views: 1245.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:50:35 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L+NodVlbDjzPLT9giDlJSmZQV/dEGIe1epXvwhBHcSwokvQOiiUUZ0ZY9nvhDNOt54ohll1LC3vHyRAQffIrHA==", "user"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "derik@gmail.com"]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 294ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:50:35 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 990ms (Views: 989.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:50:41 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zvIB0qetC6vbHaf6/FixnqX3o6YHtc60wzYs00XrTwvJg52pdNMR8FJobuGVbSt5JC3Vxx7mQnp+atMBKF4VOw==", "user"=>{"username"=>"derik1@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "derik1@gmail.com"]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 359ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:50:42 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2011ms (Views: 2010.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:50:50 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RZTXdYCsChT8g0KcQfFkX6phrdiL7yKuiGoqtw65PUBC5UsOU9IQT3X2i4coxP64K7vbuZK8rmA1NtVlYwxncA==", "user"=>{"username"=>"derik1@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "derik1@gmail.com"]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 272ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-03 12:50:50 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1988ms (Views: 1986.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-03 12:50:58 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EvGjZVCCW3Q4lG+AlNTz5f/jlasIEdqGIMq2OWDzA48VgD8eg/xBL7Hhppv94WkCfjnjyhFCVkidlknrDUZZvw==", "user"=>{"username"=>"derik1@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "derik1@gmail.com"]]
+  [1m[36mUser Exists (2.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik1@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'derik1@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["username", "derik1@gmail.com"], ["password_digest", "$2a$12$qeBrZPyWcncSthrdcwZyh.Tfeb7jIXYFpkOk24cEHX9sa42jitX6G"], ["created_at", "2022-01-03 10:50:59.141433"], ["updated_at", "2022-01-03 10:50:59.141433"]]
+  [1m[36m (7.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 626ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-03 12:50:59 +0200
+Processing by ArticlesController#welcome as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 60]]
+  Rendered articles/welcome.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 787ms (Views: 785.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-03 12:51:02 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"F+LS9h46ARK40a22jWoJ03/Ve1R+NymrremkwEinylAQk06NzUQbSTGkZK3kX5M0/g8NNWdkpWUQtVsSJRKQYA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-03 12:51:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 911ms (Views: 910.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-03 12:51:18 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 738ms (Views: 735.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-03 12:51:58 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2rl2URcWKH5+DCRCgrb+88Fd801emCB9U8+1BJ+1t0DdyOoqxGgyJfd57Vnrg2QUQIeFLEfLrLPuk0rW8gDtcA==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "derik@gmail.com"]]
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 443ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-03 12:51:58 +0200
+Processing by ArticlesController#welcome as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 58]]
+  Rendered articles/welcome.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1689ms (Views: 1686.8ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-03 12:52:03 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8jOojP+PQ9yev/izxxEwyFig/cByFqgrUtaPyKHQMSP1QjT3LPFZhxfKMaiuJKov2XqLoWtFJOXvinAazGVrEw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-03 12:52:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 830ms (Views: 829.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-03 12:52:06 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1019ms (Views: 1017.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-03 12:52:11 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJmIlg8ZY16QGFDa5XByHmlvs/lMRcJzD3lvX80kf+a36BTt3Gd5BRltmcGMRej56LXFmFUWTr2yJZCNoJEl1g==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "derik@gmail.com"]]
+Completed 500 Internal Server Error in 337ms (ActiveRecord: 0.7ms)
+
+NameError (undefined local variable or method `message' for #<SessionsController:0x00007f54fe9f5a88>):
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.8ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-03 12:52:25 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJmIlg8ZY16QGFDa5XByHmlvs/lMRcJzD3lvX80kf+a36BTt3Gd5BRltmcGMRej56LXFmFUWTr2yJZCNoJEl1g==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "derik@gmail.com"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 434ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-03 12:52:26 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1262ms (Views: 1260.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-03 12:52:34 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wt00EBZhFCR96leHqm87gURf16rmgc+7O4WMTu1PyAZdrKhrxR8Of/SfnpzDWqFmxYWhy//SQ3WG2XOcgPqSNg==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "derik@gmail.com"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 291ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-03 12:52:34 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1610ms (Views: 1609.1ms | ActiveRecord: 0.0ms)
+>>>>>>> origin/main
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-04 13:09:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 27200ms (Views: 27125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4dd96e86b442ee5ad7c33cd6024b4904d4810634b4ccc3940966cfac9a2c5fed.css?body=1" for 127.0.0.1 at 2022-01-04 13:09:49 +0200
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-04 13:09:50 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-04 13:09:55 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (394.7ms)
+Completed 200 OK in 2004ms (Views: 1818.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-04 13:10:01 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1452ms (Views: 1451.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-04 13:17:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 5989ms (Views: 5900.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-04 13:17:26 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-04 13:17:30 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (227.2ms)
+Completed 200 OK in 1273ms (Views: 1184.0ms | ActiveRecord: 3.5ms)
+Started GET "/" for 127.0.0.1 at 2022-01-05 00:35:26 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 28057ms (Views: 27598.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:35:59 +0200
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:16 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (383.5ms)
+Completed 200 OK in 2189ms (Views: 1780.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:36:22 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2279ms (Views: 2002.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:26 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1546ms (Views: 1502.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:36:31 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+R6zo/dWXTqik2jAu2LfxlLy7WUs+pZlD6H5fNzn685IvM7wkMenlAB3Kgyv13zoqRxugqnKymKVsIq1jupiw==", "user"=>{"username"=>"dsada", "password"=>"[FILTERED]"}}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 203ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:31 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1150ms (Views: 1081.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:36:33 +0200
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:36:39 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2iYAPXmMn1sTIIV0AgKvNK0dBnwhdzkutpkrnsg5D/OU4InINBLYsamrFH8yUHm4FvK8c79j+F6o8W5R7XE51w==", "user"=>{"username"=>"ca", "password"=>"[FILTERED]"}}
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 219ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:36:39 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 1944ms (Views: 1780.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:36:41 +0200
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:36:56 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1432ms (Views: 1262.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:36:58 +0200
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:05 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZGO40PfkOvdZxhDUBUnPiz6qL+30OcOnEQ2M5aqH8G/VwcWDkHXAWfsiUhgR/GylxUSsCnEJn6CLHP8s+Ip5Q==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 244ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:06 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:07 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZGO40PfkOvdZxhDUBUnPiz6qL+30OcOnEQ2M5aqH8G/VwcWDkHXAWfsiUhgR/GylxUSsCnEJn6CLHP8s+Ip5Q==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 322ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:37:08 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2702ms (Views: 2643.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1151ms (Views: 1063.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:37:09 +0200
+Started GET "/" for 127.0.0.1 at 2022-01-05 00:44:09 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/activerecord-5.0.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 10764ms (Views: 10650.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:44:26 +0200
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:44:28 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (174.5ms)
+Completed 200 OK in 777ms (Views: 550.9ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:44:54 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"67zJoQRXuhstcrzOnVx1dZljUQx2nRez4iBXlXljyQqlekBUScn98Zf5LcWtDqP5IozrA+iJ1sP8SBJaXCv/Lg==", "user"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 305ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-05 00:44:54 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1201ms (Views: 1018.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:44:56 +0200
+Started POST "/users" for 127.0.0.1 at 2022-01-05 00:45:02 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HM3ztbGl2MHo0p2hapBbB67qERPWUB5Ay9o9V1kAZDpSC3pA/DufK1JZDKpawo2LFQWrHEhE3zDVsniYfEhSHg==", "user"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "hallie@gmail.com"], ["password_digest", "$2a$12$bHF8NLTweCGveqiTMjunkuoDbsdxgb6LYty9dcp7aod0p8ip8tjF6"], ["created_at", 2022-01-04 22:45:03 UTC], ["updated_at", 2022-01-04 22:45:03 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 769ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-05 00:45:03 +0200
+Processing by ArticlesController#welcome as HTML
+  Rendering articles/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  Rendered articles/welcome.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 507ms (Views: 443.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:05 +0200
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-05 00:45:09 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yixb9kSW4sSNqBJkBc4a/K0K/B4bBL/0GXfFxPx/CcGE6tIDCQilLjcjg281nMxwFuVGEYUQfoQHH4AL2Tc/5Q=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-05 00:45:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1847ms (Views: 1773.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:12 +0200
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:15 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 768ms (Views: 691.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:29 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/dL2FENSXOoookHHY8BqHuLZrnzlmcmePCRhNO3HgNizFH/hDswbAJIp0MxTkrySWTYUc3uNCO4iTCT7yI+2/A==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 193ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:29 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 2313ms (Views: 2083.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:32 +0200
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-05 00:45:38 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wtf1OX3ju60TAvtuK2LKOf/WaONmxeom1r1+J+J4GeyMEXzMMH38R6mJamUbMBy1RDnS7PjRK1bI1TvoxzAvyA==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 239ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2022-01-05 00:45:38 +0200
+Processing by ArticlesController#welcome as HTML
+  Rendering articles/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  Rendered articles/welcome.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1694ms (Views: 1613.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/kyle23.jpg" for 127.0.0.1 at 2022-01-05 00:45:41 +0200
+>>>>>>> main

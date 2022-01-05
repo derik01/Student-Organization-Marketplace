@@ -8,13 +8,15 @@ gem 'simplecov', require: false, group: :test
 
 gem 'bcrypt' 
 
+gem 'pg_tester'
+
+gem 'rspec'
+
 gem 'pg', '~> 0.15'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.0'
-# Use SCSS for stylesheets
+gem 'rails', '5.0.1'
+
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -54,3 +56,9 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'cucumber-rails', :require => false
+  # gem 'rspec-rails'
+  gem 'webmock'
+  gem 'database_cleaner'
+end

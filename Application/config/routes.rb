@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'sign_in', to: 'sessions#login'
+  get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get "/signup", to: "users#new"
 
-  resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index, :login]
+  resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
   get "/welcome", to: "articles#welcome"
 
