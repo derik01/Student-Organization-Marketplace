@@ -32,4 +32,14 @@
 
     <% end %>
 
+    <br>
+
+	<span id="err-msg" class="container text-center">
+		<% flash.each do |type, msg| %>
+			<div>
+				<%= msg %>
+			</div>
+		<% end %>
+	</span>
+
 </div>
