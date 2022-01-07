@@ -35,6 +35,29 @@
 #home-btn:hover {
 	text-decoration: none;
 }
+#dropdown {
+	background-color: var(--color2);
+}
+#dropdownMenuLink {
+	font-size: 14px;
+	text-decoration: none;
+	background-color: var(--color2);
+	color: var(--color1);
+	padding: 10px;
+	text-align: center;
+}
+#no-drop a {
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	color: var(--color1);
+}
+#no-drop a:hover {
+	text-decoration: none;
+	background-color: var(--color1);
+	color: var(--color2);
+	border-radius: 30px;
+}
 #nav-header nav {
 	color: var(--color1);
 }
@@ -96,7 +119,7 @@
 
 
 // start of new.html.erb >>>>>>>>
-body {
+#sign {
 	background-image: url("kyle23.jpg");
 	background-repeat: no-repeat;
 }
