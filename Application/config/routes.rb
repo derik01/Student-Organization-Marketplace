@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
@@ -10,6 +11,11 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
   get "/welcome", to: "articles#welcome"
+
+  get "/marketplace", to: "articles#products"
+
+  get "upload", to: "products#new"
+  post "upload", to: "products#create"
 
   delete '/', to: "sessions#destroy"
   # post "/login", to: "articles#welcome"
