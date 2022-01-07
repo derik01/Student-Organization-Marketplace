@@ -26601,3 +26601,477 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 7977ms (Views: 7809.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2022-01-07 12:44:02 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 12231ms (Views: 12140.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:20 +0200
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2022-01-07 12:44:21 +0200
+Started GET "/" for 127.0.0.1 at 2022-01-07 12:44:39 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3667ms (Views: 3516.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-07 12:44:48 +0200
+Processing by ArticlesController#products as HTML
+  Rendering articles/products.html.erb within layouts/application
+  Rendered articles/products.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2026ms (Views: 1883.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/styles.css" for 127.0.0.1 at 2022-01-07 12:44:53 +0200
+Started GET "/js/scripts.js" for 127.0.0.1 at 2022-01-07 12:44:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/styles.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-07 12:45:27 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (255.0ms)
+Completed 200 OK in 4554ms (Views: 4200.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-07 12:45:58 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RIBzC+YGe2C2FkEEJPT3hQk4c9dQ2s98ISNYSAR0pI/a7n//7gf8JnBkg0ZXB0y7ek87bZoNFZIOKm0PPqPfew==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/upload
+Completed 302 Found in 626ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-07 12:45:58 +0200
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (68.5ms)
+  Rendered products/new.html.erb within layouts/application (366.6ms)
+Completed 200 OK in 4141ms (Views: 3715.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-07 12:46:06 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 3967ms (Views: 3571.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2022-01-07 12:46:15 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (1891.2ms)
+Completed 200 OK in 5428ms (Views: 5076.2ms | ActiveRecord: 32.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec/backpack.png" for 127.0.0.1 at 2022-01-07 12:46:21 +0200
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec", "filename"=>"backpack"}
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: c4YqCu2abLVTycdTTehRifSC (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFqTkZseFEzVXlZV0pNVmxSNVkyUlVWR1ZvVW1sbVUwTUdPZ1pGVkE9PSIsImV4cCI6IjIwMjItMDEtMDdUMTA6NTE6MjEuNzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--85558dbd78ed4171c8266f78f3148735ec81f37e/backpack.png?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22backpack.png%22%3B+filename%2A%3DUTF-8%27%27backpack.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFqTkZseFEzVXlZV0pNVmxSNVkyUlVWR1ZvVW1sbVUwTUdPZ1pGVkE9PSIsImV4cCI6IjIwMjItMDEtMDdUMTA6NTE6MjEuNzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--85558dbd78ed4171c8266f78f3148735ec81f37e/backpack.png?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22backpack.png%22%3B+filename%2A%3DUTF-8%27%27backpack.png
+Completed 302 Found in 65ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFqTkZseFEzVXlZV0pNVmxSNVkyUlVWR1ZvVW1sbVUwTUdPZ1pGVkE9PSIsImV4cCI6IjIwMjItMDEtMDdUMTA6NTE6MjEuNzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--85558dbd78ed4171c8266f78f3148735ec81f37e/backpack.png?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22backpack.png%22%3B+filename%2A%3DUTF-8%27%27backpack.png" for 127.0.0.1 at 2022-01-07 12:46:21 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"backpack.png\"; filename*=UTF-8''backpack.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFqTkZseFEzVXlZV0pNVmxSNVkyUlVWR1ZvVW1sbVUwTUdPZ1pGVkE9PSIsImV4cCI6IjIwMjItMDEtMDdUMTA6NTE6MjEuNzQxWiIsInB1ciI6ImJsb2Jfa2V5In19--85558dbd78ed4171c8266f78f3148735ec81f37e", "filename"=>"backpack"}
+[36m  Disk Storage (22.4ms) [0m[34mDownloaded file from key: c4YqCu2abLVTycdTTehRifSC[0m
+Completed 200 OK in 28ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/products/11" for 127.0.0.1 at 2022-01-07 12:46:27 +0200
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WYGrWrrok6DG7yRe/0kuYE+nyUCDXfN2AlcSJp+1jE7H76eusukU5gCd5hyMupVePNCB+kmKKZgtXidhpWL3ug==", "id"=>"11"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Destroy (3.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 11]]
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 74ed2dd6-a423-4996-93c2-b883cacaa16f) to Async(default) with arguments: #<GlobalID:0x00007fe7402cdf10 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Destroy (1.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 2]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 1038ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-07 12:46:29 +0200
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f] Performing ActiveStorage::PurgeJob (Job ID: 74ed2dd6-a423-4996-93c2-b883cacaa16f) from Async(default) with arguments: #<GlobalID:0x00007fe7403231b8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f] [36m  Disk Storage (7.4ms) [0m[31mDeleted file from key: c4YqCu2abLVTycdTTehRifSC[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f] [36m  Disk Storage (2.3ms) [0m[31mDeleted files by key prefix: variants/c4YqCu2abLVTycdTTehRifSC/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f]   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f]   [1m[36mActiveStorage::Blob Destroy (1.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f]   [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.4ms)
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f]   [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [74ed2dd6-a423-4996-93c2-b883cacaa16f] Performed ActiveStorage::PurgeJob (Job ID: 74ed2dd6-a423-4996-93c2-b883cacaa16f) from Async(default) in 725.2ms
+Completed 200 OK in 2855ms (Views: 2697.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-07 12:46:36 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2550ms (Views: 2222.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-07 12:47:17 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/sign
+  Rendered users/new.html.erb within layouts/sign (3.8ms)
+Completed 200 OK in 3142ms (Views: 2924.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-07 12:53:07 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16849ms (Views: 16495.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0e1e8d9faf749de5ef4ddcd4031fddd3ff50a4964aa8b5ef4168baf6d9373da2.css?body=1" for 127.0.0.1 at 2022-01-07 12:53:25 +0200
+Started GET "/signup" for 127.0.0.1 at 2022-01-07 12:53:40 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/sign
+  Rendered users/new.html.erb within layouts/sign (4.2ms)
+Started GET "/signup" for 127.0.0.1 at 2022-01-07 12:53:43 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/sign
+  Rendered users/new.html.erb within layouts/sign (2.6ms)
+Completed 200 OK in 4228ms (Views: 3938.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2778ms (Views: 2486.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-07 12:53:50 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 3947ms (Views: 3681.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-07 12:55:05 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/sign
+  Rendered sessions/new.html.erb within layouts/sign (2.0ms)
+Completed 200 OK in 2894ms (Views: 2571.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-07 12:55:41 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/sign
+  Rendered sessions/new.html.erb within layouts/sign (1.9ms)
+Completed 200 OK in 1606ms (Views: 1532.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-07 12:55:56 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/sign
+  Rendered sessions/new.html.erb within layouts/sign (6.2ms)
+Completed 200 OK in 3454ms (Views: 3148.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-07 12:56:01 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/sign
+  Rendered sessions/new.html.erb within layouts/sign (3.8ms)
+Completed 200 OK in 3322ms (Views: 3069.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-07 12:56:06 +0200
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 3822ms (Views: 3563.8ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-07 12:56:36 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2971ms (Views: 2767.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-07 12:56:42 +0200
+Processing by ArticlesController#products as HTML
+  Rendering articles/products.html.erb within layouts/application
+  Rendered articles/products.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1927ms (Views: 1868.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/styles.css" for 127.0.0.1 at 2022-01-07 12:56:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/styles.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/js/scripts.js" for 127.0.0.1 at 2022-01-07 12:56:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-07 13:01:19 +0200
+Started GET "/products" for 127.0.0.1 at 2022-01-07 13:01:23 +0200
+Processing by ArticlesController#products as HTML
+  Rendering articles/products.html.erb within layouts/application
+  Rendered articles/products.html.erb within layouts/application (1.7ms)
+Processing by ProductsController#index as HTML
+Started GET "/" for 127.0.0.1 at 2022-01-07 13:01:25 +0200
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.8ms)
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4254ms (Views: 4072.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3490ms (Views: 3190.9ms | ActiveRecord: 2.2ms)
+
+
+Completed 200 OK in 2798ms (Views: 2566.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-07 13:01:38 +0200
+Started GET "/css/styles.css" for 127.0.0.1 at 2022-01-07 13:01:41 +0200
+Started GET "/js/scripts.js" for 127.0.0.1 at 2022-01-07 13:01:41 +0200
+Processing by ArticlesController#products as HTML
+  Rendering articles/products.html.erb within layouts/application
+  Rendered articles/products.html.erb within layouts/application (1.8ms)
+  
+ActionController::RoutingError (No route matches [GET] "/css/styles.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Completed 200 OK in 4182ms (Views: 3847.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/scripts.js" for 127.0.0.1 at 2022-01-07 13:01:45 +0200
+Started GET "/css/styles.css" for 127.0.0.1 at 2022-01-07 13:01:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/styles.css"):
+  
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
