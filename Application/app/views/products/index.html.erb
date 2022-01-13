@@ -15,8 +15,8 @@
       <% @products.each do |product| %>
         <tr>
           <td><%= product.title %></td>
-          <td><%= link_to 'Show Product', product %></td>
-          <td><%= link_to 'Edit Product', edit_product_path(product) %></td>
+          <td><%= button_to 'Show Product', product, method: :get %></td>
+          <td><%= button_to 'Edit Product', edit_product_path(product), method: :get %></td>
           <td><%= button_to 'Delete', product_path(product), method: :delete, data: {confirm: "Are you sure?"} %></td>
         </tr>
       <% end %>
