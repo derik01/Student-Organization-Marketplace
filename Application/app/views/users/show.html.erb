@@ -1,0 +1,7 @@
+<h1><span style = "color:white">Welcome</span></h1>
+<% if logged_in? %>
+    <h1><span style = "color:white">You are Logged In, <%= current_user.first %></span></h1>
+    <td><%= button_to 'Add Product', "/upload", method: :get %></td>
+    <td><%= button_to 'Edit Profile', '/editprofile', method: :get %></td>
+    <td><%= button_to 'Delete', '/deleteprofile', method: :delete, data: {confirm: "Are you sure?"} %></td>
+<%end%>

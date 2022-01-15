@@ -8,7 +8,10 @@
 
   <p>
     <% if @product.image.attached? %>
-      <%= image_tag @product.image %>
+      <%= image_tag @product.image.variant(
+        format: :png,
+        resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+      ) %>
     <% end %>
   </p>
 </div>

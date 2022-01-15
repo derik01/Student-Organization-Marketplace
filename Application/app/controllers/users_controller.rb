@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
-    skip_before_action :verify_authenticity_token
+    # skip_before_action :verify_authenticity_token
+    before_action :logged_in_user, only: [:edit, :update, :show]
+    # before_action :correct_user,   only: [:edit, :update, :show]
 
 
-    # skip_before_action :require_login, only: [:new, :create, :login]
 
     def new
         @user = User.new
@@ -20,17 +21,47 @@ class UsersController < ApplicationController
             flash[:notice] = "Password length should be 8 or longer."
             redirect_to '/signup'
         else @user.valid?
-            @user = User.create(params.require(:user).permit(:username, :password))
-            session[:user_id] = @user.id
-            redirect_to '/welcome'
+            @user = User.create(params.require(:user).permit(:first, :last, :username, :password))
+            session[:id] = @user.id
+            redirect_to '/profile'
         end
     end
 
+    def edit
+        @user = User.find_by_id(session[:id])
+    end
+
+    def update
+        @user = User.find_by_id(session[:id])
+        # user_params = params.require(:user).permit(:username, :password, :first, :last)
+        @user.assign_attributes(params.require(:user).permit(:first, :last, :username, :password))
+        if @user.changed?
+            if @user.save
+                flash[:success] = true
+            end
+        end
+        redirect_to '/profile'
+    end
+
+    def destroy
+        @user = User.find_by_id(session[:id])
+        @user.destroy
+        flash[:notice] = "User '#{@user.first}' deleted."
+        redirect_to '/'
+    end
+    
     def show 
-        @user = User.find(params[:id])
+        @user = User.find_by_id(session[:id])
     end
 
     def user_params
-        params.require(:user).permit(:username, :password)
+        params.require(:user).permit(:first, :last, :username, :password)
+    end
+
+    def logged_in_user  
+        unless logged_in?
+          flash[:danger] = "Please log in."
+          redirect_to sign_in_url
+        end
     end
 end 
