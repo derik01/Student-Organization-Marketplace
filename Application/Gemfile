@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.6.6'
 
+gem "image_processing", "~> 1.0"
+
 gem 'active_storage_validations'
 
 gem 'bootstrap', '~> 4.0.0'

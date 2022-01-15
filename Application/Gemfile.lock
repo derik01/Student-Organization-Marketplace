@@ -162,7 +162,6 @@ GEM
     diff-lcs (1.5.0)
     docile (1.4.0)
     erubi (1.10.0)
-    erubis (2.7.0)
     execjs (2.8.1)
     ffi (1.15.5)
     globalid (1.0.0)
@@ -170,6 +169,9 @@ GEM
     hashdiff (1.0.1)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.1)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -190,6 +192,7 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
+    mini_magick (4.11.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
     multi_test (0.1.2)
@@ -254,6 +257,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.3)
+    ruby-vips (2.1.4)
+      ffi (~> 1.12)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -322,6 +327,7 @@ DEPENDENCIES
   coffee-rails
   cucumber-rails
   database_cleaner
+  image_processing (~> 1.0)
   jbuilder
   jquery-rails
   pg (~> 1.1)
