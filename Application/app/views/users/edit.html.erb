@@ -1,0 +1,19 @@
+<% provide(:title, "Edit user") %>
+<span style = "color:white"><h2>Edit Existing User Account</h2>
+
+<%= form_for @user do |f| %>
+
+    <%= f.label :"First Name:" %>
+    <%= f.text_field :first %><br>
+
+    <%= f.label :"Last Name:" %>
+    <%= f.text_field :last %><br>
+
+    <%= f.label :"Username:" %>
+    <%= f.email_field :username %><br>
+
+    <%= f.label :"Password:" %>
+    <%= f.password_field :password %></span><br>
+
+    <%= f.submit "Save changes", class: "btn btn-primary" %>
+<% end %>

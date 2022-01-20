@@ -1,0 +1,13 @@
+<span style = "color:white">
+<%# <tbody> %>
+    <% @products.each do |product| %>
+    <%# <tr> %>
+        <%= product.title %>
+        <%= image_tag product.image.variant(
+            format: :png,
+            resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+        ) %>
+    <%# </tr> %>
+    <% end %>
+<%# </tbody> %>
+</span>

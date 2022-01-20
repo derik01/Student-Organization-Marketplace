@@ -12,13 +12,17 @@ Rails.application.routes.draw do
 
   get "/welcome", to: "articles#welcome"
 
-  get "/marketplace", to: "articles#products"
+  get "/marketplace", to: "products#marketplace"
 
   get "/dashboard", to: "dashboards#dashboard"
 
   get "upload", to: "products#new"
+  get "profile", to: "users#show"
   post "upload", to: "products#create"
 
+  get 'editprofile', to: "users#edit"
+
+  delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
   # post "/login", to: "articles#welcome"
 
