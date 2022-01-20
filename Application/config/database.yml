@@ -4,13 +4,13 @@ development:
   database: rubydbapp
   pool: 5
   username: postgres
-  password: 12345
+  password: 123456
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
   host: localhost
-  port: 5432
+  port: 5433
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -29,8 +29,8 @@ test:
   encoding: unicode
   database: rubydbapp
   pool: 5
-  username: keeganchoudhury
-  password: '12345'
+  username: postgres
+  password: '123456'
 
 production:
   adapter: postgresql
