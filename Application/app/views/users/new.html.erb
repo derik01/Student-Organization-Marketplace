@@ -1,0 +1,137 @@
+
+
+<nav id="nav-header" class="text-left">
+	<div id="logo" class="text-left">
+		<a id="home-btn" href="/"><span>Mporium</span></a>
+	</div>
+	<div id="logo"> </div>	
+	<div class="dropdown show">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			PRODUCTS
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Apparel</a>
+			<a class="dropdown-item" href="#">Stationary</a>
+			<a class="dropdown-item" href="#">Events</a>
+			<a class="dropdown-item" href="#">Miscellanious</a>
+		</div>
+	</div>
+	<div class="dropdown show">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		ORGANIZATIONS
+		</a>
+		
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Academic</a>
+			<a class="dropdown-item" href="#">Arts</a>
+			<a class="dropdown-item" href="#">FLOs</a>
+			<a class="dropdown-item" href="#">Greek Life</a>
+			<a class="dropdown-item" href="#">Health/Rec</a>
+			<a class="dropdown-item" href="#">International</a>
+			<a class="dropdown-item" href="#">Professional</a>
+			<a class="dropdown-item" href="#">Political</a>
+			<a class="dropdown-item" href="#">Religious</a>
+			<a class="dropdown-item" href="#">Service</a>
+			<a class="dropdown-item" href="#">Social</a>
+			<a class="dropdown-item" href="#">Special Interest</a>
+		</div>
+	</div>
+	<div id="no-drop">
+		<a href="marketplace">MARKETPLACE</a>
+	</div>
+	<div id="no-drop">
+		<a href="sign_in">LOG IN</a>
+	</div>
+	<div id="no-drop">
+		<a href="signup">SIGN UP</a>
+	</div>
+
+</nav>
+
+    <%= form_for @user do |f| %>
+
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h1 class="mb-0 pb-3">I am trying to sign up as a ...</h1>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Member</h4>
+											<div class="form-group">
+												<%= f.label :"First Name:" %>
+												<%= f.text_field :first %><br><br>
+												<%= f.label :"Last Name:" %>
+												<%= f.text_field :last %><br><br>
+												<%= f.label :"Username:" %>
+												<%= f.text_field :username %><br>
+                                            <br>
+											</div>	
+											<div class="form-group mt-2">
+												<%= f.label :"Password:" %>
+												<%= f.password_field :password %><br>
+											</div>
+                                            <br>
+											 <button id="login-submit" class="container text-center btn btn-default">
+                                                <span visibility: hidden><%= f.submit "Create Account"%></span>
+                                                <span class="button__text" class="container text-center">Create Account</span>
+                                            </button>
+                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Organization</h4>
+											<div class="form-group">
+												<%= f.label :"First Name:" %>
+												<%= f.text_field :first %><br><br>
+												<%= f.label :"Last Name:" %>
+												<%= f.text_field :last %><br><br>
+												<%= f.label :"Username:" %>
+												<%= f.text_field :username %><br>
+                                            <br>
+											</div>	
+											<div class="form-group mt-2">
+												<%= f.label :"Password:" %>
+												<%= f.password_field :password %><br>
+											</div>
+                                            <br>
+											 <button id="login-submit" class="container text-center btn btn-default">
+                                                <span visibility: hidden><%= f.submit "Create Account"%></span>
+                                                <span class="button__text" class="container text-center">Create Account</span>
+                                            </button>
+                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+
+	   <% end %>
+
+    <br>
+
+	<span id="err-msg" class="container text-center">
+		<% flash.each do |type, msg| %>
+			<div>
+				<%= msg %>
+			</div>
+		<% end %>
+	</span>
+
+
+
