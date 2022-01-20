@@ -197,6 +197,10 @@ GEM
     minitest (5.15.0)
     multi_test (0.1.2)
     nio4r (2.5.8)
+    nokogiri (1.13.0-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.0-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.0-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
@@ -316,6 +320,7 @@ GEM
     zeitwerk (2.5.3)
 
 PLATFORMS
+  universal-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -344,7 +349,7 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.6.8p205
 
 BUNDLED WITH
    2.3.4

@@ -29,7 +29,7 @@ test:
   encoding: unicode
   database: rubydbapp
   pool: 5
-  username: keeganchoudhury
+  username: postgres
   password: '12345'
 
 production:
