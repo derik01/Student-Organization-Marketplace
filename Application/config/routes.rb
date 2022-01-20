@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get "/marketplace", to: "articles#products"
 
+  get "/dashboard", to: "dashboards#dashboard"
+
   get "upload", to: "products#new"
   post "upload", to: "products#create"
 
