@@ -41627,3 +41627,1326 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 521ms (Views: 514.1ms | ActiveRecord: 0.0ms | Allocations: 52886)
 
 
+  [1m[35m (26.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1355736032089747140)[0m
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20220101201948)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "first" character varying, "last" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220101201948"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20220106115021)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220106115021"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20220106162617)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220106162617"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20220113092506)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "active_storage_blobs" ADD "service_name" character varying[0m
+  [1m[36mActiveStorage::Blob Update All (7.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "service_name" = $1[0m  [["service_name", "local"]]
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_blobs" ALTER COLUMN "service_name" TYPE character varying, ALTER COLUMN "service_name" SET NOT NULL[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220113092506"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageVariantRecords (20220113092507)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220113092507"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-18 17:45:04.420675"], ["updated_at", "2022-01-18 17:45:04.420675"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1355736032089747140)[0m
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-01-18 11:45:24 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 3274.4ms | Allocations: 2473023)
+Completed 500 Internal Server Error in 3332ms (ActiveRecord: 0.0ms | Allocations: 2476612)
+
+
+  
+ActionView::Template::Error (Your nodejs binary failed to load autoprefixer script file,
+please check if you're running a supported version (10, 12, 14+)
+
+ENV["PATH"] = /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/bin:/home/derik0194/.rbenv/versions/2.6.6/bin:/usr/lib/rbenv/libexec:/home/derik0194/.rbenv/plugins/ruby-build/bin:/home/derik0194/.rbenv/shims:/home/derik0194/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/LyX 2.3/Perl/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Java/jdk-16/bin:/mnt/c/Program Files/Intel/Intel(R) Memory and Storage Tool/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/wangd/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/wangd/AppData/Local/atom/bin:/snap/bin
+binary      = node
+):
+    3:   <head>
+    4:     <title>Mporium</title>
+    5:     <link rel="icon" href="/favicon.ico">
+    6:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application' %>
+    8:     <%= csrf_meta_tags %>
+    9:   </head>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for 127.0.0.1 at 2022-01-18 11:46:24 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 1459.4ms | Allocations: 1726066)
+Completed 500 Internal Server Error in 1483ms (ActiveRecord: 0.0ms | Allocations: 1729655)
+
+
+  
+ActionView::Template::Error (Your nodejs binary failed to load autoprefixer script file,
+please check if you're running a supported version (10, 12, 14+)
+
+ENV["PATH"] = /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/bin:/home/derik0194/.rbenv/versions/2.6.6/bin:/usr/lib/rbenv/libexec:/home/derik0194/.rbenv/plugins/ruby-build/bin:/home/derik0194/.rbenv/shims:/home/derik0194/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/LyX 2.3/Perl/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Java/jdk-16/bin:/mnt/c/Program Files/Intel/Intel(R) Memory and Storage Tool/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/wangd/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/wangd/AppData/Local/atom/bin:/snap/bin
+binary      = node
+):
+    3:   <head>
+    4:     <title>Mporium</title>
+    5:     <link rel="icon" href="/favicon.ico">
+    6:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application' %>
+    8:     <%= csrf_meta_tags %>
+    9:   </head>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for 127.0.0.1 at 2022-01-18 11:49:18 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 2991.6ms | Allocations: 1847171)
+Completed 200 OK in 3012ms (Views: 2998.0ms | ActiveRecord: 0.0ms | Allocations: 1850781)
+
+
+Started GET "/assets/application.self-30f4155a7c52d6a6b92b677660293c542869e653b9e09a51c1339f69f1e74939.css?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap_js_files.self-4faa6fe4cd331d82c22b39308cfaa0634a36dac7c77a9e2b422f68f96be4cb06.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/jquery3.self-2a83d06853bd343c7bfc2e5d4539814cfa934676e2948ed348311435eca862f5.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2022-01-18 11:49:21 -0600
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-18 11:49:26 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 111.1ms | Allocations: 7608)
+  Rendered layout layouts/application.html.erb (Duration: 178.6ms | Allocations: 49654)
+Completed 200 OK in 181ms (Views: 180.0ms | ActiveRecord: 0.0ms | Allocations: 51764)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-18 11:49:29 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (4.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 6.9ms | Allocations: 389)
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 42309)
+Completed 200 OK in 91ms (Views: 64.4ms | ActiveRecord: 4.7ms | Allocations: 46869)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-18 11:49:31 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 1.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 42041)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.2ms | Allocations: 43555)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-18 11:49:37 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 66.2ms | Allocations: 42255)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.0ms | Allocations: 43754)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-18 11:51:46 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2522)
+  Rendered layout layouts/application.html.erb (Duration: 56.4ms | Allocations: 44445)
+Completed 200 OK in 105ms (Views: 57.9ms | ActiveRecord: 15.2ms | Allocations: 52067)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-18 11:51:48 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 43633)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms | Allocations: 45168)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-18 11:51:59 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kKzz7BUUzIWxJ94FShHmmHm1broSvIfkLlxAGTJMveBNx10qKRqgxobOs9wWW1ZcTduKR5qMdpBbYQ8nYPGarQ==", "reg-log"=>"on", "user"=>{"first"=>"derik", "last"=>"wang", "username"=>"derik0194@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik0194@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first", "last", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "derik0194@gmail.com"], ["password_digest", "$2a$12$7VNXdi0TSg97U3lQXzN9fesRPohcVonusZj.nxyjTf97BHY4hV2fS"], ["first", "derik"], ["last", "wang"], ["created_at", "2022-01-18 17:51:59.827295"], ["updated_at", "2022-01-18 17:51:59.827295"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 369ms (ActiveRecord: 11.3ms | Allocations: 3198)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-18 11:51:59 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 42255)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.3ms | Allocations: 44385)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-18 11:52:03 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 6.9ms | Allocations: 1274)
+  Rendered products/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1613)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 43530)
+Completed 200 OK in 64ms (Views: 59.5ms | ActiveRecord: 1.9ms | Allocations: 47239)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-01-18 11:52:09 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZWJSGjMKrYnDCVZiqAot2AM7hNVmALnxjwpXrNYChxE/ieOVMJG9RDlSIDW6phzVGIK7t2o85OzAWZg4eUtUQ==", "product"=>{"title"=>"adas", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd0772aed70 @tempfile=#<Tempfile:/tmp/RackMultipart20220118-18400-e29bvl.jpg>, @original_filename="An-extremely-goofy-movie-original.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"An-extremely-goofy-movie-original.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "adas"], ["created_at", "2022-01-18 17:52:09.876822"], ["updated_at", "2022-01-18 17:52:09.876822"]]
+  [1m[36mActiveStorage::Attachment Load (12.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (1.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "zk1p3dl0rt2gvqkb145ayjwe1nai"], ["filename", "An-extremely-goofy-movie-original.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 160249], ["checksum", "wZxxVLEFeIvDmksPuWhHjQ=="], ["created_at", "2022-01-18 17:52:09.910868"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 1], ["blob_id", 1], ["created_at", "2022-01-18 17:52:09.913390"]]
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-01-18 17:52:09.915059"], ["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (5.8ms) [0m[32mUploaded file to key: zk1p3dl0rt2gvqkb145ayjwe1nai (checksum: wZxxVLEFeIvDmksPuWhHjQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: a2b871fd-59ed-47e8-9012-29f3ad31ff6f) to Async(default) with arguments: #<GlobalID:0x00007fd07740b100 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 207ms (ActiveRecord: 20.8ms | Allocations: 31487)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2022-01-18 11:52:09 -0600
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f] Performing ActiveStorage::AnalyzeJob (Job ID: a2b871fd-59ed-47e8-9012-29f3ad31ff6f) from Async(default) enqueued at 2022-01-18T17:52:09Z with arguments: #<GlobalID:0x00007fd07744cdd0 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/1>>
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f] [36m  Disk Storage (5.4ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+  [1m[36mProduct Load (6.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (18.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (19.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f] Skipping image analysis because ImageMagick doesn't support the file
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f]   [1m[36mTRANSACTION (9.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f]   [1m[36mActiveStorage::Blob Update (6.0ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f]   [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [a2b871fd-59ed-47e8-9012-29f3ad31ff6f] Performed ActiveStorage::AnalyzeJob (Job ID: a2b871fd-59ed-47e8-9012-29f3ad31ff6f) from Async(default) in 223.65ms
+  Rendered products/show.html.erb within layouts/application (Duration: 110.2ms | Allocations: 9163)
+  Rendered layout layouts/application.html.erb (Duration: 163.6ms | Allocations: 51202)
+Completed 200 OK in 280ms (Views: 132.5ms | ActiveRecord: 93.8ms | Allocations: 58283)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 11:52:10 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (4.7ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.3ms | Allocations: 4871)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/products" for 127.0.0.1 at 2022-01-18 11:52:51 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 42775)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.3ms | Allocations: 44525)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 11:52:51 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (5.5ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms | Allocations: 3333)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2022-01-18 11:52:53 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 41926)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms | Allocations: 43424)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-18 11:52:56 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 43057)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 1.0ms | Allocations: 44570)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 11:52:56 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms | Allocations: 3272)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 11:53:23 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (5.3ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms | Allocations: 3272)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2022-01-18 12:41:22 -0600
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 1241.9ms | Allocations: 349551)
+Completed 200 OK in 1305ms (Views: 1262.3ms | ActiveRecord: 0.0ms | Allocations: 354410)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-18 12:41:50 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (8.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mActiveStorage::Attachment Load (16.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (12.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 299.2ms | Allocations: 27354)
+  Rendered layout layouts/application.html.erb (Duration: 358.7ms | Allocations: 69273)
+Completed 200 OK in 393ms (Views: 303.4ms | ActiveRecord: 56.6ms | Allocations: 73825)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 12:41:51 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (9.7ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 0.3ms | Allocations: 12166)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 12:42:05 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (5.8ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms | Allocations: 3413)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-18 12:42:06 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 116.6ms | Allocations: 7616)
+  Rendered layout layouts/application.html.erb (Duration: 177.9ms | Allocations: 49620)
+Completed 200 OK in 181ms (Views: 179.6ms | ActiveRecord: 0.0ms | Allocations: 51747)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-18 12:42:10 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pWsNjMfRYZT5wIZvKYUX1CGKdwv02owneUuIiGZzhch4AKNK+98N184p67Z1z6cQFeST9nzqfVMMdse2NM6ihQ==", "session"=>{"username"=>"derik0194@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik0194@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 203ms (ActiveRecord: 11.3ms | Allocations: 6690)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-18 12:42:11 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 10.0ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 91.1ms | Allocations: 42257)
+Completed 200 OK in 98ms (Views: 93.1ms | ActiveRecord: 0.3ms | Allocations: 44801)
+
+
+Started GET "/editprofile" for 127.0.0.1 at 2022-01-18 12:42:15 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1557)
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | Allocations: 43474)
+Completed 200 OK in 71ms (Views: 67.3ms | ActiveRecord: 0.3ms | Allocations: 45356)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-18 12:42:17 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 15.6ms | Allocations: 1270)
+  Rendered products/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 1604)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 43521)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms | Allocations: 45162)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-18 12:42:19 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 650)
+  Rendered layout layouts/application.html.erb (Duration: 64.4ms | Allocations: 42567)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.3ms | Allocations: 44206)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2022-01-18 12:42:20 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 63.8ms | Allocations: 43164)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 1.0ms | Allocations: 45027)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 12:42:20 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (2.2ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms | Allocations: 3272)
+
+
+  
+MiniMagick::Error (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.11.0) lib/mini_magick/configuration.rb:139:in `cli'
+mini_magick (4.11.0) lib/mini_magick.rb:38:in `imagemagick7?'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:135:in `executable'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:110:in `command'
+mini_magick (4.11.0) lib/mini_magick/tool.rb:92:in `call'
+image_processing (1.12.1) lib/image_processing/mini_magick.rb:56:in `save_image'
+image_processing (1.12.1) lib/image_processing/processor.rb:23:in `call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:50:in `call_processor'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:28:in `block in call'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:64:in `create_tempfile'
+image_processing (1.12.1) lib/image_processing/pipeline.rb:27:in `call'
+image_processing (1.12.1) lib/image_processing/builder.rb:14:in `block in call!'
+image_processing (1.12.1) lib/image_processing/builder.rb:21:in `instrument'
+image_processing (1.12.1) lib/image_processing/builder.rb:13:in `call!'
+image_processing (1.12.1) lib/image_processing/chainable.rb:58:in `call'
+activestorage (6.1.4.4) lib/active_storage/transformers/image_processing_transformer.rb:22:in `process'
+activestorage (6.1.4.4) lib/active_storage/transformers/transformer.rb:22:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:56:in `block in transform'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:205:in `instrument'
+activestorage (6.1.4.4) app/models/active_storage/variation.rb:55:in `transform'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:113:in `block in process'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:15:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/products/1" for 127.0.0.1 at 2022-01-18 12:44:41 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 42923)
+Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.9ms | Allocations: 44579)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-18 12:44:41 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+[36m  Disk Storage (4.0ms) [0m[32mUploaded file to key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlbXN4Y0ROa2JEQnlkREpuZG5GcllqRTBOV0Y1YW5kbE1XNWhhUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0xOFQxODo0OTo0MS4zODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--ff8667b61b5af8a5b355491baaf4e8d7958c8071/An-extremely-goofy-movie-original.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlbXN4Y0ROa2JEQnlkREpuZG5GcllqRTBOV0Y1YW5kbE1XNWhhUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0xOFQxODo0OTo0MS4zODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--ff8667b61b5af8a5b355491baaf4e8d7958c8071/An-extremely-goofy-movie-original.png
+Completed 302 Found in 225ms (ActiveRecord: 0.2ms | Allocations: 4271)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlbXN4Y0ROa2JEQnlkREpuZG5GcllqRTBOV0Y1YW5kbE1XNWhhUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0xOFQxODo0OTo0MS4zODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--ff8667b61b5af8a5b355491baaf4e8d7958c8071/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-01-18 12:44:41 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlbXN4Y0ROa2JEQnlkREpuZG5GcllqRTBOV0Y1YW5kbE1XNWhhUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0xOFQxODo0OTo0MS4zODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--ff8667b61b5af8a5b355491baaf4e8d7958c8071", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1427)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-18 12:44:42 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 366)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 42286)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 1.0ms | Allocations: 43799)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-18 12:44:43 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 41926)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 43424)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-18 12:44:44 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1069)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 42988)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 1.0ms | Allocations: 44500)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-19 23:35:32 -0600
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+activerecord (6.1.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.4.4) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.4.4) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.4.4) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.4.4) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.4.4) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2022-01-19 23:36:08 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 1226.4ms | Allocations: 349565)
+Completed 200 OK in 1260ms (Views: 1232.6ms | ActiveRecord: 0.0ms | Allocations: 353176)
+
+
+Started GET "/assets/application.self-30f4155a7c52d6a6b92b677660293c542869e653b9e09a51c1339f69f1e74939.css?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap_js_files.self-4faa6fe4cd331d82c22b39308cfaa0634a36dac7c77a9e2b422f68f96be4cb06.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/jquery3.self-2a83d06853bd343c7bfc2e5d4539814cfa934676e2948ed348311435eca862f5.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2022-01-19 23:36:10 -0600
