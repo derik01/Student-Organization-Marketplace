@@ -6,8 +6,8 @@ Feature: sign up as an organization
 Scenario: I sign up as an organization  
 
     Given I am on the home page
-    When I press "SIGN UP"
+    When I press the "SIGN UP" link
     Then I should be on the sign up page
-    And I should see "Create an Account"
+    And I should see "I am trying to sign up as a ..."
     Then I sign up with "anukhatri@tamu.edu" username and "Howdy123" password
     Then I should be on the welcome page

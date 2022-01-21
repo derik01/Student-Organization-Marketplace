@@ -18,7 +18,12 @@ module NavigationHelpers
 
       when /the welcome page/
         '/welcome'
-  
+      
+      when /the login page/
+        '/sign_in'
+
+      when /the profile page/
+        '/profile'
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #

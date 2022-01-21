@@ -42501,3 +42501,644 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 142ms (Views: 141.0ms | ActiveRecord: 0.0ms | Allocations: 43834)
 
 
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-19 19:27:59 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 141.3ms | Allocations: 42301)
+Completed 200 OK in 144ms (Views: 142.6ms | ActiveRecord: 0.0ms | Allocations: 43842)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-19 19:28:03 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 138.6ms | Allocations: 43681)
+Completed 200 OK in 141ms (Views: 139.9ms | ActiveRecord: 0.0ms | Allocations: 45260)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-19 19:28:04 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 132.9ms | Allocations: 42296)
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.0ms | Allocations: 43834)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-19 19:28:17 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lU5+Jo6Qg9K+kLQLTvY1L9yRUpWgD0VAQw79rR6iNnMLE/6B+pK7Oed1CAZvyk0unQlCYaBV5mhbvc6+8+haGQ==", "session"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 271ms (ActiveRecord: 1.3ms | Allocations: 1598)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-19 19:28:17 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 151.5ms | Allocations: 42122)
+Completed 200 OK in 157ms (Views: 152.6ms | ActiveRecord: 0.6ms | Allocations: 43920)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-19 19:28:27 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 3.4ms | Allocations: 684)
+  Rendered products/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 767)
+  Rendered layout layouts/application.html.erb (Duration: 192.8ms | Allocations: 42734)
+Completed 200 OK in 198ms (Views: 195.3ms | ActiveRecord: 0.0ms | Allocations: 44284)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-20 15:08:55 -0600
+Started GET "/products" for 127.0.0.1 at 2022-01-20 15:08:55 -0600
+Started GET "/products" for 127.0.0.1 at 2022-01-20 15:08:55 -0600
+Started GET "/" for 127.0.0.1 at 2022-01-20 15:08:55 -0600
+Started GET "/products" for 127.0.0.1 at 2022-01-20 15:08:56 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (4.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 223.1ms | Allocations: 21733)
+  [1m[36mProduct Load (4.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 217.9ms | Allocations: 21866)
+  [1m[36mProduct Load (25.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 241.6ms | Allocations: 25060)
+  [1m[36mProduct Load (6.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 220.4ms | Allocations: 24471)
+  Rendered layout layouts/application.html.erb (Duration: 864.6ms | Allocations: 154522)
+Completed 200 OK in 877ms (Views: 873.7ms | ActiveRecord: 0.0ms | Allocations: 156877)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 1136.5ms | Allocations: 211292)
+Completed 200 OK in 1143ms (Views: 1139.5ms | ActiveRecord: 97.9ms | Allocations: 212856)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 1128.9ms | Allocations: 220617)
+Completed 200 OK in 1137ms (Views: 1133.6ms | ActiveRecord: 76.0ms | Allocations: 223227)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 1067.7ms | Allocations: 217745)
+  Rendered layout layouts/application.html.erb (Duration: 1117.9ms | Allocations: 224519)
+Completed 200 OK in 1076ms (Views: 1072.3ms | ActiveRecord: 45.7ms | Allocations: 221818)
+
+
+Completed 200 OK in 1125ms (Views: 1121.4ms | ActiveRecord: 66.0ms | Allocations: 226306)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-20 15:09:06 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 151.0ms | Allocations: 42296)
+Completed 200 OK in 154ms (Views: 152.5ms | ActiveRecord: 0.0ms | Allocations: 43834)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-20 15:09:14 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QcSDPQLa9CkPE6cnxbm0ICaeAkzeMCcuPa1rKhI0urHfmQOadtjMwlb2GyrkhcwhZwYSuN5qhAYlHlg5/37W2w==", "session"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 259ms (ActiveRecord: 8.4ms | Allocations: 1631)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-20 15:09:14 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 158.3ms | Allocations: 42119)
+Completed 200 OK in 165ms (Views: 159.9ms | ActiveRecord: 0.7ms | Allocations: 43915)
+
+
+Started GET "/editprofile" for 127.0.0.1 at 2022-01-20 15:09:29 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 24.7ms | Allocations: 1344)
+  Rendered layout layouts/application.html.erb (Duration: 242.5ms | Allocations: 43310)
+Completed 200 OK in 253ms (Views: 244.0ms | ActiveRecord: 1.1ms | Allocations: 45233)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-20 15:09:35 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.9ms | Allocations: 682)
+  Rendered products/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 176.1ms | Allocations: 42732)
+Completed 200 OK in 180ms (Views: 177.8ms | ActiveRecord: 0.0ms | Allocations: 44283)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-20 15:16:24 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (3.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 112.2ms | Allocations: 2450)
+  Rendered layout layouts/application.html.erb (Duration: 294.2ms | Allocations: 44465)
+Completed 200 OK in 300ms (Views: 296.3ms | ActiveRecord: 29.4ms | Allocations: 46027)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-20 15:16:26 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 163.2ms | Allocations: 41974)
+Completed 200 OK in 166ms (Views: 164.4ms | ActiveRecord: 0.0ms | Allocations: 43513)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-20 15:17:18 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 145.8ms | Allocations: 42308)
+Completed 200 OK in 150ms (Views: 147.9ms | ActiveRecord: 0.0ms | Allocations: 43850)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-20 15:19:44 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TSgn+Sc7lHCVDaFZO2x991tsGIeR4xtKjkQUg1s9cwXTdadeUzmsm8zoHVQaUAX2GvQIc5G5uGKW9yeQtncfbw==", "session"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 400ms (ActiveRecord: 4.4ms | Allocations: 1677)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-20 15:19:44 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 133.0ms | Allocations: 42126)
+Completed 200 OK in 138ms (Views: 134.2ms | ActiveRecord: 0.7ms | Allocations: 43923)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-20 15:21:33 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 3.6ms | Allocations: 673)
+  Rendered products/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 756)
+  Rendered layout layouts/application.html.erb (Duration: 246.7ms | Allocations: 42771)
+Completed 200 OK in 252ms (Views: 249.0ms | ActiveRecord: 0.0ms | Allocations: 44329)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 13:33:51 -0600
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 3340)
+  Rendered layout layouts/application.html.erb (Duration: 862.0ms | Allocations: 352608)
+Completed 200 OK in 948ms (Views: 866.3ms | ActiveRecord: 10.4ms | Allocations: 360011)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap_js_files.self-4faa6fe4cd331d82c22b39308cfaa0634a36dac7c77a9e2b422f68f96be4cb06.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/jquery3.self-2a83d06853bd343c7bfc2e5d4539814cfa934676e2948ed348311435eca862f5.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2022-01-21 13:33:53 -0600
+Started GET "/" for 127.0.0.1 at 2022-01-21 13:33:56 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 132.1ms | Allocations: 42055)
+Completed 200 OK in 137ms (Views: 134.7ms | ActiveRecord: 0.0ms | Allocations: 44157)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-21 13:34:03 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 36.7ms | Allocations: 9389)
+  Rendered layout layouts/application.html.erb (Duration: 188.2ms | Allocations: 51354)
+Completed 200 OK in 237ms (Views: 190.9ms | ActiveRecord: 3.4ms | Allocations: 58822)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-21 13:34:17 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 127.4ms | Allocations: 43682)
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.0ms | Allocations: 45258)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-21 13:34:22 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 136.4ms | Allocations: 42677)
+Completed 200 OK in 141ms (Views: 138.9ms | ActiveRecord: 0.0ms | Allocations: 44774)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-21 13:34:27 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1723)
+  Rendered layout layouts/application.html.erb (Duration: 114.4ms | Allocations: 43690)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.0ms | Allocations: 45265)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-21 13:48:01 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 143.3ms | Allocations: 42301)
+Completed 200 OK in 145ms (Views: 144.3ms | Allocations: 43843)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-21 13:57:04 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"is8U4qTdPIOhAIiblIPpggIWENlGe4/LDgBpIRDAib8UkpRF0N8EaPjlNJa1v5GDQ44ALUYhLOMWs1oy/Yrl1Q==", "session"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 290ms (ActiveRecord: 7.7ms | Allocations: 4455)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-21 13:57:04 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 155.8ms | Allocations: 42302)
+Completed 200 OK in 165ms (Views: 156.9ms | ActiveRecord: 0.8ms | Allocations: 44464)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-21 14:01:50 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 15.4ms | Allocations: 1223)
+  Rendered products/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 1560)
+  Rendered layout layouts/application.html.erb (Duration: 220.1ms | Allocations: 43574)
+Completed 200 OK in 231ms (Views: 222.1ms | ActiveRecord: 0.0ms | Allocations: 45257)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-01-21 14:01:58 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MDyVwxGAMBDKMnAYEkOa3RiuH4063lwXAvzFa33QRAyuYRVkZYII+5PXzBUzf+LcWTYPeTqE/z8aT/Z4kJooZg==", "product"=>{"title"=>"Test2"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.3ms | Allocations: 1722)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1805)
+  Rendered layout layouts/application.html.erb (Duration: 127.6ms | Allocations: 43772)
+Completed 422 Unprocessable Entity in 186ms (Views: 128.8ms | ActiveRecord: 4.7ms | Allocations: 49763)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 14:08:10 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 79.9ms | Allocations: 2450)
+  Rendered layout layouts/application.html.erb (Duration: 197.6ms | Allocations: 44465)
+Completed 200 OK in 202ms (Views: 199.1ms | ActiveRecord: 11.5ms | Allocations: 46027)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2022-01-21 14:08:13 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (11.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 207.0ms | Allocations: 20314)
+  Rendered layout layouts/application.html.erb (Duration: 333.1ms | Allocations: 62281)
+Completed 200 OK in 341ms (Views: 307.3ms | ActiveRecord: 27.9ms | Allocations: 64214)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/img002.jpg" for 127.0.0.1 at 2022-01-21 14:08:13 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"img002"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mChecked if file exists at key: variants/yulsd3h4fjieg6cbtvthb13fbd9o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (yes)[0m
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: variants/yulsd3h4fjieg6cbtvthb13fbd9o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMDoxMzoxMy40NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--43e4d3d0b99e75a667bf6adfee815b1765b507f5/img002.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMDoxMzoxMy40NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--43e4d3d0b99e75a667bf6adfee815b1765b507f5/img002.png
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms | Allocations: 2682)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMDoxMzoxMy40NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--43e4d3d0b99e75a667bf6adfee815b1765b507f5/img002.png" for 127.0.0.1 at 2022-01-21 14:08:13 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMDoxMzoxMy40NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--43e4d3d0b99e75a667bf6adfee815b1765b507f5", "filename"=>"img002"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 1468)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 14:08:16 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 366)
+  Rendered layout layouts/application.html.erb (Duration: 204.3ms | Allocations: 42334)
+Completed 200 OK in 207ms (Views: 204.6ms | ActiveRecord: 0.9ms | Allocations: 43889)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-21 14:08:19 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 140.1ms | Allocations: 41974)
+Completed 200 OK in 143ms (Views: 141.2ms | ActiveRecord: 0.0ms | Allocations: 43513)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-21 14:08:21 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 138.2ms | Allocations: 42303)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.0ms | Allocations: 43842)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-21 14:08:30 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ACpUNFCskAB/2mlIVTQ0gionPfPm4SGp6kfQUvI2QJCed9STJK6o6yY/1UV0CEyDa78tB+a7goHy9ONBH3ws+g==", "session"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 213ms (ActiveRecord: 0.7ms | Allocations: 1587)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-21 14:08:30 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 134.8ms | Allocations: 42123)
+Completed 200 OK in 142ms (Views: 135.7ms | ActiveRecord: 0.6ms | Allocations: 43921)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-21 14:08:36 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.2ms | Allocations: 674)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 757)
+  Rendered layout layouts/application.html.erb (Duration: 138.4ms | Allocations: 42724)
+Completed 200 OK in 141ms (Views: 139.6ms | ActiveRecord: 0.0ms | Allocations: 44275)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-01-21 15:49:57 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/uhXfJ4xZe3s/WQqWxrOIOckcJFZ3lwlPvJ6XYyjWBxgtdfb6jNdBrUY2Cd6JrYhprxgZVmE/w0mQUlOYek0dg==", "product"=>{"title"=>"Water Bottle", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f2fc8784d68 @tempfile=#<Tempfile:/tmp/RackMultipart20220121-10183-1786584.jpg>, @original_filename="water_bottle.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"water_bottle.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (14.0ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Water Bottle"], ["created_at", "2022-01-21 21:49:57.978778"], ["updated_at", "2022-01-21 21:49:57.978778"]]
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (1.8ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "54at33xvcydoxgocmue4x094fegd"], ["filename", "water_bottle.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 10798], ["checksum", "gr9rUXt9KkKS66FR3phxyg=="], ["created_at", "2022-01-21 21:49:57.999912"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (1.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 2], ["blob_id", 2], ["created_at", "2022-01-21 21:49:58.003418"]]
+  [1m[36mProduct Update (0.9ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-01-21 21:49:58.005920"], ["id", 2]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (8.5ms) [0m[32mUploaded file to key: 54at33xvcydoxgocmue4x094fegd (checksum: gr9rUXt9KkKS66FR3phxyg==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed) to Async(default) with arguments: #<GlobalID:0x00007f2fc9ae09c0 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 160ms (ActiveRecord: 28.6ms | Allocations: 15756)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2022-01-21 15:49:58 -0600
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed] Performing ActiveStorage::AnalyzeJob (Job ID: 8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed) from Async(default) enqueued at 2022-01-21T21:49:58Z with arguments: #<GlobalID:0x00007f2fc9bbc880 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed] [36m  Disk Storage (11.7ms) [0m[34mDownloaded file from key: 54at33xvcydoxgocmue4x094fegd[0m
+  [1m[36mProduct Load (5.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (5.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 63.0ms | Allocations: 3016)
+  Rendered layout layouts/application.html.erb (Duration: 289.3ms | Allocations: 48947)
+Completed 200 OK in 379ms (Views: 283.4ms | ActiveRecord: 45.3ms | Allocations: 55761)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/water_bottle.jpg" for 127.0.0.1 at 2022-01-21 15:49:58 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"water_bottle"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mChecked if file exists at key: variants/54at33xvcydoxgocmue4x094fegd/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (1.3ms) [0m[34mDownloaded file from key: 54at33xvcydoxgocmue4x094fegd[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed]   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed]   [1m[36mActiveStorage::Blob Update (2.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":800,\"height\":800,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed]   [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed] Performed ActiveStorage::AnalyzeJob (Job ID: 8ce0ed34-ef20-4c1e-90b4-4ac9aae80bed) from Async(default) in 537.57ms
+[36m  Disk Storage (1.9ms) [0m[32mUploaded file to key: variants/54at33xvcydoxgocmue4x094fegd/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: variants/54at33xvcydoxgocmue4x094fegd/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjE6NTQ6NTguNjU0WiIsInB1ciI6ImJsb2Jfa2V5In19--e95ec364a0125b9692213b7ad930308234a10024/water_bottle.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjE6NTQ6NTguNjU0WiIsInB1ciI6ImJsb2Jfa2V5In19--e95ec364a0125b9692213b7ad930308234a10024/water_bottle.png
+Completed 302 Found in 116ms (ActiveRecord: 0.6ms | Allocations: 4974)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjE6NTQ6NTguNjU0WiIsInB1ciI6ImJsb2Jfa2V5In19--e95ec364a0125b9692213b7ad930308234a10024/water_bottle.png" for 127.0.0.1 at 2022-01-21 15:49:58 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjE6NTQ6NTguNjU0WiIsInB1ciI6ImJsb2Jfa2V5In19--e95ec364a0125b9692213b7ad930308234a10024", "filename"=>"water_bottle"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1463)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 15:55:08 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 618)
+  Rendered layout layouts/application.html.erb (Duration: 147.2ms | Allocations: 42594)
+Completed 200 OK in 151ms (Views: 147.7ms | ActiveRecord: 1.1ms | Allocations: 44217)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2022-01-21 15:55:11 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.4ms | Allocations: 745)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 829)
+  Rendered layout layouts/application.html.erb (Duration: 121.1ms | Allocations: 42796)
+Completed 200 OK in 123ms (Views: 122.1ms | ActiveRecord: 0.0ms | Allocations: 44361)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 15:57:01 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 144.7ms | Allocations: 42537)
+Completed 200 OK in 147ms (Views: 145.2ms | ActiveRecord: 0.6ms | Allocations: 44100)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2022-01-21 15:57:02 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1052)
+  Rendered layout layouts/application.html.erb (Duration: 140.4ms | Allocations: 43019)
+Completed 200 OK in 147ms (Views: 140.1ms | ActiveRecord: 2.2ms | Allocations: 44700)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/img002.jpg" for 127.0.0.1 at 2022-01-21 15:57:02 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"img002"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mChecked if file exists at key: variants/yulsd3h4fjieg6cbtvthb13fbd9o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (yes)[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/yulsd3h4fjieg6cbtvthb13fbd9o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMjowMjowMi44ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--f0bfe65ff181c611e5613820743ad442215b197f/img002.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMjowMjowMi44ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--f0bfe65ff181c611e5613820743ad442215b197f/img002.png
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2194)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMjowMjowMi44ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--f0bfe65ff181c611e5613820743ad442215b197f/img002.png" for 127.0.0.1 at 2022-01-21 15:57:03 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZlWFZzYzJRemFEUm1hbWxsWnpaalluUjJkR2hpTVRObVltUTVieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWFXMW5NREF5TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hVzFuTURBeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMVQyMjowMjowMi44ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--f0bfe65ff181c611e5613820743ad442215b197f", "filename"=>"img002"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1461)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 15:57:05 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 555)
+  Rendered layout layouts/application.html.erb (Duration: 130.2ms | Allocations: 42522)
+Completed 200 OK in 132ms (Views: 130.5ms | ActiveRecord: 0.7ms | Allocations: 44075)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2022-01-21 15:57:07 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 995)
+  Rendered layout layouts/application.html.erb (Duration: 131.6ms | Allocations: 42962)
+Completed 200 OK in 140ms (Views: 133.8ms | ActiveRecord: 2.2ms | Allocations: 44640)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/water_bottle.jpg" for 127.0.0.1 at 2022-01-21 15:57:07 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"water_bottle"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.6ms) [0m[34mChecked if file exists at key: variants/54at33xvcydoxgocmue4x094fegd/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (yes)[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/54at33xvcydoxgocmue4x094fegd/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjI6MDI6MDcuOTg0WiIsInB1ciI6ImJsb2Jfa2V5In19--3c1e3a8551c265204ad7e4a5801910127e67bd5d/water_bottle.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjI6MDI6MDcuOTg0WiIsInB1ciI6ImJsb2Jfa2V5In19--3c1e3a8551c265204ad7e4a5801910127e67bd5d/water_bottle.png
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms | Allocations: 2189)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjI6MDI6MDcuOTg0WiIsInB1ciI6ImJsb2Jfa2V5In19--3c1e3a8551c265204ad7e4a5801910127e67bd5d/water_bottle.png" for 127.0.0.1 at 2022-01-21 15:57:08 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOVFJoZERNemVIWmplV1J2ZUdkdlkyMTFaVFI0TURrMFptVm5aQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjFUMjI6MDI6MDcuOTg0WiIsInB1ciI6ImJsb2Jfa2V5In19--3c1e3a8551c265204ad7e4a5801910127e67bd5d", "filename"=>"water_bottle"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1461)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 16:06:37 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 81.8ms | Allocations: 2654)
+  Rendered layout layouts/application.html.erb (Duration: 217.5ms | Allocations: 44670)
+Completed 200 OK in 223ms (Views: 219.6ms | ActiveRecord: 7.3ms | Allocations: 46233)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2022-01-21 16:06:39 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.1ms | Allocations: 673)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 756)
+  Rendered layout layouts/application.html.erb (Duration: 139.7ms | Allocations: 42723)
+Completed 200 OK in 142ms (Views: 140.6ms | ActiveRecord: 0.0ms | Allocations: 44279)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-01-21 16:06:45 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ADBfDcgWkBoAGI9S++SeRLKPfnrKb5PQQf1dBZ2c8M+ebd+qvBSo8Vn9M1/a2OZF8xdujso1MPhZTm4WcNacpQ==", "product"=>{"title"=>"Water Bottle"}, "commit"=>"Create Product"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.0ms | Allocations: 1660)
+  Rendered products/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1743)
+  Rendered layout layouts/application.html.erb (Duration: 127.8ms | Allocations: 43710)
+Completed 422 Unprocessable Entity in 131ms (Views: 128.8ms | ActiveRecord: 0.0ms | Allocations: 45799)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-01-21 16:08:04 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7dBGKDAhJ5UXcf+INRK+XsONawcWqmQxGwJrs5c+6JVzjcaPRCMffk6UQ4UULsZfghV78xbwxxkDsVigenSE/w==", "product"=>{"title"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f2fb033fdb0 @tempfile=#<Tempfile:/tmp/RackMultipart20220121-10183-1t0tqdx.jpg>, @original_filename="water_bottle.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"water_bottle.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 5.1ms | Allocations: 1682)
+  Rendered products/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1765)
+  Rendered layout layouts/application.html.erb (Duration: 148.4ms | Allocations: 43780)
+Completed 422 Unprocessable Entity in 172ms (Views: 150.9ms | ActiveRecord: 0.0ms | Allocations: 46066)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-21 16:09:45 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 566)
+  Rendered layout layouts/application.html.erb (Duration: 194.2ms | Allocations: 42581)
+Completed 200 OK in 199ms (Views: 194.3ms | ActiveRecord: 1.8ms | Allocations: 44143)
+
+
