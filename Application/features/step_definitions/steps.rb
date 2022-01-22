@@ -49,3 +49,7 @@ end
 When /^(?:|I )fill in "([^\"]*)" with "([^\"]*)"$/ do |field, text|
     fill_in(field, with: text)
 end
+
+When /^I select checkbox "(.*?)"$/ do |cb|
+    check(cb)
+end
