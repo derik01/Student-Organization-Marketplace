@@ -42599,3 +42599,500 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 43667)
 
 
+Started GET "/" for 127.0.0.1 at 2022-01-22 19:46:57 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 1950.7ms | Allocations: 414139)
+Completed 200 OK in 1968ms (Views: 1956.1ms | ActiveRecord: 0.0ms | Allocations: 418998)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-22 19:47:01 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 9418)
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 52527)
+Completed 200 OK in 87ms (Views: 72.4ms | ActiveRecord: 2.5ms | Allocations: 60540)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-01-22 19:47:47 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2095)
+  Rendered layout layouts/application.html.erb (Duration: 76.1ms | Allocations: 45367)
+Completed 200 OK in 81ms (Views: 78.6ms | ActiveRecord: 0.0ms | Allocations: 47650)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-01-22 19:48:57 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Rotg9MCcHWEIllbPouW/DQ3ZBsm3yFpJs64gZDxSE9d1N5ETy1okDsHYoRjM2VTbVKVMEcM5gtBz99JWw+WOQ==", "reg-log"=>"on", "user"=>{"first"=>"mp3", "last"=>"", "username"=>"mp3@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp3@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first", "last", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "mp3@gmail.com"], ["password_digest", "$2a$12$FB/ebiRpBKQCERGoOTjuwuvm1mYsUa/SC6gXGwC5Pfq.l8uaoPT4m"], ["first", "mp3"], ["last", ""], ["created_at", "2022-01-23 01:48:57.489066"], ["updated_at", "2022-01-23 01:48:57.489066"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 359ms (ActiveRecord: 12.1ms | Allocations: 3286)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-22 19:48:57 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 43611)
+Completed 200 OK in 66ms (Views: 62.0ms | ActiveRecord: 0.2ms | Allocations: 46360)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-22 19:48:59 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.4ms | Allocations: 1275)
+  Rendered products/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1619)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 44728)
+Completed 200 OK in 72ms (Views: 54.0ms | ActiveRecord: 1.9ms | Allocations: 50948)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-01-22 19:49:02 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TKhjRcHzXkVZ0btjLQ8tuF5HRWqt7GZJbbc5qPWqXLrsZpCCXdxGoOb0gLxwt94XByK0Qcw/oSsKtl5gPlSCzA==", "product"=>{"title"=>"das", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f446b274960 @tempfile=#<Tempfile:/tmp/RackMultipart20220122-1613-ce55qn.PNG>, @original_filename="210.PNG", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"210.PNG\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (4.1ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "das"], ["created_at", "2022-01-23 01:49:02.843114"], ["updated_at", "2022-01-23 01:49:02.843114"]]
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (4.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "aqy0di5ad4ykchy41ik38sy91hdf"], ["filename", "210.PNG"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 145551], ["checksum", "m78gw9OA5H+Pv1eMKspaZA=="], ["created_at", "2022-01-23 01:49:02.858729"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 15], ["blob_id", 6], ["created_at", "2022-01-23 01:49:02.864200"]]
+  [1m[36mProduct Update (3.8ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-01-23 01:49:02.865551"], ["id", 15]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (4.9ms) [0m[32mUploaded file to key: aqy0di5ad4ykchy41ik38sy91hdf (checksum: m78gw9OA5H+Pv1eMKspaZA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 42a1c6e4-d736-48b6-a442-ba2661d75e79) to Async(default) with arguments: #<GlobalID:0x00007f446a682170 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/6>>
+Redirected to http://localhost:3000/products/15
+Completed 302 Found in 117ms (ActiveRecord: 18.6ms | Allocations: 31498)
+
+
+Started GET "/products/15" for 127.0.0.1 at 2022-01-22 19:49:02 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mActiveStorage::Blob Load (7.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [42a1c6e4-d736-48b6-a442-ba2661d75e79] Performing ActiveStorage::AnalyzeJob (Job ID: 42a1c6e4-d736-48b6-a442-ba2661d75e79) from Async(default) enqueued at 2022-01-23T01:49:02Z with arguments: #<GlobalID:0x00007f44641412e8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/6>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [42a1c6e4-d736-48b6-a442-ba2661d75e79] [36m  Disk Storage (5.6ms) [0m[34mDownloaded file from key: aqy0di5ad4ykchy41ik38sy91hdf[0m
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [42a1c6e4-d736-48b6-a442-ba2661d75e79]   [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [42a1c6e4-d736-48b6-a442-ba2661d75e79]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":925,\"height\":616,\"analyzed\":true}"], ["id", 6]]
+  Rendered products/show.html.erb within layouts/application (Duration: 104.0ms | Allocations: 9795)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [42a1c6e4-d736-48b6-a442-ba2661d75e79]   [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [42a1c6e4-d736-48b6-a442-ba2661d75e79] Performed ActiveStorage::AnalyzeJob (Job ID: 42a1c6e4-d736-48b6-a442-ba2661d75e79) from Async(default) in 138.86ms
+  Rendered layout layouts/application.html.erb (Duration: 154.5ms | Allocations: 53433)
+Completed 200 OK in 188ms (Views: 153.4ms | ActiveRecord: 14.0ms | Allocations: 60432)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b54ad1970c9c2b89fd6385aeb1c7aae643a4305d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/210.PNG" for 127.0.0.1 at 2022-01-22 19:49:03 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as */*
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b54ad1970c9c2b89fd6385aeb1c7aae643a4305d", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"210"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/aqy0di5ad4ykchy41ik38sy91hdf/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (5.4ms) [0m[34mDownloaded file from key: aqy0di5ad4ykchy41ik38sy91hdf[0m
+[36m  Disk Storage (3.5ms) [0m[32mUploaded file to key: variants/aqy0di5ad4ykchy41ik38sy91hdf/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: variants/aqy0di5ad4ykchy41ik38sy91hdf/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZWEY1TUdScE5XRmtOSGxyWTJoNU5ERnBhek00YzNrNU1XaGtaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MDMuMjA5WiIsInB1ciI6ImJsb2Jfa2V5In19--e7ef904ec212969ad940f5212832d1bf4672d444/210.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZWEY1TUdScE5XRmtOSGxyWTJoNU5ERnBhek00YzNrNU1XaGtaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MDMuMjA5WiIsInB1ciI6ImJsb2Jfa2V5In19--e7ef904ec212969ad940f5212832d1bf4672d444/210.png
+Completed 302 Found in 61ms (ActiveRecord: 0.2ms | Allocations: 4318)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZWEY1TUdScE5XRmtOSGxyWTJoNU5ERnBhek00YzNrNU1XaGtaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MDMuMjA5WiIsInB1ciI6ImJsb2Jfa2V5In19--e7ef904ec212969ad940f5212832d1bf4672d444/210.png" for 127.0.0.1 at 2022-01-22 19:49:03 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZWEY1TUdScE5XRmtOSGxyWTJoNU5ERnBhek00YzNrNU1XaGtaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MDMuMjA5WiIsInB1ciI6ImJsb2Jfa2V5In19--e7ef904ec212969ad940f5212832d1bf4672d444", "filename"=>"210"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1428)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-22 19:49:04 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1237)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 44347)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.2ms | Allocations: 46046)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-22 19:49:05 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 43211)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 45240)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-01-22 19:49:06 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 740)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 43849)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 45907)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-01-22 19:49:14 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dynrrbm0WDDG/a/RdItDFsclXMTgD5WjNH9vuIP6wAWv5xhqJZtA1XnYlA4pM7C5nkCt74HcUsFTfghwSAQecw==", "session"=>{"username"=>"mp3@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp3@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 171ms (ActiveRecord: 0.4ms | Allocations: 1535)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-22 19:49:14 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 43269)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.4ms | Allocations: 45028)
+
+
+Started GET "/editprofile" for 127.0.0.1 at 2022-01-22 19:49:16 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 44243)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.3ms | Allocations: 46124)
+
+
+Started PATCH "/users/5" for 127.0.0.1 at 2022-01-22 19:49:20 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sKLgTm5oxAgo930ko6DbJ6rqd63PkGj5hwdpsfDF63gQbBOJ8kfc7ZfSRvv+GCiI84+Ghq5Dr5vgBg55Ozs1Dg==", "user"=>{"first"=>"mp4", "username"=>"mp3@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "first" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["first", "mp4"], ["updated_at", "2022-01-23 01:49:20.093861"], ["id", 5]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 10ms (ActiveRecord: 5.8ms | Allocations: 2135)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-22 19:49:20 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 43265)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.3ms | Allocations: 45044)
+
+
+Started GET "/editprofile" for 127.0.0.1 at 2022-01-22 19:49:28 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 752)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 43863)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.3ms | Allocations: 45640)
+
+
+Started PATCH "/users/5" for 127.0.0.1 at 2022-01-22 19:49:28 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/rgjgnapVZqR5HGtz9i0+/zOuvyJCA96c0deXoRfmOhedtBF6oZNfy7BSnKSYEdUpatL1+jbyBgURjmWT6FGng==", "user"=>{"first"=>"mp4", "username"=>"mp3@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1726)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-01-22 19:49:28 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 43264)
+Completed 200 OK in 60ms (Views: 49.9ms | ActiveRecord: 0.2ms | Allocations: 45044)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-01-22 19:49:29 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 0.7ms | Allocations: 689)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 43884)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 45428)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-01-22 19:49:30 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 945)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 44056)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms | Allocations: 45593)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-22 19:49:31 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 43118)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 44617)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-01-22 19:49:32 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 9], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4222)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 47334)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 2.2ms | Allocations: 48975)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-22 19:49:32 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/zk1p3dl0rt2gvqkb145ayjwe1nai/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: zk1p3dl0rt2gvqkb145ayjwe1nai[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2636)
+
+
+  
+ActiveStorage::FileNotFoundError (ActiveStorage::FileNotFoundError):
+  
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:145:in `rescue in stream'
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:138:in `stream'
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:29:in `block in download'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+activestorage (6.1.4.4) lib/active_storage/service.rb:155:in `instrument'
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:28:in `download'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:32:in `download'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:13:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZWEY1TUdScE5XRmtOSGxyWTJoNU5ERnBhek00YzNrNU1XaGtaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MDMuMjA5WiIsInB1ciI6ImJsb2Jfa2V5In19--e7ef904ec212969ad940f5212832d1bf4672d444/210.png" for 127.0.0.1 at 2022-01-22 19:49:32 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZZWEY1TUdScE5XRmtOSGxyWTJoNU5ERnBhek00YzNrNU1XaGtaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MDMuMjA5WiIsInB1ciI6ImJsb2Jfa2V5In19--e7ef904ec212969ad940f5212832d1bf4672d444", "filename"=>"210"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 1455)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-01-22 19:49:32 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/44ovkv37h8gy44wlgxcdfqu3psl5/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 44ovkv37h8gy44wlgxcdfqu3psl5[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2696)
+
+
+  
+ActiveStorage::FileNotFoundError (ActiveStorage::FileNotFoundError):
+  
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:145:in `rescue in stream'
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:138:in `stream'
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:29:in `block in download'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+activestorage (6.1.4.4) lib/active_storage/service.rb:155:in `instrument'
+activestorage (6.1.4.4) lib/active_storage/service/disk_service.rb:28:in `download'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:32:in `download'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:13:in `block in open'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:24:in `open_tempfile'
+activestorage (6.1.4.4) lib/active_storage/downloader.rb:12:in `open'
+activestorage (6.1.4.4) lib/active_storage/service.rb:90:in `open'
+activestorage (6.1.4.4) app/models/active_storage/blob.rb:276:in `open'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:112:in `process'
+activestorage (6.1.4.4) app/models/active_storage/variant.rb:64:in `processed'
+activestorage (6.1.4.4) app/controllers/active_storage/representations/base_controller.rb:10:in `set_representation'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.4.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.4) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.4) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.4) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.4) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.4) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d594defd0fc50508e3433dcf8e6904e6803c19e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/210.PNG" for 127.0.0.1 at 2022-01-22 19:49:32 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as */*
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d594defd0fc50508e3433dcf8e6904e6803c19e", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"210"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mChecked if file exists at key: variants/4hhljdwiymtzdoefwz4slfncktt3/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (yes)[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/4hhljdwiymtzdoefwz4slfncktt3/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOR2hvYkdwa2QybDViWFI2Wkc5bFpuZDZOSE5zWm01amEzUjBNeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MzIuNjQ4WiIsInB1ciI6ImJsb2Jfa2V5In19--155de06e8ebfa0cda1b8bd0dfb691ef63b45a03d/210.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOR2hvYkdwa2QybDViWFI2Wkc5bFpuZDZOSE5zWm01amEzUjBNeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MzIuNjQ4WiIsInB1ciI6ImJsb2Jfa2V5In19--155de06e8ebfa0cda1b8bd0dfb691ef63b45a03d/210.png
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 4446)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOR2hvYkdwa2QybDViWFI2Wkc5bFpuZDZOSE5zWm01amEzUjBNeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MzIuNjQ4WiIsInB1ciI6ImJsb2Jfa2V5In19--155de06e8ebfa0cda1b8bd0dfb691ef63b45a03d/210.png" for 127.0.0.1 at 2022-01-22 19:49:32 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOR2hvYkdwa2QybDViWFI2Wkc5bFpuZDZOSE5zWm01amEzUjBNeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJNWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaU1qRXdMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0Njbk1qRXdMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDEtMjNUMDE6NTQ6MzIuNjQ4WiIsInB1ciI6ImJsb2Jfa2V5In19--155de06e8ebfa0cda1b8bd0dfb691ef63b45a03d", "filename"=>"210"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1620)
+
+
