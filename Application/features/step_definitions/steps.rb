@@ -47,6 +47,14 @@ When /^I will sign up with "(.*?)" organization name, "(.*?)" username, and "(.*
     
 end
 
+And /^I will sign up with "(.*?)" "(.*?)", "(.*?)" username, and "(.*?)" password$/ do |first_name, last_name, user, password|
+    fill_in('user_first', with: first_name)
+    fill_in('user_last', with: last_name)
+    fill_in('user_username', with: user)
+    fill_in('user_password', with: password)
+    click_button("login-submit")
+end
+
 Then /^I log in with "(.*?)" username and "(.*?)" password$/ do |user, password|
     # find("#user_username").set(user_name)
     fill_in('session_username', with: user)
