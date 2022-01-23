@@ -32,7 +32,19 @@ Then /^I sign up with "(.*?)" username and "(.*?)" password$/ do |user, password
     # find("#user_username").set(user_name)
     fill_in('user_username', with: user)
     fill_in('user_password', with: password)
-    click_button("Create Account")
+    click_button("CREATE ACCCOUNT")
+end
+
+When /^I will sign up with "(.*?)" organization name, "(.*?)" username, and "(.*?)" password$/ do |organization_name, user, password|
+    within('.card-back') do
+        fill_in('user_first', with: organization_name)
+        fill_in('user_username', with: user)
+        fill_in('user_password', with: password)
+        click_button("login-submit")
+    end
+    # find("#user_username").set(user_name)
+    
+    
 end
 
 Then /^I log in with "(.*?)" username and "(.*?)" password$/ do |user, password|

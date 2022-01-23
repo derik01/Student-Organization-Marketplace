@@ -11,5 +11,6 @@ Scenario: I sign up as an organization
     And I should see "I am trying to sign up as a ..."
     When I select checkbox "reg-log"
     And I should see "Organization"
-    #Then I sign up with "anukhatri@tamu.edu" username and "Howdy123" password
-    #Then I should be on the welcome page
+    When I will sign up with "Aggie Outdoors" organization name, "outdoors@gmail.com" username, and "Howdy123" password
+    Then I should be on the profile page
+    And I should see "You are Logged In, Aggie Outdoors"
