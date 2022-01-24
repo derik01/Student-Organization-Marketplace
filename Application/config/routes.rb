@@ -22,6 +22,9 @@ Rails.application.routes.draw do
 
   delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
+
+  resources :articles
+  resources :member
   # post "/login", to: "articles#welcome"
 
   # post "userinfo", to: ""
