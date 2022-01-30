@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.6.6'
 
+gem 'rails-controller-testing'
+
 gem "image_processing", "~> 1.0"
 
 gem 'active_storage_validations'
@@ -62,9 +64,10 @@ end
 
 group :test do
   gem 'cucumber-rails', :require => false
-  # gem 'rspec-rails'
+  gem 'rspec-rails'
   gem 'webmock'
   gem 'database_cleaner'
+  gem 'simplecov', :require => false
 end
 
 group :production do
