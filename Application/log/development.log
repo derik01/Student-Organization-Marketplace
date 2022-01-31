@@ -44935,3 +44935,1499 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 73ms (Views: 70.9ms | Allocations: 85419)
 
 
+Started GET "/" for ::1 at 2022-01-31 16:21:10 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 5865.2ms | Allocations: 1526603)
+Completed 200 OK in 5885ms (Views: 5870.4ms | ActiveRecord: 0.0ms | Allocations: 1529946)
+
+
+Started GET "/assets/application.self-0dca792acf3c7690337719d1cc9c942297e5343251e3bf201943594d5a74117a.css?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/argon-f1d99972b19f303c6c08dc43c4b3f1c5a78df046d4d5f487463d474b8d720728.css" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for ::1 at 2022-01-31 16:21:16 -0600
+Started GET "/assets/argon.self-d64b8dbe434792dd03bd5d635b1098a6346318b68d3855c897e60239873b662e.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/argon.min.self-b00bee460291fdd6a0c6b599b25e723a2411cf6dcbc9dee48969833534082457.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/bootstrap_js_files.self-4faa6fe4cd331d82c22b39308cfaa0634a36dac7c77a9e2b422f68f96be4cb06.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/charts/chart-bars.self-98b7ae0e503e4c53524d0173536bdeec6b2a9543d80f5be39e939435196fa83e.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/charts/chart-line.self-72799467fe8782159d720167cc75ddad513aebdaa5c661680f5a5188bba25c23.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/charts/chart-bars.self-98b7ae0e503e4c53524d0173536bdeec6b2a9543d80f5be39e939435196fa83e.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/charts/chart-bars.min.self-e3568827845769464e85c4ae457ebf4b1f9738ecc32a211f50f557117dd8f5e1.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/charts/chart-line.self-72799467fe8782159d720167cc75ddad513aebdaa5c661680f5a5188bba25c23.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/charts/chart-line.min.self-afea91b7a6a09c2c87ab43d8dbe898590a4ab2b80969408ff3b16c95cf81d2c8.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/chart-init.self-44aec85fc2f3fadbcf317b5b6a9f010578d8c387ec2b36e7f256e797571ad4f6.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/custom/form-control.min.self-5f8360274c14fa23a6dd35951e4e680b94f1b1b5f50b98e41767b6ff8ddc9a61.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/custom/form-control.self-76e0e956cac1e66741d67716765702d60d1ba6ab38fb6dc95bd87fb97eb74f87.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/chart-init.min.self-0c62395ca66aa912161f054df30354070750b18df12f2ac1f2dbe7ae1aa958e8.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/copy-icon.self-3ba12c78e674b40715596794369665a6fa2eb06a4389f040f47da92f43c6d420.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/copy-icon.min.self-8c7894752891260851a5aff29cc7da6e0fc8724ea4b06a2615dbc53a281dba96.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/navbar.self-6068de9c09cd9cece593de893cf9242e7c9d5a8542ee461f930dfeff5cd9cf4f.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/navbar.min.self-afc2c2c52062e2dfba652d1a05fc781bda2d524864e9398c6f9176b1c5031f1c.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/popover.self-383d014a6fb19e993a39715f026c56240542221b0e266581a2533fbe43a1f3e6.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/popover.min.self-d70d3ff9d244d4f3018be58e25e8c00a1125feba78dc9d92f38e9ebadfd5d070.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/scroll-to.self-cc120fc8358c3ab38c540ea215114c7673af489de373ea10f9ab51c6c11dc177.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/scroll-to.min.self-3930b6cd2c63ef2cc7e05f46f39682abb005f3f6e820bd7dcf4089650a5d594b.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/tooltip.self-db30fd86d5eaa9056970a6c9c44465ae850723b7e2fe82c9ae44323f733e9ee4.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/init/tooltip.min.self-d00f85c4279db058f83075e3686b3b7e4ed3e4ecd1182c8c352ee664cb53deca.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/vendor/bootstrap-datepicker.self-5985b41e27ab99584de9938fcc4a4888e535de245dcf1617e6dff3b6cde6c813.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/maps/maps-default.min.self-b6fcbf4e7ebd93167465b80cdbefd326f8978a7caeb0b903b32bfff2e07a157c.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/maps/maps-default.self-da6c723ba04df397d9ddca6329593da58e35f5781b2e67484135ecaed7cff474.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/vendor/bootstrap-datepicker.min.self-b2f273760c3aaaeef02a38cf8b5f7df4b8976bf5be62ddbbd273611a2d7fbf2e.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/vendor/nouislider.self-83d42cbf2eb83028f1d2aaae91c6254b0b884f67e52f420ef8fd744875de5b3e.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/vendor/nouislider.min.self-28897a2cc692b92a316e65362fdd681f28ed70ba719d791a8977be6f64094241.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/vendor/scrollbar.self-f66999fa811503514c5b69828728c35a819cc3d5ee584552c473f6d6e5bb717c.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/components/vendor/scrollbar.min.self-b493ceb3760ddd7ba11cc7c1bb835ce4a247acff0ec0c10d0d671d7ce8859197.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/jquery3.self-2a83d06853bd343c7bfc2e5d4539814cfa934676e2948ed348311435eca862f5.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2022-01-31 16:21:17 -0600
+Started GET "/dashboard" for ::1 at 2022-01-31 16:41:18 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 1.4ms | Allocations: 589)
+  Rendered layout layouts/dashboard.html.erb (Duration: 18.0ms | Allocations: 9999)
+Completed 200 OK in 21ms (Views: 19.2ms | Allocations: 11878)
+
+
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 16:41:18 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 16:41:18 -0600
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 16:41:18 -0600
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:41:18 -0600
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:41:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 16:41:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:41:19 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 16:41:19 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 16:41:19 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 16:41:19 -0600
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:41:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:41:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:41:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/dashboard" for ::1 at 2022-01-31 16:44:23 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 1.1ms | Allocations: 584)
+  Rendered layout layouts/dashboard.html.erb (Duration: 10.0ms | Allocations: 9738)
+Completed 200 OK in 13ms (Views: 11.7ms | Allocations: 11669)
+
+
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 16:44:23 -0600
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 16:44:23 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 16:44:23 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 16:44:23 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:44:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:44:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:44:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:44:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:44:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:44:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/views/articles/products.html.erb" for ::1 at 2022-01-31 16:44:32 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/views/articles/products.html.erb"):
+  
+Started GET "/dashboard" for ::1 at 2022-01-31 16:50:16 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 0.9ms | Allocations: 571)
+  Rendered layout layouts/dashboard.html.erb (Duration: 9.7ms | Allocations: 9691)
+Completed 200 OK in 13ms (Views: 11.2ms | Allocations: 11547)
+
+
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 16:50:16 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 16:50:16 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 16:50:16 -0600
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 16:50:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:50:16 -0600
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:50:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 16:50:17 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 16:50:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 16:50:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 16:50:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 16:50:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started GET "/products" for ::1 at 2022-01-31 16:50:18 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 54.7ms | Allocations: 6421)
+  Rendered layout layouts/application.html.erb (Duration: 161.0ms | Allocations: 89700)
+Completed 200 OK in 177ms (Views: 162.7ms | ActiveRecord: 13.4ms | Allocations: 94489)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 16:50:33 -0600
+Processing by UsersController#show as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1439)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-31 16:50:33 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 32.0ms | Allocations: 7470)
+  Rendered layout layouts/application.html.erb (Duration: 123.2ms | Allocations: 90637)
+Completed 200 OK in 126ms (Views: 124.5ms | ActiveRecord: 0.0ms | Allocations: 92722)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 16:51:48 -0600
+Processing by UsersController#show as HTML
+Redirected to http://localhost:3000/sign_in
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-31 16:51:48 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 697)
+  Rendered layout layouts/application.html.erb (Duration: 65.7ms | Allocations: 84026)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms | Allocations: 86328)
+
+
+Started GET "/" for ::1 at 2022-01-31 16:54:19 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 83311)
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.0ms | Allocations: 85092)
+
+
+Started GET "/signup" for ::1 at 2022-01-31 16:54:25 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2339)
+  Rendered layout layouts/application.html.erb (Duration: 88.7ms | Allocations: 85506)
+Completed 200 OK in 109ms (Views: 90.8ms | ActiveRecord: 3.4ms | Allocations: 92959)
+
+
+Started POST "/users" for ::1 at 2022-01-31 16:54:39 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K2UYeUCte+LHrAxONe8k6aE/3Rtbf1+L90HttqzGnVPiJg82OhoGwhgesHaT2mFR+NuZ5P8zNMPcSSitgDIiwQ==", "reg-log"=>"on", "user"=>{"first"=>"wranglers", "last"=>"", "username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 273ms (ActiveRecord: 0.9ms | Allocations: 2398)
+
+
+Started GET "/signup" for ::1 at 2022-01-31 16:54:40 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1519)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 84687)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms | Allocations: 86237)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-31 16:54:47 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 84.5ms | Allocations: 83507)
+Completed 200 OK in 86ms (Views: 85.1ms | ActiveRecord: 0.0ms | Allocations: 85007)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-31 16:54:57 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T9CgL2Qbtn5UzetxIpDPUv8vr/dnQNEVysOX82QcYiSGk7dgHqzLXot/V0mEpYrqpsvrCMMMul3hy1LoSOjdtg==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 265ms (ActiveRecord: 0.5ms | Allocations: 1530)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 16:54:57 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 83504)
+Completed 200 OK in 59ms (Views: 54.3ms | ActiveRecord: 0.5ms | Allocations: 85624)
+
+
+Started GET "/editprofile" for ::1 at 2022-01-31 16:55:03 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1111)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 84277)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.5ms | Allocations: 86158)
+
+
+Started GET "/dashboard" for ::1 at 2022-01-31 16:55:29 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 0.6ms | Allocations: 571)
+  Rendered layout layouts/dashboard.html.erb (Duration: 9.8ms | Allocations: 9686)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 11520)
+
+
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 16:55:29 -0600
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 16:55:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 16:55:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 16:55:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 16:55:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 16:55:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/editprofile" for ::1 at 2022-01-31 16:55:33 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 761)
+  Rendered layout layouts/application.html.erb (Duration: 89.5ms | Allocations: 83930)
+Completed 200 OK in 93ms (Views: 90.0ms | ActiveRecord: 0.3ms | Allocations: 85685)
+
+
+Started GET "/views/articles/members.html.erb" for ::1 at 2022-01-31 17:00:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/views/articles/members.html.erb"):
+  
+Started GET "/sign_in" for ::1 at 2022-01-31 17:00:12 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 690)
+  Rendered layout layouts/application.html.erb (Duration: 63.5ms | Allocations: 84018)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.0ms | Allocations: 86258)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-31 17:00:18 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FW9z+xqJtAnvHu85GWwoIgiyuHMgjiIUMydtexA5djvcLGS0YD7JKTCsUwG/WW2aUVb8jITCSVwYL6hgPM3JqQ==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 262ms (ActiveRecord: 0.4ms | Allocations: 1538)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 17:00:19 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 320)
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 83487)
+Completed 200 OK in 83ms (Views: 79.9ms | ActiveRecord: 0.5ms | Allocations: 85769)
+
+
+Started GET "/editprofile" for ::1 at 2022-01-31 17:00:20 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1036)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 84202)
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 0.4ms | Allocations: 86083)
+
+
+Started GET "/dashboard" for ::1 at 2022-01-31 17:00:24 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 0.7ms | Allocations: 570)
+  Rendered layout layouts/dashboard.html.erb (Duration: 7.9ms | Allocations: 9685)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 11526)
+
+
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 17:00:24 -0600
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 17:00:24 -0600
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 17:00:24 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 17:00:24 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:00:24 -0600
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:00:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:00:25 -0600
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:00:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:00:53 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:00:53 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:00:53 -0600
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:00:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:00:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started POST "/sign_in" for ::1 at 2022-01-31 17:03:20 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FW9z+xqJtAnvHu85GWwoIgiyuHMgjiIUMydtexA5djvcLGS0YD7JKTCsUwG/WW2aUVb8jITCSVwYL6hgPM3JqQ==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 271ms (ActiveRecord: 3.3ms | Allocations: 6435)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 17:03:21 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 83651)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.4ms | Allocations: 86403)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-31 17:04:08 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FW9z+xqJtAnvHu85GWwoIgiyuHMgjiIUMydtexA5djvcLGS0YD7JKTCsUwG/WW2aUVb8jITCSVwYL6hgPM3JqQ==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 269ms (ActiveRecord: 3.3ms | Allocations: 6377)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 17:04:08 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 104.0ms | Allocations: 83332)
+Completed 200 OK in 109ms (Views: 104.8ms | ActiveRecord: 0.4ms | Allocations: 85476)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-31 17:04:29 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 696)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 83862)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.0ms | Allocations: 85891)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-31 17:04:39 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QxNPN9BnqkewUT2fVZbde7vTFVzOdei0OswhSyRuOHmKUFh4qtDXZ2/jgafzo5jD4jdRo2o5g/wRxORQCJqH6w==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 279ms (ActiveRecord: 0.3ms | Allocations: 1526)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 17:04:40 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 77.6ms | Allocations: 83325)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.4ms | Allocations: 85079)
+
+
+Started GET "/" for ::1 at 2022-01-31 17:06:10 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 4145.6ms | Allocations: 1437718)
+Completed 200 OK in 4163ms (Views: 4150.2ms | ActiveRecord: 0.0ms | Allocations: 1441061)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/application.self-0dca792acf3c7690337719d1cc9c942297e5343251e3bf201943594d5a74117a.css?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/argon-f1d99972b19f303c6c08dc43c4b3f1c5a78df046d4d5f487463d474b8d720728.css" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/argon.self-d64b8dbe434792dd03bd5d635b1098a6346318b68d3855c897e60239873b662e.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/argon.min.self-b00bee460291fdd6a0c6b599b25e723a2411cf6dcbc9dee48969833534082457.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/charts/chart-bars.self-98b7ae0e503e4c53524d0173536bdeec6b2a9543d80f5be39e939435196fa83e.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/bootstrap_js_files.self-4faa6fe4cd331d82c22b39308cfaa0634a36dac7c77a9e2b422f68f96be4cb06.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/charts/chart-line.self-72799467fe8782159d720167cc75ddad513aebdaa5c661680f5a5188bba25c23.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/charts/chart-bars.self-98b7ae0e503e4c53524d0173536bdeec6b2a9543d80f5be39e939435196fa83e.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/charts/chart-bars.min.self-e3568827845769464e85c4ae457ebf4b1f9738ecc32a211f50f557117dd8f5e1.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/charts/chart-line.self-72799467fe8782159d720167cc75ddad513aebdaa5c661680f5a5188bba25c23.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/charts/chart-line.min.self-afea91b7a6a09c2c87ab43d8dbe898590a4ab2b80969408ff3b16c95cf81d2c8.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/custom/form-control.self-76e0e956cac1e66741d67716765702d60d1ba6ab38fb6dc95bd87fb97eb74f87.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/custom/form-control.min.self-5f8360274c14fa23a6dd35951e4e680b94f1b1b5f50b98e41767b6ff8ddc9a61.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/init/chart-init.self-44aec85fc2f3fadbcf317b5b6a9f010578d8c387ec2b36e7f256e797571ad4f6.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/init/chart-init.min.self-0c62395ca66aa912161f054df30354070750b18df12f2ac1f2dbe7ae1aa958e8.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/init/copy-icon.self-3ba12c78e674b40715596794369665a6fa2eb06a4389f040f47da92f43c6d420.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/init/copy-icon.min.self-8c7894752891260851a5aff29cc7da6e0fc8724ea4b06a2615dbc53a281dba96.js?body=1" for ::1 at 2022-01-31 17:06:14 -0600
+Started GET "/assets/components/init/navbar.self-6068de9c09cd9cece593de893cf9242e7c9d5a8542ee461f930dfeff5cd9cf4f.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/navbar.min.self-afc2c2c52062e2dfba652d1a05fc781bda2d524864e9398c6f9176b1c5031f1c.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/popover.self-383d014a6fb19e993a39715f026c56240542221b0e266581a2533fbe43a1f3e6.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/popover.min.self-d70d3ff9d244d4f3018be58e25e8c00a1125feba78dc9d92f38e9ebadfd5d070.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/scroll-to.self-cc120fc8358c3ab38c540ea215114c7673af489de373ea10f9ab51c6c11dc177.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/scroll-to.min.self-3930b6cd2c63ef2cc7e05f46f39682abb005f3f6e820bd7dcf4089650a5d594b.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/tooltip.self-db30fd86d5eaa9056970a6c9c44465ae850723b7e2fe82c9ae44323f733e9ee4.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/init/tooltip.min.self-d00f85c4279db058f83075e3686b3b7e4ed3e4ecd1182c8c352ee664cb53deca.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/maps/maps-default.self-da6c723ba04df397d9ddca6329593da58e35f5781b2e67484135ecaed7cff474.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/maps/maps-default.min.self-b6fcbf4e7ebd93167465b80cdbefd326f8978a7caeb0b903b32bfff2e07a157c.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/vendor/bootstrap-datepicker.self-5985b41e27ab99584de9938fcc4a4888e535de245dcf1617e6dff3b6cde6c813.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/vendor/bootstrap-datepicker.min.self-b2f273760c3aaaeef02a38cf8b5f7df4b8976bf5be62ddbbd273611a2d7fbf2e.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/vendor/nouislider.self-83d42cbf2eb83028f1d2aaae91c6254b0b884f67e52f420ef8fd744875de5b3e.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/vendor/nouislider.min.self-28897a2cc692b92a316e65362fdd681f28ed70ba719d791a8977be6f64094241.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/vendor/scrollbar.self-f66999fa811503514c5b69828728c35a819cc3d5ee584552c473f6d6e5bb717c.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/components/vendor/scrollbar.min.self-b493ceb3760ddd7ba11cc7c1bb835ce4a247acff0ec0c10d0d671d7ce8859197.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/jquery3.self-2a83d06853bd343c7bfc2e5d4539814cfa934676e2948ed348311435eca862f5.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2022-01-31 17:06:15 -0600
+Started GET "/sign_in" for ::1 at 2022-01-31 17:06:17 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 31.3ms | Allocations: 7674)
+  Rendered layout layouts/application.html.erb (Duration: 120.4ms | Allocations: 91073)
+Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 0.0ms | Allocations: 93246)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-31 17:06:24 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R6GRgD53OdYcosIkOamQ2dhIizl3jvqYTb6278NS1Qh6WJRPvtU19cthx1Q6nBp3nFcSmGk0isPthofOBTlmFg==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 284ms (ActiveRecord: 4.3ms | Allocations: 8264)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 17:06:25 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 109.3ms | Allocations: 83506)
+Completed 200 OK in 117ms (Views: 111.6ms | ActiveRecord: 0.3ms | Allocations: 86053)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-31 17:08:01 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R6GRgD53OdYcosIkOamQ2dhIizl3jvqYTb6278NS1Qh6WJRPvtU19cthx1Q6nBp3nFcSmGk0isPthofOBTlmFg==", "session"=>{"username"=>"aggiewranglers", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aggiewranglers"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 270ms (ActiveRecord: 2.9ms | Allocations: 6416)
+
+
+Started GET "/profile" for ::1 at 2022-01-31 17:08:02 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 0.7ms | Allocations: 587)
+  Rendered layout layouts/dashboard.html.erb (Duration: 7.0ms | Allocations: 9712)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 11546)
+
+
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:08:02 -0600
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:08:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/editprofile" for ::1 at 2022-01-31 17:08:06 -0600
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1533)
+  Rendered layout layouts/application.html.erb (Duration: 104.1ms | Allocations: 84734)
+Completed 200 OK in 109ms (Views: 104.9ms | ActiveRecord: 0.3ms | Allocations: 87229)
+
+
+Started GET "/dashboard" for ::1 at 2022-01-31 17:08:15 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/dashboard.html.erb (Duration: 7.8ms | Allocations: 9021)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 10501)
+
+
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 17:08:15 -0600
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 17:08:15 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 17:08:15 -0600
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 17:08:15 -0600
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:08:15 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:08:15 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:08:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started GET "/products" for ::1 at 2022-01-31 17:08:18 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 86070)
+Completed 200 OK in 87ms (Views: 72.4ms | ActiveRecord: 2.5ms | Allocations: 90287)
+
+
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:08:18 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:08:18 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:08:18 -0600
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:08:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:08:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:10:26 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:10:26 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:10:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/products" for ::1 at 2022-01-31 17:10:27 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:10:27 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:10:27 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 769)
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:10:28 -0600
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:10:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:10:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 284.1ms | Allocations: 260558)
+Completed 200 OK in 290ms (Views: 287.2ms | ActiveRecord: 0.7ms | Allocations: 262896)
+
+
+Started GET "/dashboard" for ::1 at 2022-01-31 17:10:29 -0600
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:10:29 -0600
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:10:30 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 1.5ms | Allocations: 588)
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:10:30 -0600
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+  Rendered layout layouts/dashboard.html.erb (Duration: 68.8ms | Allocations: 51693)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 53582)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 17:10:30 -0600
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:10:30 -0600
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:10:30 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:10:30 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:10:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/products" for ::1 at 2022-01-31 17:10:43 -0600
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:10:43 -0600
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:10:43 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 458)
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:10:43 -0600
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:10:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:10:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 274.7ms | Allocations: 260186)
+Completed 200 OK in 276ms (Views: 274.9ms | ActiveRecord: 0.5ms | Allocations: 261721)
+
+
+Started GET "/products/new" for ::1 at 2022-01-31 17:10:45 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+Started GET "/products/favicon.ico" for ::1 at 2022-01-31 17:10:45 -0600
+  Rendered products/_form.html.erb (Duration: 6.0ms | Allocations: 1493)
+  Rendered products/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1983)
+Processing by ProductsController#show as */*
+  Parameters: {"id"=>"favicon"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 4419)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=favicon):
+  
+app/controllers/products_controller.rb:74:in `set_product'
+  Rendered layout layouts/application.html.erb (Duration: 151.1ms | Allocations: 176677)
+Completed 200 OK in 155ms (Views: 151.7ms | ActiveRecord: 0.0ms | Allocations: 179157)
+
+
+Started POST "/products" for ::1 at 2022-01-31 17:10:53 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yWekOBzQvIzfH7Nsz1iitlBUU+SbqdxLkzaBd4QejKz0nqH3nHKwrwjcthzMbSgYFEvKRYUTrBAzDrBWQnU/sg==", "product"=>{"title"=>"ATM tee", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f99ce6faaf8 @tempfile=#<Tempfile:/var/folders/qg/32s190ds76s_9lbkqwk172d40000gn/T/RackMultipart20220131-15159-akilml.jpg>, @original_filename="agtee.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"agtee.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (3.2ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "ATM tee"], ["created_at", "2022-01-31 23:10:53.763852"], ["updated_at", "2022-01-31 23:10:53.763852"]]
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (4.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "3aijzkj3lqmxchq7qnju8o7ayksw"], ["filename", "agtee.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 49743], ["checksum", "CHonaNl/nvPlVgAHZb8I2A=="], ["created_at", "2022-01-31 23:10:53.775184"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (3.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 6], ["blob_id", 2], ["created_at", "2022-01-31 23:10:53.780567"]]
+  [1m[36mProduct Update (4.4ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-01-31 23:10:53.785480"], ["id", 6]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (3.0ms) [0m[32mUploaded file to key: 3aijzkj3lqmxchq7qnju8o7ayksw (checksum: CHonaNl/nvPlVgAHZb8I2A==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 02cb6937-56d3-405b-a1a3-0e27deb88f0e) to Async(default) with arguments: #<GlobalID:0x00007f99c4cb1488 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 131ms (ActiveRecord: 25.4ms | Allocations: 33567)
+
+
+Started GET "/products/6" for ::1 at 2022-01-31 17:10:53 -0600
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02cb6937-56d3-405b-a1a3-0e27deb88f0e] Performing ActiveStorage::AnalyzeJob (Job ID: 02cb6937-56d3-405b-a1a3-0e27deb88f0e) from Async(default) enqueued at 2022-01-31T23:10:53Z with arguments: #<GlobalID:0x00007f99c4f79eb8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02cb6937-56d3-405b-a1a3-0e27deb88f0e] [36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 3aijzkj3lqmxchq7qnju8o7ayksw[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02cb6937-56d3-405b-a1a3-0e27deb88f0e]   [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mBEGIN[0m
+  Rendered products/show.html.erb within layouts/application (Duration: 813.5ms | Allocations: 3452)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02cb6937-56d3-405b-a1a3-0e27deb88f0e]   [1m[36mActiveStorage::Blob Update (12.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":1000,\"height\":1000,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02cb6937-56d3-405b-a1a3-0e27deb88f0e]   [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02cb6937-56d3-405b-a1a3-0e27deb88f0e] Performed ActiveStorage::AnalyzeJob (Job ID: 02cb6937-56d3-405b-a1a3-0e27deb88f0e) from Async(default) in 927.66ms
+  Rendered layout layouts/application.html.erb (Duration: 884.5ms | Allocations: 87071)
+Completed 200 OK in 980ms (Views: 884.2ms | ActiveRecord: 34.0ms | Allocations: 100819)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/agtee.jpg" for ::1 at 2022-01-31 17:10:54 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"agtee"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.1ms) [0m[34mChecked if file exists at key: variants/3aijzkj3lqmxchq7qnju8o7ayksw/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 3aijzkj3lqmxchq7qnju8o7ayksw[0m
+[36m  Disk Storage (0.4ms) [0m[32mUploaded file to key: variants/3aijzkj3lqmxchq7qnju8o7ayksw/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: variants/3aijzkj3lqmxchq7qnju8o7ayksw/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNMkZwYW5wcmFqTnNjVzE0WTJoeE4zRnVhblU0YnpkaGVXdHpkeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVlXZDBaV1V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhaM1JsWlM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAxLTMxVDIzOjE1OjU1LjAxNVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--85668e30382e62929baa17e5884d575958ed19e1/agtee.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNMkZwYW5wcmFqTnNjVzE0WTJoeE4zRnVhblU0YnpkaGVXdHpkeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVlXZDBaV1V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhaM1JsWlM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAxLTMxVDIzOjE1OjU1LjAxNVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--85668e30382e62929baa17e5884d575958ed19e1/agtee.png
+Completed 302 Found in 151ms (ActiveRecord: 0.4ms | Allocations: 4357)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNMkZwYW5wcmFqTnNjVzE0WTJoeE4zRnVhblU0YnpkaGVXdHpkeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVlXZDBaV1V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhaM1JsWlM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAxLTMxVDIzOjE1OjU1LjAxNVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--85668e30382e62929baa17e5884d575958ed19e1/agtee.png" for ::1 at 2022-01-31 17:10:55 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNMkZwYW5wcmFqTnNjVzE0WTJoeE4zRnVhblU0YnpkaGVXdHpkeTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVlXZDBaV1V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhaM1JsWlM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAxLTMxVDIzOjE1OjU1LjAxNVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--85668e30382e62929baa17e5884d575958ed19e1", "filename"=>"agtee"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1427)
+
+
+Started GET "/products/favicon.ico" for ::1 at 2022-01-31 17:10:55 -0600
+Processing by ProductsController#show as */*
+  Parameters: {"id"=>"favicon"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1726)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=favicon):
+  
+app/controllers/products_controller.rb:74:in `set_product'
+Started GET "/products" for ::1 at 2022-01-31 17:11:21 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 83744)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.3ms | Allocations: 85258)
+
+
+Started GET "/dashboard" for ::1 at 2022-01-31 17:13:15 -0600
+Processing by DashboardsController#dashboard as HTML
+  Rendering layout layouts/dashboard.html.erb
+  Rendering dashboards/dashboard.html.erb within layouts/dashboard
+  Rendered dashboards/dashboard.html.erb within layouts/dashboard (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/dashboard.html.erb (Duration: 7.1ms | Allocations: 9023)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 10504)
+
+
+Started GET "/assets/vendor/nucleo/css/nucleo.css" for ::1 at 2022-01-31 17:13:15 -0600
+Started GET "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" for ::1 at 2022-01-31 17:13:15 -0600
+Started GET "/assets/vendor/js-cookie/js.cookie.js" for ::1 at 2022-01-31 17:13:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/nucleo/css/nucleo.css"):
+  
+Started GET "/assets/css/argon.css?v=1.2.0" for ::1 at 2022-01-31 17:13:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"):
+  
+Started GET "/assets/vendor/jquery/dist/jquery.min.js" for ::1 at 2022-01-31 17:13:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/js-cookie/js.cookie.js"):
+  
+Started GET "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" for ::1 at 2022-01-31 17:13:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/argon.css"):
+  
+Started GET "/assets/m_icon.jpg" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery/dist/jquery.min.js"):
+  
+Started GET "/assets/M_White_Thick" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" for ::1 at 2022-01-31 17:13:16 -0600
+Started GET "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" for ::1 at 2022-01-31 17:13:16 -0600
+Started GET "/assets/vendor/chart.js/dist/Chart.min.js" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"):
+  
+Started GET "/assets/vendor/chart.js/dist/Chart.extension.js" for ::1 at 2022-01-31 17:13:16 -0600
+Started GET "/assets/js/argon.js?v=1.2.0" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.min.js"):
+  
+Started GET "/assets/img/theme/team-1.jpg" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/chart.js/dist/Chart.extension.js"):
+  
+Started GET "/assets/img/theme/team-2.jpg" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/js/argon.js"):
+  
+Started GET "/assets/img/theme/team-3.jpg" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-1.jpg"):
+  
+Started GET "/assets/img/theme/team-4.jpg" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-2.jpg"):
+  
+Started GET "/assets/img/theme/team-5.jpg" for ::1 at 2022-01-31 17:13:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/theme/team-5.jpg"):
+  
