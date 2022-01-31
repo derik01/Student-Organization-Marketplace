@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   get "/dashboard", to: "dashboards#dashboard"
 
+  get "/dashboard", to: "dashboards#dashboard"
+
   get "upload", to: "products#new"
   get "profile", to: "users#show"
   post "upload", to: "products#create"

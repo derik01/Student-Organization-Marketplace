@@ -1,6 +1,3 @@
-
-
-Started GET "/" for ::1 at 2021-12-31 13:37:12 +0200
 Processing by ArticlesController#index as HTML
   Rendered articles/index.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 473ms (Views: 468.4ms | ActiveRecord: 0.0ms)
@@ -6642,59 +6639,6 @@ ActionController::RoutingError (No route matches [GET] "/index.html"):
   rack (1.6.13) lib/rack/lock.rb:17:in `call'
   rack (1.6.13) lib/rack/content_length.rb:15:in `call'
   rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
-<<<<<<< HEAD
-  /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
-  /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
-  /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
-
-
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.7ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.3ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.8ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
-  Rendered /Users/mhalcs/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.3ms)
-
-
-Started GET "/" for ::1 at 2022-01-19 18:05:35 -0600
-Processing by ArticlesController#index as HTML
-  Rendered articles/index.html.erb within layouts/application (1.1ms)
-Completed 200 OK in 741ms (Views: 740.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.self-24903d581c2ea6c3d7c89df0f2d9821235b2b6b8c665767c9baec758c536d428.css?body=1" for ::1 at 2022-01-19 18:05:36 -0600
-
-
-Started GET "/" for ::1 at 2022-01-19 18:05:51 -0600
-Processing by ArticlesController#index as HTML
-  Rendered articles/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.self-24903d581c2ea6c3d7c89df0f2d9821235b2b6b8c665767c9baec758c536d428.css?body=1" for ::1 at 2022-01-19 18:05:56 -0600
-
-
-Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2022-01-19 18:05:56 -0600
-
-
-Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2022-01-19 18:05:56 -0600
-
-
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2022-01-19 18:05:56 -0600
-
-
-Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2022-01-19 18:05:56 -0600
-
-
-Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2022-01-19 18:05:56 -0600
-=======
   /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
   /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
   /home/derik0194/.rbenv/versions/2.6.6/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
@@ -41680,47 +41624,6 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 521ms (Views: 514.1ms | ActiveRecord: 0.0ms | Allocations: 52886)
 
 
-<<<<<<< HEAD
->>>>>>> 5a383b1bc72145ae30ae967c473be9fac8eb1806
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1355736032089747140)[0m
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to AddServiceNameToActiveStorageBlobs (20220113092506)
-  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1355736032089747140)[0m
-  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1355736032089747140)[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to CreateUsers (20220101201948)
-  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "first" character varying, "last" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (5.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220101201948"]]
-  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
-Migrating to CreateActiveStorageTables (20220106115021)
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
-  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
-  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
-  [1m[35m (1.4ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
-  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220106115021"]]
-  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
-Migrating to CreateProducts (20220106162617)
-  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220106162617"]]
-  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
-Migrating to AddServiceNameToActiveStorageBlobs (20220113092506)
-  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (4.6ms)[0m  [1m[35mALTER TABLE "active_storage_blobs" ADD "service_name" character varying[0m
-  [1m[36mActiveStorage::Blob Update All (1.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "service_name" = $1[0m  [["service_name", "local"]]
-  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "active_storage_blobs" ALTER COLUMN "service_name" TYPE character varying, ALTER COLUMN "service_name" SET NOT NULL[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220113092506"]]
-  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
-Migrating to CreateActiveStorageVariantRecords (20220113092507)
-  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
-=======
 Started GET "/" for ::1 at 2022-01-17 04:40:45 -0600
   
 ActiveRecord::NoDatabaseError (connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "rubydbapp" does not exist
@@ -41806,147 +41709,10 @@ Migrating to AddServiceNameToActiveStorageBlobs (20220113092506)
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
 Migrating to CreateActiveStorageVariantRecords (20220113092507)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
->>>>>>> f7fa2f3605160e02b1021a3680e3a5eeda384402
   [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
 FOREIGN KEY ("blob_id")
   REFERENCES "active_storage_blobs" ("id")
 )[0m
-<<<<<<< HEAD
-  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220113092507"]]
-  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
-Migrating to AddColumnsToUser (20220113150016)
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "users" ADD "first" character varying[0m
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1355736032089747140)[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1355736032089747140)[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-20 00:26:43.285784"], ["updated_at", "2022-01-20 00:26:43.285784"]]
-  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1355736032089747140)[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/" for ::1 at 2022-01-19 18:27:20 -0600
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ArticlesController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering articles/index.html.erb within layouts/application
-  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 327)
-  Rendered layout layouts/application.html.erb (Duration: 3988.4ms | Allocations: 1978446)
-Completed 200 OK in 4011ms (Views: 3994.3ms | ActiveRecord: 0.0ms | Allocations: 1983387)
-
-
-Started GET "/assets/application.self-f0d3aea04f2643eed466536f772645c20691c28ee55ba3679ffc19d87016b732.css?body=1" for ::1 at 2022-01-19 18:27:24 -0600
-Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2022-01-19 18:27:24 -0600
-Started GET "/signup" for ::1 at 2022-01-19 18:27:29 -0600
-Processing by UsersController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering users/new.html.erb within layouts/application
-  Rendered users/new.html.erb within layouts/application (Duration: 31.2ms | Allocations: 9449)
-  Rendered layout layouts/application.html.erb (Duration: 75.7ms | Allocations: 54977)
-Completed 200 OK in 107ms (Views: 77.1ms | ActiveRecord: 3.9ms | Allocations: 63111)
-
-
-Started POST "/users" for ::1 at 2022-01-19 18:27:46 -0600
-Processing by UsersController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tUdau8+H5oThJrZ3tP6ray7BxUgxBxSEtiRug7HXg45Hrcc/wnKl2mMhs+vgpYQkdQtVOoOFdMaTdlvmNOwNdw==", "reg-log"=>"on", "user"=>{"first"=>"derik", "last"=>"wang", "username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first", "last", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "derik@gmail.com"], ["password_digest", "$2a$12$biK4HvQ9MgVHh1Xw2oB0R.IEPr3guwggpKeUrxKRzjSqaoN613CBO"], ["first", "derik"], ["last", "wang"], ["created_at", "2022-01-20 00:27:47.375620"], ["updated_at", "2022-01-20 00:27:47.375620"]]
-  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 533ms (ActiveRecord: 3.4ms | Allocations: 3289)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:27:47 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 338)
-  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 45840)
-Completed 200 OK in 88ms (Views: 81.1ms | ActiveRecord: 1.2ms | Allocations: 48030)
-
-
-Started GET "/upload" for ::1 at 2022-01-19 18:27:51 -0600
-Processing by ProductsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering products/new.html.erb within layouts/application
-  Rendered products/_form.html.erb (Duration: 3.9ms | Allocations: 1278)
-  Rendered products/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1621)
-  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 47122)
-Completed 200 OK in 57ms (Views: 39.9ms | ActiveRecord: 2.1ms | Allocations: 53440)
-
-
-Started POST "/products" for ::1 at 2022-01-19 18:28:10 -0600
-Processing by ProductsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J2/6+T+ONpC9YjXRYNq/CMLkROFETFzeq6w94g1pVsDVhWd9Mnt1zj9lME00gZBHmS7Uk/bOPJyO/giHiFLYOQ==", "product"=>{"title"=>"hi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe786695f30 @tempfile=#<Tempfile:/var/folders/qg/32s190ds76s_9lbkqwk172d40000gn/T/RackMultipart20220119-25746-pzq58t.jpg>, @original_filename="kyle23.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"kyle23.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
-  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mProduct Create (2.8ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "hi"], ["created_at", "2022-01-20 00:28:10.560622"], ["updated_at", "2022-01-20 00:28:10.560622"]]
-  [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
-  [1m[36mActiveStorage::Blob Create (1.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "q7mzqbs7ogdy5vz8rkugx0pzk63o"], ["filename", "kyle23.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 179290], ["checksum", "bgdBfgCVANPN03k34OQayw=="], ["created_at", "2022-01-20 00:28:10.576105"], ["service_name", "local"]]
-  [1m[36mActiveStorage::Attachment Create (0.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 1], ["blob_id", 1], ["created_at", "2022-01-20 00:28:10.578415"]]
-  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-01-20 00:28:10.580340"], ["id", 1]]
-  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
-[36m  Disk Storage (3.5ms) [0m[32mUploaded file to key: q7mzqbs7ogdy5vz8rkugx0pzk63o (checksum: bgdBfgCVANPN03k34OQayw==)[0m
-[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 868f5bfb-bd62-483a-9570-df5a7cfb446b) to Async(default) with arguments: #<GlobalID:0x00007fe785e7ac88 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/1>>
-Redirected to http://localhost:3000/products/1
-Completed 302 Found in 96ms (ActiveRecord: 17.0ms | Allocations: 33368)
-
-
-Started GET "/products/1" for ::1 at 2022-01-19 18:28:10 -0600
-  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-[ActiveJob] [ActiveStorage::AnalyzeJob] [868f5bfb-bd62-483a-9570-df5a7cfb446b] Performing ActiveStorage::AnalyzeJob (Job ID: 868f5bfb-bd62-483a-9570-df5a7cfb446b) from Async(default) enqueued at 2022-01-20T00:28:10Z with arguments: #<GlobalID:0x00007fe790a87238 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/1>>
-[ActiveJob] [ActiveStorage::AnalyzeJob] [868f5bfb-bd62-483a-9570-df5a7cfb446b] [36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: q7mzqbs7ogdy5vz8rkugx0pzk63o[0m
-Processing by ProductsController#show as HTML
-  Parameters: {"id"=>"1"}
-  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering products/show.html.erb within layouts/application
-  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
-  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-[ActiveJob] [ActiveStorage::AnalyzeJob] [868f5bfb-bd62-483a-9570-df5a7cfb446b]   [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
-  Rendered products/show.html.erb within layouts/application (Duration: 824.8ms | Allocations: 4647)
-[ActiveJob] [ActiveStorage::AnalyzeJob] [868f5bfb-bd62-483a-9570-df5a7cfb446b]   [1m[36mActiveStorage::Blob Update (10.9ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":1416,\"height\":797,\"analyzed\":true}"], ["id", 1]]
-[ActiveJob] [ActiveStorage::AnalyzeJob] [868f5bfb-bd62-483a-9570-df5a7cfb446b]   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
-[ActiveJob] [ActiveStorage::AnalyzeJob] [868f5bfb-bd62-483a-9570-df5a7cfb446b] Performed ActiveStorage::AnalyzeJob (Job ID: 868f5bfb-bd62-483a-9570-df5a7cfb446b) from Async(default) in 890.0ms
-  Rendered layout layouts/application.html.erb (Duration: 867.4ms | Allocations: 50601)
-Completed 200 OK in 921ms (Views: 866.0ms | ActiveRecord: 23.1ms | Allocations: 63394)
-
-
-Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/kyle23.jpg" for ::1 at 2022-01-19 18:28:11 -0600
-Processing by ActiveStorage::Representations::RedirectController#show as JPEG
-  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--508395371d2627c5c0d4ac921a5bd0839b632a00", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"kyle23"}
-  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-[36m  Disk Storage (0.1ms) [0m[34mChecked if file exists at key: variants/q7mzqbs7ogdy5vz8rkugx0pzk63o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
-[36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: q7mzqbs7ogdy5vz8rkugx0pzk63o[0m
-[36m  Disk Storage (0.5ms) [0m[32mUploaded file to key: variants/q7mzqbs7ogdy5vz8rkugx0pzk63o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
-[36m  Disk Storage (3.0ms) [0m[34mGenerated URL for file at key: variants/q7mzqbs7ogdy5vz8rkugx0pzk63o/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjVGR0ZW5GaWN6ZHZaMlI1TlhaNk9ISnJkV2Q0TUhCNmF6WXpieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWEzbHNaVEl6TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hM2xzWlRJekxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMFQwMDozMzoxMS43ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--74d60db8cb67fb412d4f8a398aef8567f7e5abce/kyle23.png)[0m
-Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjVGR0ZW5GaWN6ZHZaMlI1TlhaNk9ISnJkV2Q0TUhCNmF6WXpieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWEzbHNaVEl6TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hM2xzWlRJekxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMFQwMDozMzoxMS43ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--74d60db8cb67fb412d4f8a398aef8567f7e5abce/kyle23.png
-Completed 302 Found in 183ms (ActiveRecord: 0.5ms | Allocations: 4417)
-
-
-Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjVGR0ZW5GaWN6ZHZaMlI1TlhaNk9ISnJkV2Q0TUhCNmF6WXpieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWEzbHNaVEl6TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hM2xzWlRJekxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMFQwMDozMzoxMS43ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--74d60db8cb67fb412d4f8a398aef8567f7e5abce/kyle23.png" for ::1 at 2022-01-19 18:28:11 -0600
-Processing by ActiveStorage::DiskController#show as PNG
-  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZjVGR0ZW5GaWN6ZHZaMlI1TlhaNk9ISnJkV2Q0TUhCNmF6WXpieTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWEzbHNaVEl6TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25hM2xzWlRJekxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMS0yMFQwMDozMzoxMS43ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--74d60db8cb67fb412d4f8a398aef8567f7e5abce", "filename"=>"kyle23"}
-Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1486)
-
-
-Started GET "/products" for ::1 at 2022-01-19 18:28:15 -0600
-Processing by ProductsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering products/index.html.erb within layouts/application
-  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
-  Rendered products/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 646)
-  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 46147)
-Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.6ms | Allocations: 47844)
-
-
-Started GET "/" for ::1 at 2022-01-19 18:28:19 -0600
-=======
   [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220113092507"]]
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
@@ -42569,18 +42335,10 @@ Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 457
 
 
 Started GET "/" for ::1 at 2022-01-18 13:28:23 -0600
->>>>>>> f7fa2f3605160e02b1021a3680e3a5eeda384402
 Processing by ArticlesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering articles/index.html.erb within layouts/application
   Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
-<<<<<<< HEAD
-  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 45510)
-Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 47067)
-
-
-Started GET "/marketplace" for ::1 at 2022-01-19 18:28:22 -0600
-=======
   Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 42170)
 Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 43669)
 
@@ -42595,225 +42353,10 @@ Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 436
 
 
 Started GET "/marketplace" for ::1 at 2022-01-18 13:28:27 -0600
->>>>>>> f7fa2f3605160e02b1021a3680e3a5eeda384402
 Processing by ProductsController#marketplace as HTML
   Rendering layout layouts/application.html.erb
   Rendering products/marketplace.html.erb within layouts/application
   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
-<<<<<<< HEAD
-  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
-  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendered products/marketplace.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1275)
-  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 46779)
-Completed 200 OK in 80ms (Views: 75.8ms | ActiveRecord: 1.2ms | Allocations: 48480)
-
-
-Started GET "/sign_in" for ::1 at 2022-01-19 18:29:00 -0600
-Processing by SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/new.html.erb within layouts/application
-  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 745)
-  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 46251)
-Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 48374)
-
-
-Started POST "/sign_in" for ::1 at 2022-01-19 18:29:07 -0600
-Processing by SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rh3PjqaIcYIzXr3a+ehl5MLizjvDI++ZNZumn3+0wy2091IKq30y3LFZuEats0qrmSheSXGhj9sQyZP6+o9N1A==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 264ms (ActiveRecord: 0.8ms | Allocations: 1607)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:29:08 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
-  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 45660)
-Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.5ms | Allocations: 47477)
-
-
-Started GET "/editprofile" for ::1 at 2022-01-19 18:29:10 -0600
-Processing by UsersController#edit as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/edit.html.erb within layouts/application
-  Rendered users/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1366)
-  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 46867)
-Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.4ms | Allocations: 48806)
-
-
-Started PATCH "/users/1" for ::1 at 2022-01-19 18:30:35 -0600
-Processing by UsersController#update as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CubN07PpXd+9lyjc3ChWJk5HjTZE91Im9skWkhtRBRH4DFBXvhwegT+QLUCIc3lpFY0dRPZ1MmTTmyP3nmqL6A==", "user"=>{"first"=>"hallie", "last"=>"scasta", "username"=>"derik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"1"}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "first" = $1, "last" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["first", "hallie"], ["last", "scasta"], ["updated_at", "2022-01-20 00:30:35.465513"], ["id", 1]]
-  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 7ms (ActiveRecord: 2.0ms | Allocations: 2235)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:30:35 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
-  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 45662)
-Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.4ms | Allocations: 47500)
-
-
-Started GET "/" for ::1 at 2022-01-19 18:30:55 -0600
-Processing by ArticlesController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering articles/index.html.erb within layouts/application
-  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
-  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 45510)
-Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms | Allocations: 47086)
-
-
-Started GET "/sign_in" for ::1 at 2022-01-19 18:30:57 -0600
-Processing by SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/new.html.erb within layouts/application
-  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 339)
-  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 45843)
-Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 47426)
-
-
-Started POST "/sign_in" for ::1 at 2022-01-19 18:31:07 -0600
-Processing by SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nPeB53GkBHeWeAevHrkZMlQ/1TE7Xkt9xVqTgs1fgr5uHRxjfFFHKRR/AjNK4jZ9D/VFQ4ncKz/gCKbnSGQMRw==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 262ms (ActiveRecord: 0.3ms | Allocations: 1588)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:31:08 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
-  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 45655)
-Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.4ms | Allocations: 47467)
-
-
-Started GET "/editprofile" for ::1 at 2022-01-19 18:31:09 -0600
-Processing by UsersController#edit as HTML
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/edit.html.erb within layouts/application
-  Rendered users/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 953)
-  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 46456)
-Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.4ms | Allocations: 48267)
-
-
-Started PATCH "/users/1" for ::1 at 2022-01-19 18:31:13 -0600
-Processing by UsersController#update as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aQ3Fj9HXyX/K8fuK8cY46hutXtIFvSf+TEJR+arnVE2b51gL3CKKIUj2/halnRelQGfOoLc/R7xpEGScL9zatA==", "user"=>{"first"=>"hallie", "last"=>"scasta", "username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"1"}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "username" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["username", "hallie@gmail.com"], ["updated_at", "2022-01-20 00:31:13.300906"], ["id", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 4ms (ActiveRecord: 1.1ms | Allocations: 2156)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:31:13 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
-  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 45655)
-Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.3ms | Allocations: 47491)
-
-
-Started GET "/" for ::1 at 2022-01-19 18:31:18 -0600
-Processing by ArticlesController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering articles/index.html.erb within layouts/application
-  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
-  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 45508)
-Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 47083)
-
-
-Started GET "/sign_in" for ::1 at 2022-01-19 18:31:19 -0600
-Processing by SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/new.html.erb within layouts/application
-  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 332)
-  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 45835)
-Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 47416)
-
-
-Started POST "/sign_in" for ::1 at 2022-01-19 18:31:26 -0600
-Processing by SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lKEDsUhc2uEy7ZDdCnbie0DYL1lhsjIhkLGp50kFjB1mS541RamZv7DqlUFeLc00GxK/K9MwUmO145yCzD4C5A==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 263ms (ActiveRecord: 0.4ms | Allocations: 1586)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:31:26 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
-  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 45656)
-Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.3ms | Allocations: 47468)
-
-
-Started GET "/editprofile" for ::1 at 2022-01-19 18:31:28 -0600
-Processing by UsersController#edit as HTML
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/edit.html.erb within layouts/application
-  Rendered users/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 953)
-  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 46456)
-Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.4ms | Allocations: 48267)
-
-
-Started PATCH "/users/1" for ::1 at 2022-01-19 18:31:36 -0600
-Processing by UsersController#update as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d1jDnkZXvu8dsBXiaeJOqpNuHj+9YxD3Qq2ySve9yRuFsl4aS6L9sZ+3EH49uWHlyKSOTQ/hcLVn/4cvcoZH4g==", "user"=>{"first"=>"hallie", "last"=>"scasta", "username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"1"}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["password_digest", "$2a$12$hgJg3/2AuFw/1oh8x2AUfuOhvRgPhPqkMlsExG6a9BBiVSSWjURM."], ["updated_at", "2022-01-20 00:31:36.900357"], ["id", 1]]
-  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 270ms (ActiveRecord: 1.9ms | Allocations: 2199)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:31:36 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
-  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 45655)
-Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.3ms | Allocations: 47491)
-
-
-Started GET "/" for ::1 at 2022-01-19 18:31:45 -0600
-=======
   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   Rendered products/marketplace.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1230)
@@ -43300,74 +42843,10 @@ Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms | Allocations: 455
 
 
 Started GET "/" for 127.0.0.1 at 2022-01-22 19:49:31 -0600
->>>>>>> f7fa2f3605160e02b1021a3680e3a5eeda384402
 Processing by ArticlesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering articles/index.html.erb within layouts/application
   Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
-<<<<<<< HEAD
-  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 45508)
-Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 47083)
-
-
-Started GET "/sign_in" for ::1 at 2022-01-19 18:31:47 -0600
-Processing by SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/new.html.erb within layouts/application
-  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 332)
-  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 45835)
-Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 47416)
-
-
-Started POST "/sign_in" for ::1 at 2022-01-19 18:31:51 -0600
-Processing by SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"muGxZnlBh9qvXJ8dMeaE7L9tUe201f6tX2fpjAdYvoJoCyzidLTEhC1bmoFlvauj5KfBnwZXnu96NdzpgmMwew==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/sign_in
-Completed 302 Found in 262ms (ActiveRecord: 0.3ms | Allocations: 1597)
-
-
-Started GET "/sign_in" for ::1 at 2022-01-19 18:31:51 -0600
-Processing by SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/new.html.erb within layouts/application
-  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 331)
-  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 45834)
-Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 47409)
-
-
-Started POST "/sign_in" for ::1 at 2022-01-19 18:31:59 -0600
-Processing by SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rNsQI/iHe6Mktf8J7qVEmd5AH1psXAortiMm9D316Q5eMY2n9XI4/aay+pW6/mvWhYqPKN7eammTcRORuM5n9w==", "session"=>{"username"=>"hallie@gmail.com", "password"=>"[FILTERED]"}}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hallie@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/profile
-Completed 302 Found in 263ms (ActiveRecord: 0.3ms | Allocations: 1586)
-
-
-Started GET "/profile" for ::1 at 2022-01-19 18:32:00 -0600
-Processing by UsersController#show as HTML
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering layout layouts/application.html.erb
-  Rendering users/show.html.erb within layouts/application
-  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 152)
-  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 45656)
-Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.3ms | Allocations: 47468)
-
-
-Started DELETE "/deleteprofile" for ::1 at 2022-01-19 18:32:04 -0600
-Processing by UsersController#destroy as HTML
-  Parameters: {"authenticity_token"=>"Vz49XIKPDI/6X8b52zWoEPkv3i92Eq79jXan5+KeCoil1KDYj3pP0XhYw2WPbodfouVOXcSQzr+oJJKCZ6WEcQ=="}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
-  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 4ms (ActiveRecord: 1.2ms | Allocations: 1818)
-
-
-Started GET "/" for ::1 at 2022-01-19 18:32:04 -0600
-=======
   Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 43118)
 Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 44617)
 
@@ -44322,17 +43801,9 @@ Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.3ms | Allocations: 476
 
 
 Started GET "/" for 127.0.0.1 at 2022-01-25 12:08:06 -0600
->>>>>>> f7fa2f3605160e02b1021a3680e3a5eeda384402
 Processing by ArticlesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering articles/index.html.erb within layouts/application
   Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
-<<<<<<< HEAD
-  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 45508)
-Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms | Allocations: 47083)
-=======
   Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 44108)
 Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 45606)
->>>>>>> f7fa2f3605160e02b1021a3680e3a5eeda384402
-
-
