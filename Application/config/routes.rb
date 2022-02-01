@@ -17,10 +17,10 @@ Rails.application.routes.draw do
   get "/dashboard", to: "dashboards#dashboard"
 
   get "products", to: "articles#products"
-  get "account", to: "users#"
-  
-  get "upload", to: "products#new"
+  get "members", to: "dashboards#members"
   get "profile", to: "dashboards#dashboard"
+
+  get "upload", to: "products#new"
   post "upload", to: "products#create"
 
   get 'editprofile', to: "users#edit"
