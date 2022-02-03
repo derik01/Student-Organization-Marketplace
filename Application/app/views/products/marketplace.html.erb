@@ -2,11 +2,12 @@
 <%# <tbody> %>
     <% @products.each do |product| %>
     <%# <tr> %>
-        <%= product.title %>
+        <%= "Product Title:" + product.title %><br>
         <%= image_tag product.image.variant(
             format: :png,
             resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
-        ) %>
+        ) %><br>
+        <%= "Product Price: $" + product.price.to_s %><br><br>
     <%# </tr> %>
     <% end %>
 <%# </tbody> %>
