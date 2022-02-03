@@ -4,7 +4,8 @@ class ProductsController < ApplicationController
 
   # GET /products or /products.json
   def index
-    @products = Product.all
+    @user = User.find_by_id(session[:id])
+    @products = @user.products.all
   end
 
   def marketplace
@@ -25,8 +26,9 @@ class ProductsController < ApplicationController
 
   # POST /products or /products.json
   def create
+    @user = User.find_by_id(session[:id])
     product_params = params.require(:product).permit(:title, :image, :price)
-    @product = Product.new(product_params)
+    @product = @user.products.new(product_params)
 
     respond_to do |format|
       if @product.save
@@ -55,7 +57,8 @@ class ProductsController < ApplicationController
 
   # DELETE /products/1 or /products/1.json
   def destroy
-    @product = Product.find(params[:id])
+    @user = User.find_by_id(session[:id])
+    @product = @user.products.find(params[:id])
     @product.destroy
 
     respond_to do |format|

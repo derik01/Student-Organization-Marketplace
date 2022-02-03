@@ -45016,3 +45016,1202 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms | Allocations: 45606)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:17:32 -0600
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::DuplicateMigrationNameError (
+
+Multiple migrations have the name CreateProducts.
+
+):
+  
+activerecord (6.1.4.4) lib/active_record/migration.rb:1353:in `validate'
+activerecord (6.1.4.4) lib/active_record/migration.rb:1226:in `initialize'
+activerecord (6.1.4.4) lib/active_record/migration.rb:1104:in `new'
+activerecord (6.1.4.4) lib/active_record/migration.rb:1104:in `open'
+activerecord (6.1.4.4) lib/active_record/migration.rb:156:in `detailed_migration_message'
+activerecord (6.1.4.4) lib/active_record/migration.rb:147:in `initialize'
+activerecord (6.1.4.4) lib/active_record/migration.rb:625:in `exception'
+activerecord (6.1.4.4) lib/active_record/migration.rb:625:in `raise'
+activerecord (6.1.4.4) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.4) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (6.1.4.4) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:19:19 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220203201434_create_products.rb
+
+
+):
+  
+activerecord (6.1.4.4) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.4) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (6.1.4.4) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:140:in `service'
+webrick (1.7.0) lib/webrick/httpserver.rb:96:in `run'
+webrick (1.7.0) lib/webrick/server.rb:310:in `block in start_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1355736032089747140)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20220303201434)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "title" character varying, "price" integer, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_dee2631783"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE INDEX "index_products_on_user_id" ON "products" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220303201434"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1355736032089747140)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:20:38 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 1553.7ms | Allocations: 467752)
+Completed 200 OK in 1572ms (Views: 1559.4ms | ActiveRecord: 0.0ms | Allocations: 472610)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:20:41 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 7607)
+  Rendered layout layouts/application.html.erb (Duration: 61.9ms | Allocations: 51706)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.0ms | Allocations: 53770)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:20:46 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yo9n9Odcm4ZomY3Wq3vNc67iiLpFxv/TmxnmN3TEiUD0FKPZ5U7W3ViAzMYzMzsLmSlr6qotj8PXOyKbm6MaUA==", "session"=>{"username"=>"mp5@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 197ms (ActiveRecord: 9.0ms | Allocations: 8198)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:20:46 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 44443)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.3ms | Allocations: 46991)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 14:20:48 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.7ms | Allocations: 1554)
+  Rendered products/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1893)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 45992)
+Completed 200 OK in 72ms (Views: 53.7ms | ActiveRecord: 2.0ms | Allocations: 53320)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:20:54 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ChNIwITTbDWsS0e8mIhzly373zlDRQ8QDknuiRLtZ3eciIzthsEhbpxSBqwAwIXvGjA8aayufwBCayol/Yr0Zw==", "product"=>{"title"=>"test", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fa23b278320 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-2999-6nctfl.jpg>, @original_filename="boogie.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"boogie.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"12"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "test"], ["price", 12], ["created_at", "2022-02-03 20:20:54.441383"], ["updated_at", "2022-02-03 20:20:54.441383"]]
+  [1m[36mActiveStorage::Attachment Load (10.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 65]]
+  [1m[36mActiveStorage::Blob Create (3.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "icms6tces5kk56nj2lohn62op11h"], ["filename", "boogie.jpg"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 173461], ["checksum", "fyGyZmwKNgAovy1pcrLqrg=="], ["created_at", "2022-02-03 20:20:54.464530"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 1], ["blob_id", 67], ["created_at", "2022-02-03 20:20:54.469574"]]
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:20:54.470629"], ["id", 1]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (4.4ms) [0m[32mUploaded file to key: icms6tces5kk56nj2lohn62op11h (checksum: fyGyZmwKNgAovy1pcrLqrg==)[0m
+  [1m[36mActiveStorage::Blob Load (5.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 1ef09e14-d417-4965-adf1-7c97db23b7c2) to Async(default) with arguments: #<GlobalID:0x00007fa23bded2c8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/65>>
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 00116100-4e51-42e9-8ba8-7da8a4bcc641) to Async(default) with arguments: #<GlobalID:0x00007fa23be15d90 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/67>>
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 156ms (ActiveRecord: 30.4ms | Allocations: 34698)
+
+
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2] Performing ActiveStorage::PurgeJob (Job ID: 1ef09e14-d417-4965-adf1-7c97db23b7c2) from Async(default) enqueued at 2022-02-03T20:20:54Z with arguments: #<GlobalID:0x00007fa23be6f7a0 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/65>>
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2]   [1m[36mActiveStorage::Attachment Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 65], ["LIMIT", 1]]
+Started GET "/products/1" for 127.0.0.1 at 2022-02-03 14:20:54 -0600
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [00116100-4e51-42e9-8ba8-7da8a4bcc641] Performing ActiveStorage::AnalyzeJob (Job ID: 00116100-4e51-42e9-8ba8-7da8a4bcc641) from Async(default) enqueued at 2022-02-03T20:20:54Z with arguments: #<GlobalID:0x00007fa23bec8d50 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/67>>
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2]   [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 65], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2]   [1m[36mActiveStorage::Blob Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 65]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2]   [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [00116100-4e51-42e9-8ba8-7da8a4bcc641] [36m  Disk Storage (6.1ms) [0m[34mDownloaded file from key: icms6tces5kk56nj2lohn62op11h[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: 9lgocw6898852qcvlkjozkbj9nsu[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2] [36m  Disk Storage (0.7ms) [0m[31mDeleted files by key prefix: variants/9lgocw6898852qcvlkjozkbj9nsu/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1ef09e14-d417-4965-adf1-7c97db23b7c2] Performed ActiveStorage::PurgeJob (Job ID: 1ef09e14-d417-4965-adf1-7c97db23b7c2) from Async(default) in 29.35ms
+  [1m[36mProduct Load (7.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (12.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [00116100-4e51-42e9-8ba8-7da8a4bcc641]   [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [00116100-4e51-42e9-8ba8-7da8a4bcc641]   [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":640,\"height\":358,\"analyzed\":true}"], ["id", 67]]
+  Rendered products/show.html.erb within layouts/application (Duration: 90.0ms | Allocations: 9014)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [00116100-4e51-42e9-8ba8-7da8a4bcc641]   [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [00116100-4e51-42e9-8ba8-7da8a4bcc641] Performed ActiveStorage::AnalyzeJob (Job ID: 00116100-4e51-42e9-8ba8-7da8a4bcc641) from Async(default) in 144.79ms
+  Rendered layout layouts/application.html.erb (Duration: 139.8ms | Allocations: 53505)
+Completed 200 OK in 187ms (Views: 129.8ms | ActiveRecord: 32.5ms | Allocations: 61118)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a172080817b25820bb47efd072a7c35c954e1ff/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/boogie.jpg" for 127.0.0.1 at 2022-02-03 14:20:54 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a172080817b25820bb47efd072a7c35c954e1ff", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"boogie"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/icms6tces5kk56nj2lohn62op11h/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.7ms) [0m[34mDownloaded file from key: icms6tces5kk56nj2lohn62op11h[0m
+[36m  Disk Storage (3.1ms) [0m[32mUploaded file to key: variants/icms6tces5kk56nj2lohn62op11h/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: variants/icms6tces5kk56nj2lohn62op11h/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDoyNTo1NC44NTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--b9ab322f9d6ba028a42bf1049caf5531078280cc/boogie.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDoyNTo1NC44NTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--b9ab322f9d6ba028a42bf1049caf5531078280cc/boogie.png
+Completed 302 Found in 56ms (ActiveRecord: 0.3ms | Allocations: 4345)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDoyNTo1NC44NTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--b9ab322f9d6ba028a42bf1049caf5531078280cc/boogie.png" for 127.0.0.1 at 2022-02-03 14:20:54 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDoyNTo1NC44NTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--b9ab322f9d6ba028a42bf1049caf5531078280cc", "filename"=>"boogie"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1427)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:20:55 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 659)
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 44758)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.3ms | Allocations: 46451)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2022-02-03 14:28:21 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.1ms | Allocations: 978)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1062)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 45168)
+Completed 200 OK in 81ms (Views: 51.4ms | ActiveRecord: 12.1ms | Allocations: 52988)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:28:25 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3IbqoLaPXOkq1pTY1ufow0UBBTdVKl7FWRs+M9TBZwtKHS6NtJ0RshrP1chOrx67csrmZ7rBLtUVOfqfO6b0Gw==", "product"=>{"title"=>"dsa", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fa23be14aa8 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-2999-1mvnjnx.jpg>, @original_filename="An-extremely-goofy-movie-original.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"An-extremely-goofy-movie-original.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"12"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (3.8ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "dsa"], ["price", 12], ["created_at", "2022-02-03 20:28:25.844834"], ["updated_at", "2022-02-03 20:28:25.844834"]]
+  [1m[36mActiveStorage::Attachment Load (11.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 66]]
+  [1m[36mActiveStorage::Blob Create (3.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "5zcps8gkk0leiz5i7ehhnh0zqxhj"], ["filename", "An-extremely-goofy-movie-original.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 160249], ["checksum", "wZxxVLEFeIvDmksPuWhHjQ=="], ["created_at", "2022-02-03 20:28:25.866131"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 2], ["blob_id", 68], ["created_at", "2022-02-03 20:28:25.870658"]]
+  [1m[36mProduct Update (5.4ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:28:25.871917"], ["id", 2]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (4.5ms) [0m[32mUploaded file to key: 5zcps8gkk0leiz5i7ehhnh0zqxhj (checksum: wZxxVLEFeIvDmksPuWhHjQ==)[0m
+  [1m[36mActiveStorage::Blob Load (5.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 92e1bb1b-388d-4cbc-8d9e-6152de44f6d0) to Async(default) with arguments: #<GlobalID:0x00007fa22c21da60 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/66>>
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 08c0f034-fe11-4a42-913b-74d4c88bf444) to Async(default) with arguments: #<GlobalID:0x00007fa22c259f60 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/68>>
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 108ms (ActiveRecord: 35.2ms | Allocations: 31450)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0] Performing ActiveStorage::PurgeJob (Job ID: 92e1bb1b-388d-4cbc-8d9e-6152de44f6d0) from Async(default) enqueued at 2022-02-03T20:28:25Z with arguments: #<GlobalID:0x00007fa22c2db3a8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/66>>
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0]   [1m[36mActiveStorage::Attachment Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 66], ["LIMIT", 1]]
+Started GET "/products/2" for 127.0.0.1 at 2022-02-03 14:28:25 -0600
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [08c0f034-fe11-4a42-913b-74d4c88bf444] Performing ActiveStorage::AnalyzeJob (Job ID: 08c0f034-fe11-4a42-913b-74d4c88bf444) from Async(default) enqueued at 2022-02-03T20:28:25Z with arguments: #<GlobalID:0x00007fa22c341130 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/68>>
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0]   [1m[36mActiveStorage::Blob Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 66]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0]   [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [08c0f034-fe11-4a42-913b-74d4c88bf444] [36m  Disk Storage (4.6ms) [0m[34mDownloaded file from key: 5zcps8gkk0leiz5i7ehhnh0zqxhj[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: ihu6vgq7rov2nf8syhfsv2d0j475[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0] [36m  Disk Storage (0.6ms) [0m[31mDeleted files by key prefix: variants/ihu6vgq7rov2nf8syhfsv2d0j475/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [92e1bb1b-388d-4cbc-8d9e-6152de44f6d0] Performed ActiveStorage::PurgeJob (Job ID: 92e1bb1b-388d-4cbc-8d9e-6152de44f6d0) from Async(default) in 18.07ms
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [08c0f034-fe11-4a42-913b-74d4c88bf444]   [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  Rendered products/show.html.erb within layouts/application (Duration: 42.0ms | Allocations: 2495)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [08c0f034-fe11-4a42-913b-74d4c88bf444]   [1m[36mActiveStorage::Blob Update (1.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":1920,\"height\":1080,\"analyzed\":true}"], ["id", 68]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [08c0f034-fe11-4a42-913b-74d4c88bf444]   [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [08c0f034-fe11-4a42-913b-74d4c88bf444] Performed ActiveStorage::AnalyzeJob (Job ID: 08c0f034-fe11-4a42-913b-74d4c88bf444) from Async(default) in 69.09ms
+  Rendered layout layouts/application.html.erb (Duration: 102.4ms | Allocations: 46905)
+Completed 200 OK in 123ms (Views: 102.2ms | ActiveRecord: 5.7ms | Allocations: 51240)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1775752670baca50105458b006af037b364b40e7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-02-03 14:28:26 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1775752670baca50105458b006af037b364b40e7", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/5zcps8gkk0leiz5i7ehhnh0zqxhj/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.7ms) [0m[34mDownloaded file from key: 5zcps8gkk0leiz5i7ehhnh0zqxhj[0m
+[36m  Disk Storage (2.9ms) [0m[32mUploaded file to key: variants/5zcps8gkk0leiz5i7ehhnh0zqxhj/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/5zcps8gkk0leiz5i7ehhnh0zqxhj/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDozMzoyNi4xODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--765dca0703ec1bc940fd69b124084c40c907c39a/An-extremely-goofy-movie-original.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDozMzoyNi4xODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--765dca0703ec1bc940fd69b124084c40c907c39a/An-extremely-goofy-movie-original.png
+Completed 302 Found in 74ms (ActiveRecord: 0.2ms | Allocations: 3084)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDozMzoyNi4xODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--765dca0703ec1bc940fd69b124084c40c907c39a/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-02-03 14:28:26 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDozMzoyNi4xODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--765dca0703ec1bc940fd69b124084c40c907c39a", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1426)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:41:21 -0600
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 324.7ms | Allocations: 352621)
+Completed 200 OK in 343ms (Views: 330.3ms | ActiveRecord: 0.0ms | Allocations: 357479)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:41:23 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 7607)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 51706)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 53770)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:41:27 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zLatg+v4b7vWB4Ce2PVFrWxn2siJwBtaN6UjwpX+mtNaLWmu6eoi4OYewY5AvbPVW6w5mGYra0p7h+duepkJww==", "session"=>{"username"=>"mp5@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 190ms (ActiveRecord: 3.3ms | Allocations: 8225)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:41:27 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 44438)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.3ms | Allocations: 46986)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 14:41:29 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.6ms | Allocations: 1553)
+  Rendered products/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1892)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 45991)
+Completed 200 OK in 77ms (Views: 57.7ms | ActiveRecord: 1.8ms | Allocations: 53319)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:41:37 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNcgwlW7jp4JQV+SmqKf1epmj1Kg0U1ZFpP2Z3hnhdEOTOTvV6nDxTlYHoIC6mmt3a1sAk86PUlasTLLlwAWwQ==", "product"=>{"title"=>"Backpack", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fafdfb9bab8 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-3413-1nery1r.jpg>, @original_filename="dazai.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"dazai.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"45"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 3527)
+
+
+  
+NoMethodError (undefined method `Product' for #<User:0x00007fafdfbbc8a8>
+Did you mean?  products
+               products=):
+  
+app/controllers/products_controller.rb:30:in `create'
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:41:58 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNcgwlW7jp4JQV+SmqKf1epmj1Kg0U1ZFpP2Z3hnhdEOTOTvV6nDxTlYHoIC6mmt3a1sAk86PUlasTLLlwAWwQ==", "product"=>{"title"=>"Backpack", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fafdf94b038 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-3413-15kvhz5.jpg>, @original_filename="dazai.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"dazai.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"45"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (3.8ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Backpack"], ["price", 45], ["user_id", 6], ["created_at", "2022-02-03 20:41:58.939386"], ["updated_at", "2022-02-03 20:41:58.939386"]]
+  [1m[36mActiveStorage::Attachment Load (10.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (3.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "oozew86f2yep1zyjbhps8bpv8hnf"], ["filename", "dazai.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 79634], ["checksum", "Yr36GqyqfnLMbIEvW2MbkA=="], ["created_at", "2022-02-03 20:41:58.958225"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 3], ["blob_id", 69], ["created_at", "2022-02-03 20:41:58.963029"]]
+  [1m[36mProduct Update (5.5ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:41:58.964279"], ["id", 3]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (5.2ms) [0m[32mUploaded file to key: oozew86f2yep1zyjbhps8bpv8hnf (checksum: Yr36GqyqfnLMbIEvW2MbkA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e72e90d3-3d43-4230-bc37-bf9f29ad7315) to Async(default) with arguments: #<GlobalID:0x00007fafddfce038 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/69>>
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 165ms (ActiveRecord: 36.4ms | Allocations: 44348)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2022-02-03 14:41:59 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mActiveStorage::Blob Load (6.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e72e90d3-3d43-4230-bc37-bf9f29ad7315] Performing ActiveStorage::AnalyzeJob (Job ID: e72e90d3-3d43-4230-bc37-bf9f29ad7315) from Async(default) enqueued at 2022-02-03T20:41:58Z with arguments: #<GlobalID:0x00007fafde25cef8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/69>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e72e90d3-3d43-4230-bc37-bf9f29ad7315] [36m  Disk Storage (5.7ms) [0m[34mDownloaded file from key: oozew86f2yep1zyjbhps8bpv8hnf[0m
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e72e90d3-3d43-4230-bc37-bf9f29ad7315]   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e72e90d3-3d43-4230-bc37-bf9f29ad7315]   [1m[36mActiveStorage::Blob Update (0.9ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":640,\"height\":640,\"analyzed\":true}"], ["id", 69]]
+  Rendered products/show.html.erb within layouts/application (Duration: 113.5ms | Allocations: 9654)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e72e90d3-3d43-4230-bc37-bf9f29ad7315]   [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e72e90d3-3d43-4230-bc37-bf9f29ad7315] Performed ActiveStorage::AnalyzeJob (Job ID: e72e90d3-3d43-4230-bc37-bf9f29ad7315) from Async(default) in 151.34ms
+  Rendered layout layouts/application.html.erb (Duration: 173.6ms | Allocations: 54284)
+Completed 200 OK in 211ms (Views: 172.0ms | ActiveRecord: 18.6ms | Allocations: 61596)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a8001b39db1d0dea358252dd1e41981c3f4c0fa/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/dazai.jpg" for 127.0.0.1 at 2022-02-03 14:41:59 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a8001b39db1d0dea358252dd1e41981c3f4c0fa", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"dazai"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/oozew86f2yep1zyjbhps8bpv8hnf/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: oozew86f2yep1zyjbhps8bpv8hnf[0m
+[36m  Disk Storage (3.1ms) [0m[32mUploaded file to key: variants/oozew86f2yep1zyjbhps8bpv8hnf/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: variants/oozew86f2yep1zyjbhps8bpv8hnf/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZiMjk2WlhjNE5tWXllV1Z3TVhwNWFtSm9jSE00WW5CMk9HaHVaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpHRjZZV2t1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGtZWHBoYVM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ2OjU5LjMyOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c8ba0c73d90dde9d516dff2669263a062e453126/dazai.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZiMjk2WlhjNE5tWXllV1Z3TVhwNWFtSm9jSE00WW5CMk9HaHVaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpHRjZZV2t1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGtZWHBoYVM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ2OjU5LjMyOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c8ba0c73d90dde9d516dff2669263a062e453126/dazai.png
+Completed 302 Found in 56ms (ActiveRecord: 0.2ms | Allocations: 4405)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZiMjk2WlhjNE5tWXllV1Z3TVhwNWFtSm9jSE00WW5CMk9HaHVaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpHRjZZV2t1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGtZWHBoYVM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ2OjU5LjMyOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c8ba0c73d90dde9d516dff2669263a062e453126/dazai.png" for 127.0.0.1 at 2022-02-03 14:41:59 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZiMjk2WlhjNE5tWXllV1Z3TVhwNWFtSm9jSE00WW5CMk9HaHVaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpHRjZZV2t1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGtZWHBoYVM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ2OjU5LjMyOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c8ba0c73d90dde9d516dff2669263a062e453126", "filename"=>"dazai"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1427)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:42:00 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1094)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 45194)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.3ms | Allocations: 46888)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:42:02 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 44108)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 45784)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:03 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 368)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 44469)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms | Allocations: 46141)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:07 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4iTc6aD0tvjEZodf2iDOpCf8xsFBto0wGhVVHENaAnB0vxjEoub7o/R/xk9CaDjcEDclka5d/SBWN5GwrD2RYA==", "session"=>{"username"=>"derik@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1597)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:07 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 44432)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms | Allocations: 45948)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:07 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xeTk4aNhUhadMmG/QABIM7clB8zO12uI3u+i1twOhKlTfyDMoXMfTa0rIK/YSL5LgO7knCE8G5iSzWZ6M2kXuQ==", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1496)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:07 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 61.9ms | Allocations: 44433)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms | Allocations: 45949)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:14 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z7JVPG8uRJm8/Z4W/KujkHL/bIO+UArhcSvyVPUXz3JZKZERbTwJwozk3wZk41XoRTSP01G7evE9CTb4GnBcYg==", "session"=>{"username"=>"derik2@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derik2@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 171ms (ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:42:15 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 44258)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.3ms | Allocations: 46271)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 14:42:16 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 0.9ms | Allocations: 885)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 969)
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 45070)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms | Allocations: 46591)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:42:22 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kZGAlAg1wuJNsArYXzxP1wXp6q/p2B0Yd6mYODepNpw3YIvUjKaULkvgTv5NAdHa9xE+lBMEGQt/GLMD7k3yg==", "product"=>{"title"=>"ds", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fafdf555910 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-3413-1okkqkc.jpg>, @original_filename="An-extremely-goofy-movie-original.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"An-extremely-goofy-movie-original.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"45"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ds"], ["price", 45], ["user_id", 248], ["created_at", "2022-02-03 20:42:22.321623"], ["updated_at", "2022-02-03 20:42:22.321623"]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "tcr2rfv9pbdiijcpsdp8n4qoja0k"], ["filename", "An-extremely-goofy-movie-original.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 160249], ["checksum", "wZxxVLEFeIvDmksPuWhHjQ=="], ["created_at", "2022-02-03 20:42:22.325057"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 4], ["blob_id", 70], ["created_at", "2022-02-03 20:42:22.326335"]]
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:42:22.327379"], ["id", 4]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (4.6ms) [0m[32mUploaded file to key: tcr2rfv9pbdiijcpsdp8n4qoja0k (checksum: wZxxVLEFeIvDmksPuWhHjQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 26783439-6366-4125-a780-7e3a2759d86d) to Async(default) with arguments: #<GlobalID:0x00007fafdf5f33b8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/70>>
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 28ms (ActiveRecord: 6.9ms | Allocations: 8187)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2022-02-03 14:42:22 -0600
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [26783439-6366-4125-a780-7e3a2759d86d] Performing ActiveStorage::AnalyzeJob (Job ID: 26783439-6366-4125-a780-7e3a2759d86d) from Async(default) enqueued at 2022-02-03T20:42:22Z with arguments: #<GlobalID:0x00007fafdf63b1e0 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/70>>
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [26783439-6366-4125-a780-7e3a2759d86d] [36m  Disk Storage (3.6ms) [0m[34mDownloaded file from key: tcr2rfv9pbdiijcpsdp8n4qoja0k[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1103)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 45457)
+Completed 200 OK in 62ms (Views: 57.5ms | ActiveRecord: 2.3ms | Allocations: 47460)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [26783439-6366-4125-a780-7e3a2759d86d]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [26783439-6366-4125-a780-7e3a2759d86d]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":1920,\"height\":1080,\"analyzed\":true}"], ["id", 70]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [26783439-6366-4125-a780-7e3a2759d86d]   [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [26783439-6366-4125-a780-7e3a2759d86d] Performed ActiveStorage::AnalyzeJob (Job ID: 26783439-6366-4125-a780-7e3a2759d86d) from Async(default) in 70.6ms
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--94219285c45cc7abd90ee21a757e45aa216cda79/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-02-03 14:42:22 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--94219285c45cc7abd90ee21a757e45aa216cda79", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/tcr2rfv9pbdiijcpsdp8n4qoja0k/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: tcr2rfv9pbdiijcpsdp8n4qoja0k[0m
+[36m  Disk Storage (2.8ms) [0m[32mUploaded file to key: variants/tcr2rfv9pbdiijcpsdp8n4qoja0k/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/tcr2rfv9pbdiijcpsdp8n4qoja0k/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45/An-extremely-goofy-movie-original.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45/An-extremely-goofy-movie-original.png
+Completed 302 Found in 73ms (ActiveRecord: 0.3ms | Allocations: 2726)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-02-03 14:42:22 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1420)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:42:23 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 944)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 45046)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.3ms | Allocations: 46559)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:42:39 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."user_id" = $1[0m  [["user_id", 248]]
+  Rendered products/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3964)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 48065)
+Completed 200 OK in 74ms (Views: 54.3ms | ActiveRecord: 7.0ms | Allocations: 57436)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:42:41 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 44108)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms | Allocations: 45780)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:42 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 44438)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms | Allocations: 46111)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:45 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nksxzRRBdUg88LQFxm1loZe15pf2WkRWJgUOQwejTi4I0PXgFlM4Ewzp9RVeJZPZoH4FxxmxNEZqJ8rv6MTdPg==", "session"=>{"username"=>"mp5@gmail.com12345678", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com12345678"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1593)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:45 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 44432)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms | Allocations: 45947)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:42:50 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7vpAWRv2KOAfg8z/Ia4oN/CQg2ArR7oe0fGgdNnsSUl4YYR0GeRluy+aje+55t5Px1tgMMSsyg6d02TYNovaWQ==", "session"=>{"username"=>"mp5@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 170ms (ActiveRecord: 0.3ms | Allocations: 1530)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:42:50 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 44258)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.3ms | Allocations: 46267)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 14:42:51 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 0.8ms | Allocations: 861)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 944)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 45045)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms | Allocations: 46556)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:43:00 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G//OtmifFyrsU1GQfBV5iPTgvqncjUumXtb1P2TxojqNZAqbao1acdxKEIDkXY/wwytd+TNmO7YS9DGTi5YxKg==", "product"=>{"title"=>"d4", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fafdf8d1a58 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-3413-rzogz7.PNG>, @original_filename="d4.PNG", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"d4.PNG\"\r\nContent-Type: image/png\r\n">, "price"=>"100"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "d4"], ["price", 100], ["user_id", 6], ["created_at", "2022-02-03 20:43:00.753728"], ["updated_at", "2022-02-03 20:43:00.753728"]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "0hlec6l3897xxd1hnn3nqr62xwm1"], ["filename", "d4.PNG"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 485473], ["checksum", "FO4elN9HC4erfGVnQhU3/w=="], ["created_at", "2022-02-03 20:43:00.758602"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 5], ["blob_id", 71], ["created_at", "2022-02-03 20:43:00.759832"]]
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:43:00.760700"], ["id", 5]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (5.2ms) [0m[32mUploaded file to key: 0hlec6l3897xxd1hnn3nqr62xwm1 (checksum: FO4elN9HC4erfGVnQhU3/w==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: fc4b0f7e-025e-482b-8796-b842078d358e) to Async(default) with arguments: #<GlobalID:0x00007fafdfb95b40 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/71>>
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 52ms (ActiveRecord: 7.1ms | Allocations: 25520)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2022-02-03 14:43:00 -0600
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc4b0f7e-025e-482b-8796-b842078d358e] Performing ActiveStorage::AnalyzeJob (Job ID: fc4b0f7e-025e-482b-8796-b842078d358e) from Async(default) enqueued at 2022-02-03T20:43:00Z with arguments: #<GlobalID:0x00007fafdfc24a70 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/71>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc4b0f7e-025e-482b-8796-b842078d358e] [36m  Disk Storage (1.0ms) [0m[34mDownloaded file from key: 0hlec6l3897xxd1hnn3nqr62xwm1[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc4b0f7e-025e-482b-8796-b842078d358e]   [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc4b0f7e-025e-482b-8796-b842078d358e]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":1283,\"height\":721,\"analyzed\":true}"], ["id", 71]]
+  Rendered products/show.html.erb within layouts/application (Duration: 51.8ms | Allocations: 2877)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc4b0f7e-025e-482b-8796-b842078d358e]   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc4b0f7e-025e-482b-8796-b842078d358e] Performed ActiveStorage::AnalyzeJob (Job ID: fc4b0f7e-025e-482b-8796-b842078d358e) from Async(default) in 62.79ms
+  Rendered layout layouts/application.html.erb (Duration: 111.8ms | Allocations: 47251)
+Completed 200 OK in 117ms (Views: 112.1ms | ActiveRecord: 0.9ms | Allocations: 49108)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a4233f55b128085d20e3e4da50b2773a888e23e5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/d4.PNG" for 127.0.0.1 at 2022-02-03 14:43:00 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as */*
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a4233f55b128085d20e3e4da50b2773a888e23e5", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"d4"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/0hlec6l3897xxd1hnn3nqr62xwm1/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: 0hlec6l3897xxd1hnn3nqr62xwm1[0m
+[36m  Disk Storage (2.9ms) [0m[32mUploaded file to key: variants/0hlec6l3897xxd1hnn3nqr62xwm1/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/0hlec6l3897xxd1hnn3nqr62xwm1/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNR2hzWldNMmJETTRPVGQ0ZUdReGFHNXVNMjV4Y2pZeWVIZHRNUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJM2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpEUXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlka05DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowMS4wMTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--2aba941c2ca10bf42bcedfa1fc1d1be6e85a2b13/d4.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNR2hzWldNMmJETTRPVGQ0ZUdReGFHNXVNMjV4Y2pZeWVIZHRNUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJM2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpEUXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlka05DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowMS4wMTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--2aba941c2ca10bf42bcedfa1fc1d1be6e85a2b13/d4.png
+Completed 302 Found in 62ms (ActiveRecord: 0.2ms | Allocations: 3090)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNR2hzWldNMmJETTRPVGQ0ZUdReGFHNXVNMjV4Y2pZeWVIZHRNUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJM2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpEUXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlka05DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowMS4wMTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--2aba941c2ca10bf42bcedfa1fc1d1be6e85a2b13/d4.png" for 127.0.0.1 at 2022-02-03 14:43:01 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZNR2hzWldNMmJETTRPVGQ0ZUdReGFHNXVNMjV4Y2pZeWVIZHRNUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJM2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpEUXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlka05DNXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowMS4wMTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--2aba941c2ca10bf42bcedfa1fc1d1be6e85a2b13", "filename"=>"d4"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1426)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:43:01 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered products/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 44683)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.6ms | Allocations: 46472)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:43:04 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 44106)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms | Allocations: 45603)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 15.3ms | Allocations: 5158)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 49259)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 2.6ms | Allocations: 50900)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a172080817b25820bb47efd072a7c35c954e1ff/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/boogie.jpg" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a172080817b25820bb47efd072a7c35c954e1ff", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"boogie"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/icms6tces5kk56nj2lohn62op11h/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (yes)[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: variants/icms6tces5kk56nj2lohn62op11h/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS40OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--93cf798867719861357881977625b2a0ea252722/boogie.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS40OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--93cf798867719861357881977625b2a0ea252722/boogie.png
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 2142)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZiMjk2WlhjNE5tWXllV1Z3TVhwNWFtSm9jSE00WW5CMk9HaHVaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpHRjZZV2t1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGtZWHBoYVM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ2OjU5LjMyOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c8ba0c73d90dde9d516dff2669263a062e453126/dazai.png" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZiMjk2WlhjNE5tWXllV1Z3TVhwNWFtSm9jSE00WW5CMk9HaHVaaTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJOWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVpHRjZZV2t1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGtZWHBoYVM1d2JtY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzVwYldGblpTOXdibWNHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ2OjU5LjMyOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--c8ba0c73d90dde9d516dff2669263a062e453126", "filename"=>"dazai"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 1402)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 1402)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS40OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--93cf798867719861357881977625b2a0ea252722/boogie.png" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS40OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--93cf798867719861357881977625b2a0ea252722", "filename"=>"boogie"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1420)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1775752670baca50105458b006af037b364b40e7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/An-extremely-goofy-movie-original.jpg" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1775752670baca50105458b006af037b364b40e7", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"An-extremely-goofy-movie-original"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/5zcps8gkk0leiz5i7ehhnh0zqxhj/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (yes)[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: variants/5zcps8gkk0leiz5i7ehhnh0zqxhj/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS41ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--959b782bd494d9f6e6f446d360c957205b65eaf2/An-extremely-goofy-movie-original.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS41ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--959b782bd494d9f6e6f446d360c957205b65eaf2/An-extremely-goofy-movie-original.png
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2144)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS41ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--959b782bd494d9f6e6f446d360c957205b65eaf2/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-02-03 14:43:05 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS41ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--959b782bd494d9f6e6f446d360c957205b65eaf2", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1420)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:43:57 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 44443)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms | Allocations: 45944)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:44:03 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q4Ekpg2cHFgHkcmN2NrdclDRV7Mgyskl8FBwFga2eZ49GuCLD45RAzeIiJ1AkisKZxq0488huTW8crS66dHqjg==", "session"=>{"username"=>"mp5@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 172ms (ActiveRecord: 0.3ms | Allocations: 1541)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:44:03 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 44257)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.3ms | Allocations: 46011)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 14:44:04 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 0.9ms | Allocations: 859)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 45043)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 46555)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:44:11 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9eBC04c1ru7wlLkPzthkx0mlrfAMBrqcNrqZGb2XHb9je4b+hSfjtcCN+B9WkJK/fm5OoOPtyox6mF21UvCOrw==", "product"=>{"title"=>"test", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fafdf9ebb28 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-3413-1tto34d.jpg>, @original_filename="boogie.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"boogie.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"12"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "test"], ["price", 12], ["user_id", 6], ["created_at", "2022-02-03 20:44:11.154159"], ["updated_at", "2022-02-03 20:44:11.154159"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "6tho3c468ttk2pxn1uvgf907hdpm"], ["filename", "boogie.jpg"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 173461], ["checksum", "fyGyZmwKNgAovy1pcrLqrg=="], ["created_at", "2022-02-03 20:44:11.158129"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 6], ["blob_id", 72], ["created_at", "2022-02-03 20:44:11.159387"]]
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:44:11.160322"], ["id", 6]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (4.5ms) [0m[32mUploaded file to key: 6tho3c468ttk2pxn1uvgf907hdpm (checksum: fyGyZmwKNgAovy1pcrLqrg==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: bac46511-020c-4899-8733-63076356b14d) to Async(default) with arguments: #<GlobalID:0x00007fafdfac3168 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/72>>
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 27ms (ActiveRecord: 3.0ms | Allocations: 7940)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2022-02-03 14:44:11 -0600
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bac46511-020c-4899-8733-63076356b14d] Performing ActiveStorage::AnalyzeJob (Job ID: bac46511-020c-4899-8733-63076356b14d) from Async(default) enqueued at 2022-02-03T20:44:11Z with arguments: #<GlobalID:0x00007fafdfbac1d8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/72>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bac46511-020c-4899-8733-63076356b14d] [36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: 6tho3c468ttk2pxn1uvgf907hdpm[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 999)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bac46511-020c-4899-8733-63076356b14d]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bac46511-020c-4899-8733-63076356b14d]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":640,\"height\":358,\"analyzed\":true}"], ["id", 72]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bac46511-020c-4899-8733-63076356b14d]   [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [bac46511-020c-4899-8733-63076356b14d] Performed ActiveStorage::AnalyzeJob (Job ID: bac46511-020c-4899-8733-63076356b14d) from Async(default) in 56.37ms
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 46042)
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 0.8ms | Allocations: 47803)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a312e607775c2cd07447ae13af9f2427c25b40b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/boogie.jpg" for 127.0.0.1 at 2022-02-03 14:44:11 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4a312e607775c2cd07447ae13af9f2427c25b40b", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"boogie"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/6tho3c468ttk2pxn1uvgf907hdpm/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (2.3ms) [0m[34mDownloaded file from key: 6tho3c468ttk2pxn1uvgf907hdpm[0m
+[36m  Disk Storage (2.7ms) [0m[32mUploaded file to key: variants/6tho3c468ttk2pxn1uvgf907hdpm/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.2ms) [0m[34mGenerated URL for file at key: variants/6tho3c468ttk2pxn1uvgf907hdpm/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOblJvYnpOak5EWTRkSFJyTW5CNGJqRjFkbWRtT1RBM2FHUndiUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0OToxMS4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--dcbb1996c90e32e4044beb817ab3e9bf0356302c/boogie.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOblJvYnpOak5EWTRkSFJyTW5CNGJqRjFkbWRtT1RBM2FHUndiUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0OToxMS4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--dcbb1996c90e32e4044beb817ab3e9bf0356302c/boogie.png
+Completed 302 Found in 48ms (ActiveRecord: 0.3ms | Allocations: 2728)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOblJvYnpOak5EWTRkSFJyTW5CNGJqRjFkbWRtT1RBM2FHUndiUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0OToxMS4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--dcbb1996c90e32e4044beb817ab3e9bf0356302c/boogie.png" for 127.0.0.1 at 2022-02-03 14:44:11 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOblJvYnpOak5EWTRkSFJyTW5CNGJqRjFkbWRtT1RBM2FHUndiUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0OToxMS4zMzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--dcbb1996c90e32e4044beb817ab3e9bf0356302c", "filename"=>"boogie"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1420)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:44:12 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 44879)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.5ms | Allocations: 46667)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2022-02-03 14:44:14 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 0.8ms | Allocations: 855)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 938)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 45039)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms | Allocations: 46556)
+
+
+Started POST "/products" for 127.0.0.1 at 2022-02-03 14:44:18 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w4NTOts3WNPT8VT1xJ7sHlkX3EN5rMUrtZGsGQDNJtFVGJcX2SUViOPoFeVc1hpmbtw/E5ZHtTv5s2i176q1wQ==", "product"=>{"title"=>"ds", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fafdf67a840 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-3413-iyf9ds.PNG>, @original_filename="Bitt.PNG", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Bitt.PNG\"\r\nContent-Type: image/png\r\n">, "price"=>"23"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ds"], ["price", 23], ["user_id", 6], ["created_at", "2022-02-03 20:44:18.608012"], ["updated_at", "2022-02-03 20:44:18.608012"]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "85qdeuwbdv8oi8a1nhrbj8np2pe5"], ["filename", "Bitt.PNG"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 170709], ["checksum", "SHQUT6Fe3BQ5bj0FRsRPCA=="], ["created_at", "2022-02-03 20:44:18.611049"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 7], ["blob_id", 73], ["created_at", "2022-02-03 20:44:18.612698"]]
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-03 20:44:18.613695"], ["id", 7]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (4.8ms) [0m[32mUploaded file to key: 85qdeuwbdv8oi8a1nhrbj8np2pe5 (checksum: SHQUT6Fe3BQ5bj0FRsRPCA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: ca7a72e9-56ed-4148-839a-11a79c2c6441) to Async(default) with arguments: #<GlobalID:0x00007fafdf719bc0 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/73>>
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 21ms (ActiveRecord: 3.1ms | Allocations: 7934)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2022-02-03 14:44:18 -0600
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ca7a72e9-56ed-4148-839a-11a79c2c6441] Performing ActiveStorage::AnalyzeJob (Job ID: ca7a72e9-56ed-4148-839a-11a79c2c6441) from Async(default) enqueued at 2022-02-03T20:44:18Z with arguments: #<GlobalID:0x00007fafdf7d3cc8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/73>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ca7a72e9-56ed-4148-839a-11a79c2c6441] [36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: 85qdeuwbdv8oi8a1nhrbj8np2pe5[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1002)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ca7a72e9-56ed-4148-839a-11a79c2c6441]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ca7a72e9-56ed-4148-839a-11a79c2c6441]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":444,\"height\":606,\"analyzed\":true}"], ["id", 73]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ca7a72e9-56ed-4148-839a-11a79c2c6441]   [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ca7a72e9-56ed-4148-839a-11a79c2c6441] Performed ActiveStorage::AnalyzeJob (Job ID: ca7a72e9-56ed-4148-839a-11a79c2c6441) from Async(default) in 50.58ms
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 46040)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.7ms | Allocations: 47800)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5745e544a087acbc893cc1affa295d640327eead/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/Bitt.PNG" for 127.0.0.1 at 2022-02-03 14:44:18 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as */*
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5745e544a087acbc893cc1affa295d640327eead", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"Bitt"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/85qdeuwbdv8oi8a1nhrbj8np2pe5/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (1.0ms) [0m[34mDownloaded file from key: 85qdeuwbdv8oi8a1nhrbj8np2pe5[0m
+[36m  Disk Storage (3.0ms) [0m[32mUploaded file to key: variants/85qdeuwbdv8oi8a1nhrbj8np2pe5/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: variants/85qdeuwbdv8oi8a1nhrbj8np2pe5/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPRFZ4WkdWMWQySmtkamh2YVRoaE1XNW9jbUpxT0c1d01uQmxOUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJN2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFtbDBkQzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowSnBkSFF1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkRvUmMyVnlkbWxqWlY5dVlXMWxPZ3BzYjJOaGJBPT0iLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ5OjE4Ljc4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d48cfc51de3bcf9b80b96fe0e560944b2a3eafa3/Bitt.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPRFZ4WkdWMWQySmtkamh2YVRoaE1XNW9jbUpxT0c1d01uQmxOUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJN2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFtbDBkQzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowSnBkSFF1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkRvUmMyVnlkbWxqWlY5dVlXMWxPZ3BzYjJOaGJBPT0iLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ5OjE4Ljc4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d48cfc51de3bcf9b80b96fe0e560944b2a3eafa3/Bitt.png
+Completed 302 Found in 53ms (ActiveRecord: 0.2ms | Allocations: 2732)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPRFZ4WkdWMWQySmtkamh2YVRoaE1XNW9jbUpxT0c1d01uQmxOUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJN2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFtbDBkQzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowSnBkSFF1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkRvUmMyVnlkbWxqWlY5dVlXMWxPZ3BzYjJOaGJBPT0iLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ5OjE4Ljc4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d48cfc51de3bcf9b80b96fe0e560944b2a3eafa3/Bitt.png" for 127.0.0.1 at 2022-02-03 14:44:18 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZPRFZ4WkdWMWQySmtkamh2YVRoaE1XNW9jbUpxT0c1d01uQmxOUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJN2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFtbDBkQzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowSnBkSFF1Y0c1bkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSU9hVzFoWjJVdmNHNW5CanNHVkRvUmMyVnlkbWxqWlY5dVlXMWxPZ3BzYjJOaGJBPT0iLCJleHAiOiIyMDIyLTAyLTAzVDIwOjQ5OjE4Ljc4NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d48cfc51de3bcf9b80b96fe0e560944b2a3eafa3", "filename"=>"Bitt"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1420)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:44:19 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered products/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 972)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 45074)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.5ms | Allocations: 46862)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:44:45 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 44108)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 45780)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:44:46 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 44438)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 46110)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:44:50 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BskPQpiDxxWHFDqiFOxTlR1CTQHsfMvvOvwACXRSHyeQUstvmpGKTrcNe7KMpKXtKomuUQOXu/923sSlmzWMNw==", "session"=>{"username"=>"mp5@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 178ms (ActiveRecord: 2.6ms | Allocations: 6356)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:44:51 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 44259)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 0.3ms | Allocations: 46404)
+
+
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 14:44:53 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 1.0ms | Allocations: 919)
+  Rendered products/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1002)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 45103)
+Completed 200 OK in 58ms (Views: 49.7ms | ActiveRecord: 2.0ms | Allocations: 51086)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-02-03 14:44:54 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered products/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1871)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 45972)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.4ms | Allocations: 48409)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:44:57 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 44106)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 45603)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 14:44:58 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 44431)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms | Allocations: 45929)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 14:45:02 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"51xPxxsWtyry5EZvnEdiHkkFbqGG045gLCJmLi/CILJxx4vqGQT6ccL9B38ED5Rmfs6N8Wk4/nBgAKKCwKWzog==", "session"=>{"username"=>"mp5@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mp5@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 171ms (ActiveRecord: 0.2ms | Allocations: 1528)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 14:45:02 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 44253)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.2ms | Allocations: 46006)
+
+
+Started DELETE "/deleteprofile" for 127.0.0.1 at 2022-02-03 14:45:06 -0600
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eCut57AcDuaHNHdgr79prgtdkRve02mW1gFHn+LJB9vusGnKsg5DvbctNnA395/WPJZySzE4GYaaI4MzDa6Uyw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 69]]
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 3]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 71]]
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 5]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 72]]
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 6]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 73]]
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 7]]
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: cfa1d81b-d857-428e-9ed7-594afdcc53ad) to Async(default) with arguments: #<GlobalID:0x00007fafdf5c1520 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/69>>
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a) to Async(default) with arguments: #<GlobalID:0x00007fafdf5cdb18 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/71>>
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 21f5327a-233b-41e0-a69c-85c97404f166) to Async(default) with arguments: #<GlobalID:0x00007fafdf5dad90 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/72>>
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 1666db2e-bb03-4cda-a8be-49173d24eb40) to Async(default) with arguments: #<GlobalID:0x00007fafdf5fb900 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/73>>
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 10.5ms | Allocations: 23831)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad] Performing ActiveStorage::PurgeJob (Job ID: cfa1d81b-d857-428e-9ed7-594afdcc53ad) from Async(default) enqueued at 2022-02-03T20:45:06Z with arguments: #<GlobalID:0x00007fafdf63a3d0 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/69>>
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad]   [1m[36mActiveStorage::Attachment Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 69], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a] Performing ActiveStorage::PurgeJob (Job ID: 1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a) from Async(default) enqueued at 2022-02-03T20:45:06Z with arguments: #<GlobalID:0x00007fafdf688af8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/71>>
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad]   [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 69], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a]   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad]   [1m[36mActiveStorage::Blob Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 69]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 71], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 71], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad]   [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: oozew86f2yep1zyjbhps8bpv8hnf[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a]   [1m[36mActiveStorage::Blob Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 71]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad] [36m  Disk Storage (0.9ms) [0m[31mDeleted files by key prefix: variants/oozew86f2yep1zyjbhps8bpv8hnf/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa1d81b-d857-428e-9ed7-594afdcc53ad] Performed ActiveStorage::PurgeJob (Job ID: cfa1d81b-d857-428e-9ed7-594afdcc53ad) from Async(default) in 15.06ms
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a]   [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: 0hlec6l3897xxd1hnn3nqr62xwm1[0m
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166] Performing ActiveStorage::PurgeJob (Job ID: 21f5327a-233b-41e0-a69c-85c97404f166) from Async(default) enqueued at 2022-02-03T20:45:06Z with arguments: #<GlobalID:0x00007fafdf6d6c58 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/72>>
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a] [36m  Disk Storage (0.9ms) [0m[31mDeleted files by key prefix: variants/0hlec6l3897xxd1hnn3nqr62xwm1/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a] Performed ActiveStorage::PurgeJob (Job ID: 1de208f6-9e59-40cd-9d0c-d6e71c8cfd1a) from Async(default) in 9.31ms
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 72], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2022-02-03 14:45:06 -0600
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 72], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 72]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40] Performing ActiveStorage::PurgeJob (Job ID: 1666db2e-bb03-4cda-a8be-49173d24eb40) from Async(default) enqueued at 2022-02-03T20:45:06Z with arguments: #<GlobalID:0x00007fafdf6f6c38 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/73>>
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166]   [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: 6tho3c468ttk2pxn1uvgf907hdpm[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 73], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166] [36m  Disk Storage (0.9ms) [0m[31mDeleted files by key prefix: variants/6tho3c468ttk2pxn1uvgf907hdpm/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 73], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [21f5327a-233b-41e0-a69c-85c97404f166] Performed ActiveStorage::PurgeJob (Job ID: 21f5327a-233b-41e0-a69c-85c97404f166) from Async(default) in 9.71ms
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 73]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40]   [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40] [36m  Disk Storage (0.2ms) [0m[31mDeleted file from key: 85qdeuwbdv8oi8a1nhrbj8np2pe5[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40] [36m  Disk Storage (1.6ms) [0m[31mDeleted files by key prefix: variants/85qdeuwbdv8oi8a1nhrbj8np2pe5/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1666db2e-bb03-4cda-a8be-49173d24eb40] Performed ActiveStorage::PurgeJob (Job ID: 1666db2e-bb03-4cda-a8be-49173d24eb40) from Async(default) in 8.6ms
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 44215)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms | Allocations: 45749)
+
+
+Started GET "/marketplace" for 127.0.0.1 at 2022-02-03 14:45:07 -0600
+Processing by ProductsController#marketplace as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/marketplace.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  Rendered products/marketplace.html.erb within layouts/application (Duration: 22.2ms | Allocations: 4123)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 48225)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 1.7ms | Allocations: 49762)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS40OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--93cf798867719861357881977625b2a0ea252722/boogie.png" for 127.0.0.1 at 2022-02-03 14:45:08 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZhV050Y3paMFkyVnpOV3RyTlRadWFqSnNiMmh1TmpKdmNERXhhQzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NJL2FXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVltOXZaMmxsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25ZbTl2WjJsbExuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS40OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--93cf798867719861357881977625b2a0ea252722", "filename"=>"boogie"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS41ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--959b782bd494d9f6e6f446d360c957205b65eaf2/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-02-03 14:45:08 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZOWHBqY0hNNFoydHJNR3hsYVhvMWFUZGxhR2h1YURCNmNYaG9haTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0ODowNS41ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--959b782bd494d9f6e6f446d360c957205b65eaf2", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 1426)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45/An-extremely-goofy-movie-original.png" for 127.0.0.1 at 2022-02-03 14:45:08 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR055TW5KbWRqbHdZbVJwYVdwamNITmtjRGh1TkhGdmFtRXdheTlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKMWFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaVFXNHRaWGgwY21WdFpXeDVMV2R2YjJaNUxXMXZkbWxsTFc5eWFXZHBibUZzTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25RVzR0WlhoMGNtVnRaV3g1TFdkdmIyWjVMVzF2ZG1sbExXOXlhV2RwYm1Gc0xuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wMi0wM1QyMDo0NzoyMi41MjNaIiwicHVyIjoiYmxvYl9rZXkifX0=--b40622b3a88ce07559d13467db107f352ced8b45", "filename"=>"An-extremely-goofy-movie-original"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 1426)
+
+
