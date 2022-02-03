@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1><span style = "color:white">Welcome</span></h1>
+<% if logged_in? %>
+    <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>
+<%end%>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>

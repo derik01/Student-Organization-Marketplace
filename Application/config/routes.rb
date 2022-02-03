@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :members
   resources :products
   get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'sessions#create'
@@ -6,7 +7,8 @@ Rails.application.routes.draw do
 
   get "/", to: "articles#index"
 
-  get "/signup", to: "users#new"
+  get "/signup_organization", to: "users#new"
+  get "/signup_member", to: "members#new"
 
   resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
@@ -24,6 +26,8 @@ Rails.application.routes.draw do
 
   delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
+
+  get "member_profile", to: "members#show"
 
   resources :articles
   resources :member
