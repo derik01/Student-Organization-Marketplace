@@ -4,4 +4,5 @@
     <td><%= button_to 'Add Product', "/upload", method: :get %></td>
     <td><%= button_to 'Edit Profile', '/editprofile', method: :get %></td>
     <td><%= button_to 'Delete Account', '/deleteprofile', method: :delete, data: {confirm: "Are you sure?"} %></td>
+    <td><%= button_to 'Logout', logout_path, :method => :delete %></td>
 <%end%>

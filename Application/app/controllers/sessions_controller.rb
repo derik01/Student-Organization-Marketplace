@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       if @member && @member.authenticate(params[:session][:password])
         session[:user_type] = "Member"
         session[:id] = @member.id
-        redirect_to '/member_profile'
+        redirect_to @member
       else
         flash[:notice] = 'Invalid email/password combination'
         redirect_to '/sign_in'
