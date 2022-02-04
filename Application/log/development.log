@@ -49349,3 +49349,91 @@ Started GET "/members/assets/images/favicon" for 127.0.0.1 at 2022-02-03 17:36:1
   
 ActionController::RoutingError (No route matches [GET] "/members/assets/images/favicon"):
   
+Started GET "/" for 127.0.0.1 at 2022-02-03 19:23:44 -0600
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 334)
+Started GET "/" for 127.0.0.1 at 2022-02-03 19:23:46 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 11630.6ms | Allocations: 2392141)
+  Rendered layout layouts/application.html.erb (Duration: 10333.6ms | Allocations: 2017806)
+Completed 200 OK in 11667ms (Views: 11641.2ms | ActiveRecord: 0.0ms | Allocations: 2398493)
+
+
+Completed 200 OK in 10336ms (Views: 10334.7ms | ActiveRecord: 0.0ms | Allocations: 2019651)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 19:23:56 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 19:24:12 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 19:24:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 21.3ms | Allocations: 7482)
+  Rendered layout layouts/application.html.erb (Duration: 412.6ms | Allocations: 84753)
+Completed 200 OK in 419ms (Views: 417.2ms | ActiveRecord: 0.0ms | Allocations: 86959)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 19:24:21 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dyIPKMI09VveBmo0gQyT5xt+btHIV5vCTxqVoTU7j2fpf4+PtjbNsIfj1jmgMOvmWuZ+JcgNOOpXqaay2HHjDQ==", "session"=>{"username"=>"wranglers@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wranglers@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 401ms (ActiveRecord: 13.0ms | Allocations: 9012)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 19:24:22 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 451)
+  Rendered layout layouts/application.html.erb (Duration: 301.7ms | Allocations: 75880)
+Completed 200 OK in 314ms (Views: 304.5ms | ActiveRecord: 0.7ms | Allocations: 78476)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 19:24:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 19:24:25 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 14.8ms | Allocations: 1331)
+  Rendered products/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 1664)
+  Rendered layout layouts/application.html.erb (Duration: 395.0ms | Allocations: 77092)
+Completed 200 OK in 509ms (Views: 400.6ms | ActiveRecord: 10.5ms | Allocations: 83390)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 19:24:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started POST "/products" for 127.0.0.1 at 2022-02-03 19:24:35 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H8M0XIpJub14WO8ZX29m66SFlutkBcvDMZj+c5uyu/yBnrT7/kuBViG9UxR+Ux7q5R2GH2RfaOspK81gdvjXlg==", "product"=>{"title"=>"Water Bottle4", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f0dc3319c00 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-4319-aqe5i3.jpg>, @original_filename="water_bottle.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"water_bottle.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (1.2ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Water Bottle4"], ["created_at", "2022-02-04 01:24:35.277210"], ["updated_at", "2022-02-04 01:24:35.277210"]]
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 18], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 164ms (ActiveRecord: 11.4ms | Allocations: 25198)
+
+
+  
+ActiveRecord::RecordNotSaved (Failed to save the new associated image_attachment.):
+  
+app/controllers/products_controller.rb:32:in `block in create'
+app/controllers/products_controller.rb:31:in `create'
