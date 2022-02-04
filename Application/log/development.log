@@ -49437,3 +49437,184 @@ ActiveRecord::RecordNotSaved (Failed to save the new associated image_attachment
   
 app/controllers/products_controller.rb:32:in `block in create'
 app/controllers/products_controller.rb:31:in `create'
+Started GET "/" for 127.0.0.1 at 2022-02-03 22:27:03 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 334)
+Started GET "/" for 127.0.0.1 at 2022-02-03 22:27:05 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 11184.9ms | Allocations: 2382576)
+  Rendered layout layouts/application.html.erb (Duration: 9544.9ms | Allocations: 1979851)
+Completed 200 OK in 11220ms (Views: 11195.7ms | ActiveRecord: 0.0ms | Allocations: 2388928)
+
+
+Completed 200 OK in 9547ms (Views: 9546.0ms | ActiveRecord: 0.0ms | Allocations: 1981475)
+
+
+Started GET "/assets/argon-f1d99972b19f303c6c08dc43c4b3f1c5a78df046d4d5f487463d474b8d720728.css" for 127.0.0.1 at 2022-02-03 22:27:15 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 22:27:18 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 7483)
+  Rendered layout layouts/application.html.erb (Duration: 345.5ms | Allocations: 84738)
+Completed 200 OK in 351ms (Views: 348.4ms | ActiveRecord: 0.0ms | Allocations: 86944)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 22:27:25 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WJjBwkLkdgoc/LHcdJEx3xpWryTUfmZlp7oY5bqf5lHGxUFlNuZO4UUZDdFVrUneW86/0NQkxU2/CSv2V9WKOw==", "session"=>{"username"=>"anu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."username" = $1 LIMIT $2[0m  [["username", "anu@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 93ms (ActiveRecord: 8.4ms | Allocations: 8331)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 22:27:25 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 333)
+  Rendered layout layouts/application.html.erb (Duration: 254.9ms | Allocations: 75764)
+Completed 200 OK in 257ms (Views: 256.1ms | ActiveRecord: 0.0ms | Allocations: 77332)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started POST "/sign_in" for 127.0.0.1 at 2022-02-03 22:27:43 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cyGtrhr5C2FZfRSyJ/b3YDkMQsa7Q4xUXq2Rs1Cl6LPtfC0JbvszigCYqL8Gyo9heJRSMrsZL3xGHqKgve+E2Q==", "session"=>{"username"=>"wranglers@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wranglers@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 279ms (ActiveRecord: 3.9ms | Allocations: 4957)
+
+
+Started GET "/profile" for 127.0.0.1 at 2022-02-03 22:27:43 -0600
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 451)
+  Rendered layout layouts/application.html.erb (Duration: 219.0ms | Allocations: 75880)
+Completed 200 OK in 227ms (Views: 221.2ms | ActiveRecord: 0.6ms | Allocations: 78475)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started GET "/upload" for 127.0.0.1 at 2022-02-03 22:27:46 -0600
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 7.7ms | Allocations: 1331)
+  Rendered products/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1664)
+  Rendered layout layouts/application.html.erb (Duration: 242.2ms | Allocations: 77092)
+Completed 200 OK in 273ms (Views: 245.7ms | ActiveRecord: 4.8ms | Allocations: 82782)
+
+
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:47 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+Started POST "/products" for 127.0.0.1 at 2022-02-03 22:27:54 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0tX+XkLjQxUvCkaIHX1hPdltxok8g0SRFSa0QgX3lVZMiH75NuF7/nbv+oU8QRk8mPXWfTzZ57kNlYdR6L35PA==", "product"=>{"title"=>"Bottle4", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7f91eea288 @tempfile=#<Tempfile:/tmp/RackMultipart20220203-4759-1yogzkp.jpg>, @original_filename="water_bottle.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"water_bottle.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Bottle4"], ["created_at", "2022-02-04 04:27:55.106515"], ["updated_at", "2022-02-04 04:27:55.106515"]]
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 20], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (1.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at", "service_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "tl9ep6spfo5wlzjrkmlg46a73aiu"], ["filename", "water_bottle.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 10798], ["checksum", "gr9rUXt9KkKS66FR3phxyg=="], ["created_at", "2022-02-04 04:27:55.128815"], ["service_name", "local"]]
+  [1m[36mActiveStorage::Attachment Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Product"], ["record_id", 20], ["blob_id", 2], ["created_at", "2022-02-04 04:27:55.131917"]]
+  [1m[36mProduct Update (1.0ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-02-04 04:27:55.133978"], ["id", 20]]
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (7.7ms) [0m[32mUploaded file to key: tl9ep6spfo5wlzjrkmlg46a73aiu (checksum: gr9rUXt9KkKS66FR3phxyg==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 1aafb68d-9502-4540-a42e-e7f7a40b9a8b) to Async(default) with arguments: #<GlobalID:0x00007f7f925f4718 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/products/20
+Completed 302 Found in 218ms (ActiveRecord: 21.6ms | Allocations: 35267)
+
+
+Started GET "/products/20" for 127.0.0.1 at 2022-02-03 22:27:55 -0600
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1aafb68d-9502-4540-a42e-e7f7a40b9a8b] Performing ActiveStorage::AnalyzeJob (Job ID: 1aafb68d-9502-4540-a42e-e7f7a40b9a8b) from Async(default) enqueued at 2022-02-04T04:27:55Z with arguments: #<GlobalID:0x00007f7f9265a4c8 @uri=#<URI::GID gid://app-path/ActiveStorage::Blob/2>>
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"20"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1aafb68d-9502-4540-a42e-e7f7a40b9a8b] [36m  Disk Storage (11.2ms) [0m[34mDownloaded file from key: tl9ep6spfo5wlzjrkmlg46a73aiu[0m
+  [1m[36mProduct Load (4.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 20], ["record_type", "Product"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1aafb68d-9502-4540-a42e-e7f7a40b9a8b]   [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1aafb68d-9502-4540-a42e-e7f7a40b9a8b]   [1m[36mActiveStorage::Blob Update (3.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":800,\"height\":800,\"analyzed\":true}"], ["id", 2]]
+  Rendered products/show.html.erb within layouts/application (Duration: 617.9ms | Allocations: 5022)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1aafb68d-9502-4540-a42e-e7f7a40b9a8b]   [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1aafb68d-9502-4540-a42e-e7f7a40b9a8b] Performed ActiveStorage::AnalyzeJob (Job ID: 1aafb68d-9502-4540-a42e-e7f7a40b9a8b) from Async(default) in 796.23ms
+  Rendered layout layouts/application.html.erb (Duration: 861.8ms | Allocations: 81147)
+Completed 200 OK in 1028ms (Views: 860.9ms | ActiveRecord: 45.3ms | Allocations: 92421)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71/water_bottle.jpg" for 127.0.0.1 at 2022-02-03 22:27:56 -0600
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c6f9fd6d8254cf442f222167ee6742fb7a104cec", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5aGJtUmZjR0ZrV3docEFjaHBBY2g3QnpvTVozSmhkbWwwZVVraUNtNXZjblJvQmpvR1JWUTZEMkpoWTJ0bmNtOTFibVE2RUhSeVlXNXpjR0Z5Wlc1MCIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--fb2906fc99e66f15812d2fd28739b4137fe04b71", "filename"=>"water_bottle"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mChecked if file exists at key: variants/tl9ep6spfo5wlzjrkmlg46a73aiu/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (no)[0m
+[36m  Disk Storage (20.5ms) [0m[34mDownloaded file from key: tl9ep6spfo5wlzjrkmlg46a73aiu[0m
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: variants/tl9ep6spfo5wlzjrkmlg46a73aiu/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168[0m
+[36m  Disk Storage (1.7ms) [0m[34mGenerated URL for file at key: variants/tl9ep6spfo5wlzjrkmlg46a73aiu/d005f018dfcf32acc8a976bdfddebed38c76cd0545ebe47a33269377e9c7b168 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR3c1WlhBMmMzQm1ielYzYkhwcWNtdHRiR2MwTm1FM00yRnBkUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDItMDRUMDQ6MzI6NTYuNTIwWiIsInB1ciI6ImJsb2Jfa2V5In19--d01d2acd63bf2b5f1295898c19004c5c106b40ec/water_bottle.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR3c1WlhBMmMzQm1ielYzYkhwcWNtdHRiR2MwTm1FM00yRnBkUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDItMDRUMDQ6MzI6NTYuNTIwWiIsInB1ciI6ImJsb2Jfa2V5In19--d01d2acd63bf2b5f1295898c19004c5c106b40ec/water_bottle.png
+Completed 302 Found in 158ms (ActiveRecord: 0.8ms | Allocations: 4382)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR3c1WlhBMmMzQm1ielYzYkhwcWNtdHRiR2MwTm1FM00yRnBkUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDItMDRUMDQ6MzI6NTYuNTIwWiIsInB1ciI6ImJsb2Jfa2V5In19--d01d2acd63bf2b5f1295898c19004c5c106b40ec/water_bottle.png" for 127.0.0.1 at 2022-02-03 22:27:56 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSnJkbUZ5YVdGdWRITXZkR3c1WlhBMmMzQm1ielYzYkhwcWNtdHRiR2MwTm1FM00yRnBkUzlrTURBMVpqQXhPR1JtWTJZek1tRmpZemhoT1RjMlltUm1aR1JsWW1Wa016aGpOelpqWkRBMU5EVmxZbVUwTjJFek16STJPVE0zTjJVNVl6ZGlNVFk0QmpvR1JWUTZFR1JwYzNCdmMybDBhVzl1U1NKTGFXNXNhVzVsT3lCbWFXeGxibUZ0WlQwaWQyRjBaWEpmWW05MGRHeGxMbkJ1WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmQyRjBaWEpmWW05MGRHeGxMbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDItMDRUMDQ6MzI6NTYuNTIwWiIsInB1ciI6ImJsb2Jfa2V5In19--d01d2acd63bf2b5f1295898c19004c5c106b40ec", "filename"=>"water_bottle"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 1476)
+
+
+Started GET "/products/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:56 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/products/assets/images/favicon"):
+  
+Started GET "/products" for 127.0.0.1 at 2022-02-03 22:27:58 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:27:58 -0600
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 661)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 284.7ms | Allocations: 110768)
+Completed 200 OK in 293ms (Views: 285.1ms | ActiveRecord: 1.6ms | Allocations: 112467)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 22:28:05 -0600
+Started GET "/assets/images/favicon" for 127.0.0.1 at 2022-02-03 22:28:05 -0600
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 294.1ms | Allocations: 110133)
+Completed 200 OK in 296ms (Views: 295.3ms | ActiveRecord: 0.0ms | Allocations: 111664)
+
+
