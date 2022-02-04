@@ -18,6 +18,18 @@
 	background-color: var(--color1);
 }
 
+nav.navbar.navbar-top.navbar-expand.navbar-dark.bg-primary {
+    background-color: #500000 !important;
+}
+
+div.header.bg-primary {
+  background-color: #500000 !important;
+}
+
+a.nav-link.py-2.px-3.active {
+    background-color: #500000;
+}
+
 #nav-header {
 	padding: 20px;
 	width: 100%;
@@ -31,7 +43,7 @@
 	font-family: 'Stalemate', cursive; 
 	font-size: 40px;
 	color: var(--color1);
-    background-color: var(--color2);
+  background-color: var(--color2);
 }
 #home-btn:hover {
 	text-decoration: none;
