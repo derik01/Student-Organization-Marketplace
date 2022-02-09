@@ -3,11 +3,8 @@
 
 <%= form_for @user do |f| %>
 
-    <%= f.label :"First Name:" %>
+    <%= f.label :"Organization Name:" %>
     <%= f.text_field :first %><br>
-
-    <%= f.label :"Last Name:" %>
-    <%= f.text_field :last %><br>
 
     <%= f.label :"Username:" %>
     <%= f.email_field :username %><br>
@@ -16,4 +13,9 @@
     <%= f.password_field :password %></span><br>
 
     <%= f.submit "Save changes", class: "btn btn-primary" %>
+
 <% end %>
+
+<td><%= button_to 'Delete Account', '/deleteprofile', method: :delete, data: {confirm: "Are you sure?"} %></td>
+
+<%= link_to 'Back', dashboard_path %>

@@ -2,6 +2,7 @@
 
 <nav id="nav-header" class="text-left">
 	<div id="logo" class="text-left">
+        <%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
@@ -92,10 +93,8 @@
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">Organization</h4>
 											<div class="form-group">
-												<%= f.label :"First Name:" %>
+												<%= f.label :"Organization Name:" %>
 												<%= f.text_field :first %><br><br>
-												<%= f.label :"Last Name:" %>
-												<%= f.text_field :last %><br><br>
 												<%= f.label :"Username:" %>
 												<%= f.text_field :username %><br>
                                             <br>
