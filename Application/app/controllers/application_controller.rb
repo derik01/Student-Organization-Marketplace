@@ -1,16 +1,18 @@
 class ApplicationController < ActionController::Base
+
   # before_action :require_login
+  # layout 'application'
 
   helper_method :current_user
   helper_method :logged_in?
 
 
   def require_login
-    redirect_to new_user_path unless session.include? :user_id
+    redirect_to new_user_path unless session.include? :id
   end
 
   def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    @current_user ||= User.find(session[:id]) if session[:id]
   end
 
   def logged_in?    

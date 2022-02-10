@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'sign_in', to: 'sessions#login'
+  resources :products
+  get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
@@ -7,11 +8,28 @@ Rails.application.routes.draw do
 
   get "/signup", to: "users#new"
 
-  resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index, :login]
+  resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
   get "/welcome", to: "articles#welcome"
 
+  get "/marketplace", to: "products#marketplace"
+
+  get "/dashboard", to: "dashboards#dashboard"
+
+  get "products", to: "articles#products"
+  get "members", to: "dashboards#members"
+  get "profile", to: "dashboards#dashboard"
+
+  get "upload", to: "products#new"
+  post "upload", to: "products#create"
+
+  get 'editprofile', to: "users#edit"
+
+  delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
+
+  resources :articles
+  resources :member
   # post "/login", to: "articles#welcome"
 
   # post "userinfo", to: ""
