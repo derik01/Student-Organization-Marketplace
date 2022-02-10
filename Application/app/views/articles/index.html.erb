@@ -46,12 +46,18 @@
 	</div>
 	<div id="no-drop">
 		<a href="sign_in">LOG IN</a>
-	</div>
-	<div id="no-drop">
-		<a href="signup">SIGN UP</a>
-	</div>
-</nav>
+		<div class="dropdown show">
+			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				SIGN UP
+			</a>
 
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				<a class="dropdown-item" href="signup_organization">Organization</a>
+				<a class="dropdown-item" href="signup_member">Member</a>
+			</div>
+		</div>
+	</nav>
+</div>
 
 <div class="mx-auto container text-center justify-content-center align-items-center" id="container">
 	<h1>Student Organization Marketplace</h1>
