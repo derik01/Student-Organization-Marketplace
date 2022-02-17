@@ -32,6 +32,8 @@ Rails.application.routes.draw do
 
   get "members/:id", to: "members#show"
 
+  get 'tags/:tag', to: 'products#tag_index', as: :tag
+
   resources :articles
   resources :member
   # post "/login", to: "articles#welcome"
