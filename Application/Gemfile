@@ -18,6 +18,10 @@ gem 'bcrypt'
 
 # gem 'pg_tester'
 
+gem "chartkick"
+
+gem "groupdate"
+
 gem 'rspec'
 
 gem 'pg', '~> 1.1'
