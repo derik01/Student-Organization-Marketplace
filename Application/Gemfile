@@ -16,7 +16,13 @@ gem 'simplecov', require: false, group: :test
 
 gem 'bcrypt' 
 
+gem 'paypal-checkout-sdk'
+
 # gem 'pg_tester'
+
+gem "chartkick"
+
+gem "groupdate"
 
 gem 'rspec'
 

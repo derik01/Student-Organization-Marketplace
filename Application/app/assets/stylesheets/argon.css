@@ -22828,9 +22828,9 @@ textarea[resize='horizontal']
     top: 2px;
 }
 
-.nav-pills .nav-item:not(:last-child)
+.nav-pills .nav-item
 {
-    padding-right: 1rem;
+    padding: 1rem;
 }
 
 .nav-pills .nav-link

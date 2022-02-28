@@ -97,6 +97,7 @@ a.nav-link.py-2.px-3.active {
 
 #index {
 	color: var(--color2);
+  padding: 20px;
 }
 
 #container{
@@ -129,6 +130,47 @@ a.nav-link.py-2.px-3.active {
 }
 
 // <<<<<<<<< end of index.html.erb 
+
+
+
+// members >>>>>>>>
+.home #members {
+  color: white;
+  padding: 20px;
+}
+.home #memchart {
+  padding: 2em;
+}
+.home #members td {
+  padding-right: 15px;
+}
+#bkbtn {
+  padding: 6px;
+  border-radius: 20px;
+  width: 10%;
+}
+#bkbtn:hover {
+  background-color: var(--color2);
+}
+#bkbtn a {
+  color: var(--color2);
+}
+#bkbtn:hover a {
+  color: var(--color1);
+}
+// <<<<<<<<< end of members
+
+
+
+
+// start of users >>>>>>>>>>>>
+#account {
+  padding: 10px;
+}
+
+
+
+// end of users <<<<<<<<<<<<<
 
 
 // start of new.html.erb >>>>>>>>
@@ -497,11 +539,30 @@ h6 span{
   opacity: 0.7;
 }
 
-.marketplace {
+#marketplace {
   margin: auto;
   text-align: center;
-  color: white;
+  color: var(--color2);
+  padding: 20px;
 }
+#marketplace #prodinfo {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color2);
+}
+#marketplace #prodedit #prodinfo {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+#marketplace #prodedit #prodadd a {
+  font-size: 160px;
+  color: var(--color2);
+}
+#marketplace #prodedit {
+  border: 2px solid var(--color2);
+  background-color: var(--color1);
+}
+
 
 a.button1{
   display:inline-block;
@@ -510,16 +571,17 @@ a.button1{
   margin:0 0.3em 0.3em 0;
   border-radius:0.12em;
   box-sizing: border-box;
+  width: 75%;
   text-decoration:none;
-  font-family:'Roboto',sans-serif;
+  font-family:'Montserrat', sans-serif;
   font-weight:300;
   color: black;
   text-align:center;
   transition: all 0.2s;
   }
   a.button1:hover{
-  color:#000000;
-  background-color:#FFFFFF;
+  color: var(--color2);
+  background-color: var(--color1);
   }
   @media all and (max-width:30em){
   a.button1{
