@@ -43,6 +43,16 @@ ActiveRecord::Schema.define(version: 2022_03_03_201434) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "members", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.string "first"
+    t.string "last"
+    t.string "organizations"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "title"
     t.integer "price"
@@ -59,16 +69,6 @@ ActiveRecord::Schema.define(version: 2022_03_03_201434) do
     t.string "last"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "members", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
-    t.string "first"
-    t.string "last"
-    t.string "organizations"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
