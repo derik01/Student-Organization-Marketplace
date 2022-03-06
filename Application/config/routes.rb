@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get "/mem_profile", to: "members#show"
+  get "/edit_mem", to: "members#edit"
   resources :members
   resources :products
+
   get 'sign_in', to: 'sessions#new'
   post 'sign_in', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
@@ -22,6 +25,7 @@ Rails.application.routes.draw do
   get "products", to: "articles#products"
   get "members", to: "dashboards#members"
   get "profile", to: "dashboards#dashboard"
+  
 
   get "/checkout", to: "orders#index"
 
@@ -33,7 +37,6 @@ Rails.application.routes.draw do
   delete 'deleteprofile', to: "users#destroy"
   delete '/', to: "sessions#destroy"
 
-  get "members/:id", to: "members#show"
   post :create_order, :to => 'orders#create_order'
   post :capture_order, :to => 'orders#capture_order'
 

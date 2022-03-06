@@ -1,5 +1,5 @@
 class MembersController < ApplicationController
-  before_action :set_member, only: %i[ show edit update destroy ]
+  # before_action :set_member, only: %i[ show edit update destroy ]
 
   # GET /members or /members.json
   def index
@@ -22,15 +22,20 @@ class MembersController < ApplicationController
   # POST /members or /members.json
   def create
     @member = Member.new(member_params)
-
-    respond_to do |format|
-      if @member.save
-        format.html { redirect_to member_url(@member), notice: "Member was successfully created." }
-        format.json { render :show, status: :created, location: @member }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @member.errors, status: :unprocessable_entity }
-      end
+    if /\A[^@\s]+@[^@\s]+\z/.match(@member.username) == nil 
+        flash[:notice] = "Invalid Username"
+        redirect_to '/signup_member'
+    elsif Member.find_by(username: @member.username)
+        flash[:notice] = "Username already exists"
+        redirect_to '/signup_member'
+    elsif @member.password.length < 8
+        flash[:notice] = "Password length should be 8 or longer."
+        redirect_to '/signup_member'
+    else @member.valid?
+        @member = Member.create(params.require(:member).permit(:first, :last, :username, :password))
+        session[:id] = @member.id
+        session[:type] = "member"
+        redirect_to '/mem_profile'
     end
   end
 
@@ -59,9 +64,9 @@ class MembersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_member
-      @member = Member.find(params[:id])
-    end
+    # def set_member
+    #   @member = Member.find(params[:id])
+    # end
 
     # Only allow a list of trusted parameters through.
     def member_params

@@ -23,6 +23,7 @@ class UsersController < ApplicationController
         else @user.valid?
             @user = User.create(params.require(:user).permit(:first, :last, :username, :password))
             session[:id] = @user.id
+            session[:type] = "organization"
             redirect_to '/profile'
         end
     end
