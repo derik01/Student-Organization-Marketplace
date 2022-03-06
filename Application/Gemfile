@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.6.6'
 
+gem 'rails-controller-testing'
+
 gem "image_processing", "~> 1.0"
 
 gem 'active_storage_validations'
@@ -13,6 +15,12 @@ gem 'simplecov', require: false, group: :test
 gem 'bcrypt' 
 
 # gem 'pg_tester'
+
+gem "chartkick"
+
+gem "groupdate"
+
+gem 'webpacker', '~> 5.0'
 
 gem 'rspec'
 
@@ -30,7 +38,7 @@ gem 'coffee-rails'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -62,9 +70,10 @@ end
 
 group :test do
   gem 'cucumber-rails', :require => false
-  # gem 'rspec-rails'
+  gem 'rspec-rails'
   gem 'webmock'
   gem 'database_cleaner'
+  gem 'simplecov', :require => false
 end
 
 group :production do

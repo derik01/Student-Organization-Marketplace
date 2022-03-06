@@ -13,13 +13,13 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if /\A[^@\s]+@[^@\s]+\z/.match(@user.username) == nil 
             flash[:notice] = "Invalid Username"
-            redirect_to '/signup'
+            redirect_to '/signup_organization'
         elsif User.find_by(username: @user.username)
             flash[:notice] = "Username already exists"
-            redirect_to '/signup'
+            redirect_to '/signup_organization'
         elsif @user.password.length < 8
             flash[:notice] = "Password length should be 8 or longer."
-            redirect_to '/signup'
+            redirect_to '/signup_organization'
         else @user.valid?
             @user = User.create(params.require(:user).permit(:first, :last, :username, :password))
             session[:id] = @user.id

@@ -1,16 +1,35 @@
-<% provide(:title, "Edit user") %>
-<span style = "color:white"><h2>Edit Existing Organization Account</h2>
+<div id="account">
+    <% provide(:title, "Edit user") %>
+    <span style = "color:white"><h2>Edit Existing Organization Account</h2>
+    
+    <div id="bkbtn">
+        <%= link_to '< Back', dashboard_path %>
+    </div>
 
-<%= form_for @user do |f| %>
+    <%= form_for @user do |f| %>
+        <div id="account">
+            <%= f.label :"Organization Name:" %>
+            <%= f.text_field :first %><br>
+        </div>
 
-    <%= f.label :"Organization Name:" %>
-    <%= f.text_field :first %><br>
+        <div id="account">
+            <%= f.label :"Username:" %>
+            <%= f.email_field :username %><br>
+        </div>
 
-    <%= f.label :"Username:" %>
-    <%= f.email_field :username %><br>
+        <div id="account">
+            <%= f.label :"Password:" %>
+            <%= f.password_field :password %></span><br>
+        </div>
 
-    <%= f.label :"Password:" %>
-    <%= f.password_field :password %></span><br>
+        <div id="account">
+            <%= f.submit "Save changes", class: "btn btn-primary" %>
+        </div>
 
-    <%= f.submit "Save changes", class: "btn btn-primary" %>
-<% end %>
+    <% end %>
+    
+    <div id="account">
+        <td><%= button_to 'Delete Account', '/deleteprofile', method: :delete, data: {confirm: "Are you sure?"} %></td>
+    </div>
+
+</div>

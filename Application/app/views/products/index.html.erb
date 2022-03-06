@@ -1,32 +1,57 @@
 <p id="notice"><%= notice %></p>
 
-<div id="index">
+<div id="marketplace" class="mx-auto">
+  <div id="bkbtn">
+    <%= link_to '< Back', dashboard_path %>
+  </div>
+
   <h1>Products</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
+  
     <tbody>
       <% @products.each do |product| %>
-        <tr>
-          <td><%= product.title %></td>
-          <td><%= button_to 'Show Product', product, method: :get %></td>
-          <td><%= button_to 'Edit Product', edit_product_path(product), method: :get %></td>
-          <td><%= button_to 'Delete Product', product_path(product), method: :delete, data: {confirm: "Are you sure?"} %></td>
-        </tr>
-      <% end %>
+        <div id="prodedit" class="card">
+       
+            <div id="prodinfo">
+              <%= product.title %>
+            </div>
+            <div id="prodinfo">
+              <%= image_tag product.image.variant(
+                format: :png,
+                resize_and_pad: [200, 200, gravity: 'north', background: :transparent]
+              ) %>
+            </div>
+            <div id="prodinfo">
+              <%= "Price: $" + product.price.to_s %>
+            </div>
+            <div id="prodinfo">
+              <%= button_to 'Edit Product', edit_product_path(product), method: :get %>
+            </div>
+            <div id="prodinfo">
+              <%= button_to 'Delete Product', product_path(product), method: :delete, data: {confirm: "Are you sure?"} %>
+            </div>
+
+         
+        </div>
+      <% end %> 
+
+      <div id="prodedit" class="card">
+        <div id="prodinfo">
+          <h5>Add New Product</h5>
+        </div>
+        <div id="prodadd">
+          <%= link_to '+', upload_path %>
+        </div>
+      </div>
+
     </tbody>
-  </table>
+
+  <br>
+
+  
+
 </div>
-<br>
 
-<%= link_to 'New Product', new_product_path %>
 
-<br>
 
-<%= link_to 'Return Home', '/' %>
+
