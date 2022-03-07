@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get "/", to: "articles#index"
 
-
+  get "/add_members", to: "users#add_members"
   get "/signup_organization", to: "users#new"
   get "/signup_member", to: "members#new"
 
