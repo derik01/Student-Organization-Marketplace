@@ -3,7 +3,8 @@
 <h1><span style = "color:white">Howdy</span></h1>
 <% if logged_in_member? %>
     <h1><span style = "color:white">You are Logged In, <%= current_member.first %></span></h1>
-    <h2><span style = "color:white">You are not currently part of any organizations</span></h2>
+    <h2><span style = "color:white">Organizations:</span></h2>
+    <span style = "color:white"><%= @org_name %></span>
 <%end%>
 
 <%= link_to 'Edit', "/edit_mem" %> |

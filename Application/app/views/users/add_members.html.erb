@@ -11,5 +11,10 @@
     <%= f.button :submit, "Add Member" %>
   <% end %>
 
-  <%= params.inspect %>
 </div>
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>

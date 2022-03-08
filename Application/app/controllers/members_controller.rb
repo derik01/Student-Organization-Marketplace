@@ -8,6 +8,9 @@ class MembersController < ApplicationController
 
   # GET /members/1 or /members/1.json
   def show
+    @org_num = current_member.users_id
+    @org = User.find_by_id(@org_num)
+    @org_name = @org.first
   end
 
   # GET /members/new

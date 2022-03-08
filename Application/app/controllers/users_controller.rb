@@ -15,15 +15,24 @@ class UsersController < ApplicationController
     def add_members
         # @user = User.find_by_id(session[:id])
         # @member = Member.find_by_username(params[:username])
+        if Member.exists?(username: params[:username])
+            flash[:notice] = "User " + @member.first + " " + @member.last +  " was added to the organization."
+        else
+            flash[:notice] = "User does not exist." 
+        end
     end
 
     def create_new_member
         @user = User.find_by_id(session[:id])
-        @member = Member.find_by_username(params[:username])
-        @member.update_attribute(:users_id, @user.id)
-        # @mem_params = {"first" => @member.first, "last" => @member.last, "username" => @member.username, "password" => @member.password}
-        # @user.members.create(@mem_params)
+        if Member.exists?(username: params[:username])
+            @member = Member.find_by_username(params[:username])
+            @member.update_attribute(:users_id, @user.id)
+            flash[:notice] = "User " + @member.first + " " + @member.last +  " was added to the organization."
+        else
+            flash[:notice] = "User does not exist." 
+        end
     end
+
         
     def create
         @user = User.new(user_params)
