@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get "/mem_profile", to: "members#show"
   get "/edit_mem", to: "members#edit"
+  delete "/delete_member", to: "members#destroy"
   resources :members
   resources :products
 
@@ -10,7 +11,8 @@ Rails.application.routes.draw do
 
   get "/", to: "articles#index"
 
-
+  get "/add_potential_members", to: "users#add_members"
+  post "/create_new_member", to: "users#create_new_member"
   get "/signup_organization", to: "users#new"
   get "/signup_member", to: "members#new"
 
@@ -23,7 +25,7 @@ Rails.application.routes.draw do
   get "/dashboard", to: "dashboards#dashboard"
 
   get "products", to: "articles#products"
-  get "members", to: "dashboards#members"
+  get "/view_members", to: "users#index"
   get "profile", to: "dashboards#dashboard"
   
 

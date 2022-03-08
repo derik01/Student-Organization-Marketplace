@@ -3,12 +3,37 @@ class UsersController < ApplicationController
     before_action :logged_in_user, only: [:edit, :update, :show]
     # before_action :correct_user,   only: [:edit, :update, :show]
 
-
-
     def new
         @user = User.new
     end
 
+    def index
+        @user = User.find_by_id(session[:id])
+        @members = Member.where(users_id: @user.id)
+    end
+
+    def add_members
+        # @user = User.find_by_id(session[:id])
+        # @member = Member.find_by_username(params[:username])
+        if Member.exists?(username: params[:username])
+            flash[:notice] = "User " + @member.first + " " + @member.last +  " was added to the organization."
+        else
+            flash[:notice] = "User does not exist." 
+        end
+    end
+
+    def create_new_member
+        @user = User.find_by_id(session[:id])
+        if Member.exists?(username: params[:username])
+            @member = Member.find_by_username(params[:username])
+            @member.update_attribute(:users_id, @user.id)
+            flash[:notice] = "User " + @member.first + " " + @member.last +  " was added to the organization."
+        else
+            flash[:notice] = "User does not exist." 
+        end
+    end
+
+        
     def create
         @user = User.new(user_params)
         if /\A[^@\s]+@[^@\s]+\z/.match(@user.username) == nil 
