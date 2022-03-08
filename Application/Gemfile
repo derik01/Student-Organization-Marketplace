@@ -26,6 +26,8 @@ gem "groupdate"
 
 gem 'rspec'
 
+gem 'google_sign_in'
+
 gem 'pg', '~> 1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
