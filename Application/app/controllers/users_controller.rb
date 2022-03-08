@@ -7,10 +7,24 @@ class UsersController < ApplicationController
         @user = User.new
     end
 
-    def add_members
-        redirect_to "members#index"
+    def index
+        @user = User.find_by_id(session[:id])
+        @members = Member.where(users_id: @user.id)
     end
 
+    def add_members
+        # @user = User.find_by_id(session[:id])
+        # @member = Member.find_by_username(params[:username])
+    end
+
+    def create_new_member
+        @user = User.find_by_id(session[:id])
+        @member = Member.find_by_username(params[:username])
+        @member.update_attribute(:users_id, @user.id)
+        # @mem_params = {"first" => @member.first, "last" => @member.last, "username" => @member.username, "password" => @member.password}
+        # @user.members.create(@mem_params)
+    end
+        
     def create
         @user = User.new(user_params)
         if /\A[^@\s]+@[^@\s]+\z/.match(@user.username) == nil 

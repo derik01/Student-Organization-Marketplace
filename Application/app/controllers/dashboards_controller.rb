@@ -10,4 +10,5 @@ class DashboardsController < ApplicationController
     def members
       @user = User.find_by_id(session[:id])
       @members = @user.members.all
+    end
   end
