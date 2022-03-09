@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get "/mem_profile", to: "members#show"
   get "/edit_mem", to: "members#edit"
   delete "/delete_member", to: "members#destroy"
+  delete "remove_member/:id", to: "users#remove_member", as: "remove_member"
   resources :members
   resources :products
 
