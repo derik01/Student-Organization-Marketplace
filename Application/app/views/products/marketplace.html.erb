@@ -59,7 +59,7 @@
 		<div class="card">
 		
 				<div id="prodinfo">
-					<%= product.title %>
+					<span style="color:black"><%= product.title %></span>
 				</div>
 				<div id="prodinfo">
 					<%= image_tag product.image.variant(
@@ -68,7 +68,7 @@
 					) %>
 				</div>
 				<div id="prodinfo">
-					<%= "Price: $" + product.price.to_s %>
+					<span style="color:black"><%= "Price: $" + product.price.to_s %></span>
 				</div>
 			
 			<a href="checkout" class="button1 mx-auto">Add to Cart</a>
