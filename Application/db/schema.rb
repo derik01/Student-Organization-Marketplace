@@ -65,7 +65,8 @@ ActiveRecord::Schema.define(version: 2032_05_03_201435) do
 
   create_table "products", force: :cascade do |t|
     t.string "title"
-    t.integer "price"
+    t.decimal "price"
+    t.integer "quantity"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -98,6 +99,6 @@ ActiveRecord::Schema.define(version: 2032_05_03_201435) do
 
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "members", "users", column: "users_id"
-  add_foreign_key "taggings", "products"
+  add_foreign_key "products", "users"
   add_foreign_key "taggings", "tags"
 end

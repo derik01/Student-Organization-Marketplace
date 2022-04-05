@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   get "/signup_organization", to: "users#new"
   get "/signup_member", to: "members#new"
 
+  post "/tag_marketplace", to: "products#tag_marketplace"
+
+  post "/marketplace", to: "products#tag_marketplace"
+
   resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]
 
   get "/welcome", to: "articles#welcome"

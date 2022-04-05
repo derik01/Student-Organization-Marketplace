@@ -1,23 +1,27 @@
-
 <nav id="nav-header" class="text-left">
 	<div id="logo" class="text-left">
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
 			PRODUCTS
 		</a>
 
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Apparel</a>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="button">
+			<%# <a class="dropdown-item" href="#">Apparel</a>
 			<a class="dropdown-item" href="#">Stationary</a>
 			<a class="dropdown-item" href="#">Events</a>
-			<a class="dropdown-item" href="#">Miscellanious</a>
+			<a class="dropdown-item" href="#">Miscellanious</a> %>
+			<%= form_with(url: "/tag_marketplace") do |f| %>
+				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, include_blank: true %>
+				<%= f.submit %>
+			<% end %>
 		</div>
 	</div>
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		ORGANIZATIONS
 		</a>
 		
@@ -42,11 +46,25 @@
 	<div id="no-drop">
 		<a href="sign_in">LOG IN</a>
 	</div>
-	<div id="no-drop">
-		<a href="signup">SIGN UP</a>
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			SIGN UP
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="signup_organization">Organization</a>
+			<a class="dropdown-item" href="signup_member">Member</a>
+		</div>
 	</div>
 
 </nav>
+
+
+
+
+
+
+
 
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>

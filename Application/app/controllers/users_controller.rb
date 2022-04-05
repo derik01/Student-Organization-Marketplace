@@ -23,24 +23,6 @@ class UsersController < ApplicationController
     end
 
     def add_members
-        # @user = User.find_by_id(session[:id])
-        # @member = Member.find_by_username(params[:username])
-        # if Member.exists?(username: params[:username])
-        #     flash[:notice] = "User " + @member.first + " " + @member.last +  " was added to the organization."
-        # else
-        #     flash[:notice] = "User does not exist." 
-        # end
-
-        # respond_to do |format|
-        #     format.html { 
-        #         if Member.exists?(username: params[:username]) 
-        #             redirect_to "/add_potential_members", notice: "User " + @member.first + " " + @member.last +  " was added to the organization."
-        #         else
-        #             format.html { redirect_to "/add_potential_members", notice: "User does not exist."}
-        #         end
-        #     }
-        #     format.json { head :no_content }
-        # end
     end
 
     def create_new_member
