@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   post "/tag_marketplace", to: "products#tag_marketplace"
 
+  post "/org_marketplace", to: "products#org_marketplace"
+
   post "/marketplace", to: "products#tag_marketplace"
 
   resources :users, only: [:new, :create, :update, :edit, :destroy, :show, :index]

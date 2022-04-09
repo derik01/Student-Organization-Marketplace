@@ -16,9 +16,13 @@ class ProductsController < ApplicationController
 
   def marketplace
     @tags = Tag.all
+    @users = User.all
     @products = Product.all
   end
 
+  def org_marketplace
+    @products = Product.where(user_id: params[:org_id])
+  end
 
   def tag_marketplace
     @selected_tag = Tag.find_by_id(params[:tag_id]).name
