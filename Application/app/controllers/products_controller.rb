@@ -33,6 +33,7 @@ class ProductsController < ApplicationController
   end 
 
   def add_to_cart
+    session[:cart] ||= []
     session[:cart] << params[:product_id]
     redirect_to "/marketplace"
   end
