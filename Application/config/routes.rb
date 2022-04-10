@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   post "add_to_cart/:product_id", to: "products#add_to_cart", as: 'add_to_cart'
 
+  get "view_cart", to: "products#view_cart", as: 'view_cart'
+
   post "/tag_marketplace", to: "products#tag_marketplace"
 
   post "/org_marketplace", to: "products#org_marketplace"

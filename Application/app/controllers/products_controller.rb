@@ -24,6 +24,14 @@ class ProductsController < ApplicationController
     session[:cart] ||= []
   end
 
+  def view_cart
+    @cart_ids = session[:cart]
+    @total = 0
+    @cart_ids.each do |cart_id|
+      @total += Product.find_by_id(cart_id).price
+    end
+  end 
+
   def add_to_cart
     session[:cart] << params[:product_id]
     redirect_to "/marketplace"
