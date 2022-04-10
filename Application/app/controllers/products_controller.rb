@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   skip_before_action :verify_authenticity_token
-  before_action :set_product, only: %i[ show edit update destroy ]
+  before_action :set_product, :initialize_cart, only: %i[ show edit update destroy ]
 
   # GET /products or /products.json
   def index
@@ -18,6 +18,15 @@ class ProductsController < ApplicationController
     @tags = Tag.all
     @users = User.all
     @products = Product.all
+  end
+
+  def initialize_cart
+    session[:cart] ||= []
+  end
+
+  def add_to_cart
+    session[:cart] << params[:product_id]
+    redirect_to "/marketplace"
   end
 
   def org_marketplace

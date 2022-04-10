@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get "/signup_organization", to: "users#new"
   get "/signup_member", to: "members#new"
 
+  post "add_to_cart/:product_id", to: "products#add_to_cart", as: 'add_to_cart'
+
   post "/tag_marketplace", to: "products#tag_marketplace"
 
   post "/org_marketplace", to: "products#org_marketplace"
@@ -28,6 +30,8 @@ Rails.application.routes.draw do
   get "/welcome", to: "articles#welcome"
 
   get "/marketplace", to: "products#marketplace"
+
+  root to: "products#marketplace"
 
   get "/dashboard", to: "dashboards#dashboard"
 
