@@ -26,7 +26,11 @@ gem "groupdate"
 
 gem 'rspec'
 
-gem 'google_sign_in'
+#gem 'google_sign_in'
+gem 'omniauth'
+gem 'dotenv-rails'
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection", '~> 1.0'
 
 gem 'pg', '~> 1.1'
 

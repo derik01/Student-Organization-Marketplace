@@ -39,8 +39,8 @@ Rails.application.routes.draw do
 
   get 'tags/:tag', to: 'products#tag_index', as: :tag
 
-  get 'login', to: 'logins#new'
-  get 'login/create', to: 'logins#create', as: :create_login
+  get '/auth/google_oauth2/callback' => 'sessions#omniauth'
+  get '/auth/failure', to: redirect('/')
 
 
 

@@ -3,8 +3,6 @@ class UsersController < ApplicationController
     before_action :logged_in_user, only: [:edit, :update, :show]
     # before_action :correct_user,   only: [:edit, :update, :show]
 
-
-
     def new
         @user = User.new
     end
@@ -21,7 +19,7 @@ class UsersController < ApplicationController
             flash[:notice] = "Password length should be 8 or longer."
             redirect_to '/signup_organization'
         else @user.valid?
-            @user = User.create(params.require(:user).permit(:first, :last, :username, :password))
+            @user = User.create(params.require(:user).permit(:first, :username, :password))
             session[:id] = @user.id
             redirect_to '/profile'
         end

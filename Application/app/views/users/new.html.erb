@@ -89,13 +89,7 @@
                                                 <span class="button__text" class="container text-center">Create Account</span>
                                             </button>
                             				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-											<%= google_sign_in_button 'Sign in with my Google account', proceed_to: create_login_url %>
-
-<%= google_sign_in_button image_tag('google_logo.png', alt: 'Google'), proceed_to: create_login_url %>
-
-<%= google_sign_in_button proceed_to: create_login_url do %>
-  Sign in with my <%= image_tag('google_logo.png', alt: 'Google') %> account
-<% end %>
+											<%= link_to "Log In with Google", '/auth/google_oauth2', method: :post %>
 				      					</div>
 			      					</div>
 			      				</div>
