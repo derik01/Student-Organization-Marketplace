@@ -19,7 +19,11 @@ Rails.application.routes.draw do
 
   post "add_to_cart/:product_id", to: "products#add_to_cart", as: 'add_to_cart'
 
+  delete "remove_from_cart/:product_id", to: "products#remove_from_cart", as: 'remove_from_cart'
+
   get "view_cart", to: "products#view_cart", as: 'view_cart'
+
+  post '/set_referral', to: "products#set_referral"
 
   post "/tag_marketplace", to: "products#tag_marketplace"
 

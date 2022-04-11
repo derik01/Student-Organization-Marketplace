@@ -1,7 +1,5 @@
 <p><span style= "color:white">Your Cart:</span></p>
 
-<p><span style= "color:white">Total Cost: <%= @total %></span></p>
-
 <div id="marketplace" class="mx-auto">
 	<span style = "color:white">
 	<tbody>
@@ -19,9 +17,20 @@
 				<div id="prodinfo">
 					<span style="color:black"><%= "Price: $" + Product.find_by_id(cart_id).price.to_s %></span>
 				</div>
-			
+
+				<%= button_to 'Remove From Cart', remove_from_cart_path(cart_id), method: :delete %>
 			</div>
 		<% end %>
 	</tbody>
+	<br>
+	<p><span style= "color:white">Total Cost: <%= @total %></span></p>
+	<br>
+
+	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
+		<%= f.input :referral_code, input_html: { name: "referral_code" } %>
+		<%= f.button :submit, "Set referral code" %>
+	<% end %>
+
+	<a href="checkout" class="button1 mx-auto">Checkout</a>
 	</span>
 </div>

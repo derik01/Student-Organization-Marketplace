@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
   def marketplace
     @tags = Tag.all
     @users = User.all
-    @products = Product.all
+    @products = Product.order(:id).all
   end
 
   def initialize_cart
@@ -30,12 +30,29 @@ class ProductsController < ApplicationController
     @cart_ids.each do |cart_id|
       @total += Product.find_by_id(cart_id).price
     end
+    session[:total] = @total
   end 
 
   def add_to_cart
     session[:cart] ||= []
     session[:cart] << params[:product_id]
+
+    @product = Product.find_by_id(params[:product_id])
+    new_quantity = @product.quantity - 1
+    @product.update_attribute(:quantity, new_quantity)
     redirect_to "/marketplace"
+  end
+
+  def remove_from_cart
+    session[:cart].delete_at(session[:cart].index(params[:product_id]))
+    @product = Product.find_by_id(params[:product_id])
+    new_quantity = @product.quantity + 1
+    @product.update_attribute(:quantity, new_quantity)
+    redirect_to "/view_cart"
+  end
+
+  def set_referral
+    session[:referral] = params[:referral_code]
   end
 
   def org_marketplace
