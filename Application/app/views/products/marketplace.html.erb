@@ -1,39 +1,31 @@
-
 <nav id="nav-header" class="text-left">
 	<div id="logo" class="text-left">
+		<%= image_tag "M_White_Thick.jpg", style: 'height:50px;width:30px;margin-bottom:15px;margin-right:10px;' %>
 		<a id="home-btn" href="/"><span>Mporium</span></a>
 	</div>
 	<div id="logo"> </div>	
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
 			PRODUCTS
 		</a>
 
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Apparel</a>
-			<a class="dropdown-item" href="#">Stationary</a>
-			<a class="dropdown-item" href="#">Events</a>
-			<a class="dropdown-item" href="#">Miscellanious</a>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="button">
+			<%= form_with(url: "/tag_marketplace") do |f| %>
+				<%= f.select :tag_id, @tags.map { |t| [t.name, t.id] }, include_blank: true %>
+				<%= f.submit %>
+			<% end %>
 		</div>
 	</div>
-	<div class="dropdown show">
-		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		ORGANIZATIONS
 		</a>
 		
 		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="#">Academic</a>
-			<a class="dropdown-item" href="#">Arts</a>
-			<a class="dropdown-item" href="#">FLOs</a>
-			<a class="dropdown-item" href="#">Greek Life</a>
-			<a class="dropdown-item" href="#">Health/Rec</a>
-			<a class="dropdown-item" href="#">International</a>
-			<a class="dropdown-item" href="#">Professional</a>
-			<a class="dropdown-item" href="#">Political</a>
-			<a class="dropdown-item" href="#">Religious</a>
-			<a class="dropdown-item" href="#">Service</a>
-			<a class="dropdown-item" href="#">Social</a>
-			<a class="dropdown-item" href="#">Special Interest</a>
+			<%= form_with(url: "/org_marketplace") do |f| %>
+				<%= f.select :org_id, @users.map { |u| [u.first, u.id] }, include_blank: true %>
+				<%= f.submit %>
+			<% end %>
 		</div>
 	</div>
 	<div id="no-drop">
@@ -42,11 +34,25 @@
 	<div id="no-drop">
 		<a href="sign_in">LOG IN</a>
 	</div>
-	<div id="no-drop">
-		<a href="signup">SIGN UP</a>
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			SIGN UP
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="signup_organization">Organization</a>
+			<a class="dropdown-item" href="signup_member">Member</a>
+		</div>
 	</div>
 
 </nav>
+
+
+
+
+
+
+
 
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>
@@ -59,7 +65,7 @@
 		<div class="card">
 		
 				<div id="prodinfo">
-					<%= product.title %>
+					<span style="color:black"><%= product.title %></span>
 				</div>
 				<div id="prodinfo">
 					<%= image_tag product.image.variant(
@@ -68,9 +74,10 @@
 					) %>
 				</div>
 				<div id="prodinfo">
-					<%= "Price: $" + product.price.to_s %>
+					<span style="color:black"><%= "Price: $" + product.price.to_s %></span>
 				</div>
-			<a href="checkout" class="button1 mx-auto">Add to Cart</a></div>
+			
+			<a href="checkout" class="button1 mx-auto">Add to Cart</a>
 			<br>
 			</div>
 		<% end %>
