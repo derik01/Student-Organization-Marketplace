@@ -22,6 +22,7 @@ class ProductsController < ApplicationController
 
   def initialize_cart
     session[:cart] ||= []
+    session[:referral] = nil
   end
 
   def view_cart
@@ -30,7 +31,13 @@ class ProductsController < ApplicationController
     @cart_ids.each do |cart_id|
       @total += Product.find_by_id(cart_id).price
     end
+
     session[:total] = @total
+
+    @member_refer = Member.find_by_referral_code(session[:referral])
+    if @member_refer != nil
+      @member_refer = Member.find_by_referral_code(session[:referral]).first
+    end
   end 
 
   def add_to_cart
@@ -40,6 +47,12 @@ class ProductsController < ApplicationController
     @product = Product.find_by_id(params[:product_id])
     new_quantity = @product.quantity - 1
     @product.update_attribute(:quantity, new_quantity)
+
+    @member_refer ||= Member.find_by_referral_code(session[:referral])
+    if @member_refer
+      new_refer = @member_refer.num_referred + 1
+      @member_refer.update_attribute(:num_referred, new_refer)
+    end
     redirect_to "/marketplace"
   end
 
@@ -48,11 +61,19 @@ class ProductsController < ApplicationController
     @product = Product.find_by_id(params[:product_id])
     new_quantity = @product.quantity + 1
     @product.update_attribute(:quantity, new_quantity)
+
+    @member_refer ||= Member.find_by_referral_code(session[:referral])
+    if @member_refer != nil
+      new_refer = @member_refer.num_referred - 1
+      @member_refer.update_attribute(:num_referred, new_refer)
+    end
+
     redirect_to "/view_cart"
   end
 
   def set_referral
     session[:referral] = params[:referral_code]
+    redirect_to "/view_cart"
   end
 
   def org_marketplace

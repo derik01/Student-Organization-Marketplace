@@ -7,6 +7,7 @@ class CreateMembers < ActiveRecord::Migration[6.1]
       t.string :last
       t.string :organizations
       t.string :referral_code
+      t.integer :num_referred
       t.belongs_to :users, foreign_key: true
       
       t.timestamps

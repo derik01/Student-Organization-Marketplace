@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2032_10_03_201435) do
     t.string "last"
     t.string "organizations"
     t.string "referral_code"
+    t.integer "num_referred"
     t.bigint "users_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
