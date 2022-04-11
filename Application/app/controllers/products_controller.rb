@@ -28,8 +28,10 @@ class ProductsController < ApplicationController
   def view_cart
     @cart_ids = session[:cart]
     @total = 0
-    @cart_ids.each do |cart_id|
-      @total += Product.find_by_id(cart_id).price
+    if @cart_ids != nil
+      @cart_ids.each do |cart_id|
+        @total += Product.find_by_id(cart_id).price
+      end
     end
 
     session[:total] = @total

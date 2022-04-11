@@ -57,8 +57,14 @@
 <div id="marketplace">
 	<h1>MARKETPLACE</h1>
 	<%= link_to 'View Cart', view_cart_path %>
+	<%= simple_form_for :view_cart_path, :url => "/set_referral", :method => :post do |f| %>
+	<%= f.input :referral_code, input_html: { name: "referral_code" } %>
+	<%= f.button :submit, "Set referral code" %>
+<% end %>
 </div>
 
+
+<br>
 <div id="marketplace" class="mx-auto">
 	<span style = "color:white">
 	<tbody>
