@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
     before_action :paypal_init, :except => [:index]
     def index; end
     def create_order
-        price = '100.00'
+        price = session[:total]
         request = PayPalCheckoutSdk::Orders::OrdersCreateRequest::new
         request.request_body({
           :intent => 'CAPTURE',
