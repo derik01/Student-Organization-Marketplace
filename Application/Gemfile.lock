@@ -398,7 +398,6 @@ DEPENDENCIES
   groupdate
   image_processing (~> 1.0)
   jbuilder
-  jquery-rails
   omniauth
   omniauth-google-oauth2
   omniauth-rails_csrf_protection (~> 1.0)
@@ -424,4 +423,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.3.4
+   2.3.5

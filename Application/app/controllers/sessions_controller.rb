@@ -30,11 +30,18 @@ class SessionsController < ApplicationController
     redirect_to '/'
   end
   
-  def omniauth
+  def omniauth_user
     @user = User.from_omniauth(auth)
     @user.save
     session[:id] = @user.id
     redirect_to '/profile'
+  end
+
+  def omniauth_member
+    @member = Member.from_omniauth(auth)
+    @member.save
+    session[:id] = @member.id
+    redirect_to @member
   end
   private
   def auth
