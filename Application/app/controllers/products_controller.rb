@@ -75,7 +75,7 @@ class ProductsController < ApplicationController
 
   def set_referral
     session[:referral] = params[:referral_code]
-    redirect_to "/view_cart"
+    redirect_to "/marketplace"
   end
 
   def org_marketplace
