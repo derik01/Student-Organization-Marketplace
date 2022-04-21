@@ -86,6 +86,8 @@ class UsersController < ApplicationController
 
     def destroy
         @user = User.find_by_id(session[:id])
+        Member.where(users_id: @user.id).update_all(users_id: nil)
+        # @members.update_all(:users_id, nil)
         @user.destroy
         flash[:notice] = "User '#{@user.first}' deleted."
         redirect_to '/'
