@@ -42,7 +42,21 @@ class SessionsController < ApplicationController
       session[:id] = @member.id
       redirect_to @member
     else
-      redirect_to '/'
+      @user = User.from_omniauth(auth)
+      if @user
+        @user.save
+        session[:id] = @user.id
+        redirect_to '/profile'
+      else
+        @member = Member.from_omniauth(auth)
+        if @member
+          @member.save
+          session[:id] = @member.id
+          redirect_to @member
+        else
+          redirect_to '/'
+        end
+      end
     end
     
   end
