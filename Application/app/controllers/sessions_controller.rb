@@ -30,6 +30,23 @@ class SessionsController < ApplicationController
     redirect_to '/'
   end
   
+  def omniauth
+    if (auth2 == "user")
+      @user = User.from_omniauth(auth)
+      @user.save
+      session[:id] = @user.id
+      redirect_to '/profile'
+    elsif (auth2 == "member") 
+      @member = Member.from_omniauth(auth)
+      @member.save
+      session[:id] = @member.id
+      redirect_to @member
+    else
+      redirect_to '/'
+    end
+    
+  end
+
   def omniauth_user
     @user = User.from_omniauth(auth)
     @user.save
@@ -46,5 +63,10 @@ class SessionsController < ApplicationController
   private
   def auth
     request.env['omniauth.auth']
+  end
+
+  def auth2
+    request.env["omniauth.params"]["from"]
+    
   end
 end
