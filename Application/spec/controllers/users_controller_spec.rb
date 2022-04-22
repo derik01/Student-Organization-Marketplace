@@ -18,7 +18,7 @@ RSpec.describe UsersController, type: :controller do
     describe "creates" do
         it "user with invalid parameters" do
             get :create, params: {:user => {:username => "rspec_test@gmail.com", :password => "45678", :first => "rspec2"}}
-            expect(response).to redirect_to "/signup"
+            expect(response).to redirect_to "/signup_organization"
             expect(flash[:notice]).to match(/Password length should be 8 or longer./)
         end
     end
@@ -26,7 +26,7 @@ RSpec.describe UsersController, type: :controller do
     describe "creates" do
         it "user with invalid parameters" do
             get :create, params: {:user => {:username => "rspec_user@gmail.com", :password => "12345678", :first => "rspec2"}}
-            expect(response).to redirect_to "/signup"
+            expect(response).to redirect_to "/signup_organization"
             expect(flash[:notice]).to match(/Username already exists/)
         end
     end
@@ -34,7 +34,7 @@ RSpec.describe UsersController, type: :controller do
     describe "creates" do
         it "user with invalid parameters" do
             get :create, params: {:user => {:username => "rspec_user", :password => "12345678", :first => "rspec2"}}
-            expect(response).to redirect_to "/signup"
+            expect(response).to redirect_to "/signup_organization"
             expect(flash[:notice]).to match(/Invalid Username/)
         end
     end 
@@ -66,14 +66,15 @@ RSpec.describe UsersController, type: :controller do
     end
 
     describe "gets" do
-        it "the show" do
-            get :show
-        end
-    end
-
-    describe "gets" do
         it "the new" do
             get :new
         end
     end
+
+    describe "gets" do
+        it "add members" do
+            get :add_members
+        end
+    end
+
 end
