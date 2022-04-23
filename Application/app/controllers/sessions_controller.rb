@@ -35,25 +35,27 @@ class SessionsController < ApplicationController
     if (auth2 == "user")
       @user = User.from_omniauth(auth)
       @user.save
+      session[:user_type] = "Organization"
       session[:id] = @user.id
       redirect_to '/profile'
     elsif (auth2 == "member") 
       @member = Member.from_omniauth(auth)
       @member.save
+      session[:user_type] = "Member"
       session[:id] = @member.id
       redirect_to @member
-    else
+    elsif (auth2 == "login")
       @user = User.from_omniauth(auth)
-      if @user
-        @user.save
+      if User.find_by_id(@user.id)
         session[:id] = @user.id
+        session[:user_type] = "Organization"
         redirect_to '/profile'
       else
         @member = Member.from_omniauth(auth)
-        if @member
-          @member.save
+        if Member.find_by_id(@member.id)
           session[:id] = @member.id
-          redirect_to @member
+          session[:user_type] = "Member"
+          redirect_to '/mem_profile'
         else
           redirect_to '/'
         end

@@ -9,6 +9,8 @@ class Member < ActiveRecord::Base
             user.last = auth.info.last_name
             user.username = auth.info.email
             user.password = SecureRandom.hex
+            user.update_attribute(:referral_code, rand(36**8).to_s(36))
+            user.update_attribute(:num_referred, 0)
         end
     end
 end
