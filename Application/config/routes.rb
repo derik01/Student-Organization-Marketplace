@@ -61,6 +61,10 @@ Rails.application.routes.draw do
 
   get 'tags/:tag', to: 'products#tag_index', as: :tag
 
+  get '/auth/google_oauth2/callback' => 'sessions#omniauth'
+  get '/auth/google_oauth2_member/callback' => 'sessions#omniauth_member'
+  get '/auth/failure', to: redirect('/')
+
 
 
   resources :articles

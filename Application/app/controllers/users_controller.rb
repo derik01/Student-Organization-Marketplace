@@ -61,7 +61,7 @@ class UsersController < ApplicationController
             flash[:notice] = "Password length should be 8 or longer."
             redirect_to '/signup_organization'
         else @user.valid?
-            @user = User.create(params.require(:user).permit(:first, :last, :username, :password))
+            @user = User.create(params.require(:user).permit(:first, :username, :password))
             session[:id] = @user.id
             session[:type] = "organization"
             redirect_to '/profile'
@@ -86,6 +86,8 @@ class UsersController < ApplicationController
 
     def destroy
         @user = User.find_by_id(session[:id])
+        Member.where(users_id: @user.id).update_all(users_id: nil)
+        # @members.update_all(:users_id, nil)
         @user.destroy
         flash[:notice] = "User '#{@user.first}' deleted."
         redirect_to '/'

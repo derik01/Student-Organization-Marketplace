@@ -30,4 +30,60 @@ class SessionsController < ApplicationController
     # flash[:notice] = "You have been signed out!"
     redirect_to '/'
   end
+  
+  def omniauth
+    if (auth2 == "user")
+      @user = User.from_omniauth(auth)
+      @user.save
+      session[:user_type] = "Organization"
+      session[:id] = @user.id
+      redirect_to '/profile'
+    elsif (auth2 == "member") 
+      @member = Member.from_omniauth(auth)
+      @member.save
+      session[:user_type] = "Member"
+      session[:id] = @member.id
+      redirect_to @member
+    elsif (auth2 == "login")
+      @user = User.from_omniauth(auth)
+      if User.find_by_id(@user.id)
+        session[:id] = @user.id
+        session[:user_type] = "Organization"
+        redirect_to '/profile'
+      else
+        @member = Member.from_omniauth(auth)
+        if Member.find_by_id(@member.id)
+          session[:id] = @member.id
+          session[:user_type] = "Member"
+          redirect_to '/mem_profile'
+        else
+          redirect_to '/'
+        end
+      end
+    end
+    
+  end
+
+  def omniauth_user
+    @user = User.from_omniauth(auth)
+    @user.save
+    session[:id] = @user.id
+    redirect_to '/profile'
+  end
+
+  def omniauth_member
+    @member = Member.from_omniauth(auth)
+    @member.save
+    session[:id] = @member.id
+    redirect_to @member
+  end
+  private
+  def auth
+    request.env['omniauth.auth']
+  end
+
+  def auth2
+    request.env["omniauth.params"]["from"]
+    
+  end
 end

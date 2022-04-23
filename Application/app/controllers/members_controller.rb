@@ -62,6 +62,8 @@ class MembersController < ApplicationController
     redirect_to '/mem_profile'
   end
 
+
+  
   # DELETE /members/1 or /members/1.json
   def destroy
     @member = Member.find_by_id(session[:id])
