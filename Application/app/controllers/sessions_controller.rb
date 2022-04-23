@@ -55,7 +55,7 @@ class SessionsController < ApplicationController
         if Member.find_by_id(@member.id)
           session[:id] = @member.id
           session[:user_type] = "Member"
-          redirect_to '/mem_profile'
+          redirect_to @member
         else
           redirect_to '/'
         end
