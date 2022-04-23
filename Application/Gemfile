@@ -12,8 +12,6 @@ gem 'active_storage_validations'
 
 gem 'bootstrap', '~> 4.0.0'
 
-gem 'simplecov', require: false, group: :test
-
 gem 'bcrypt' 
 
 gem 'paypal-checkout-sdk'
